@@ -1,0 +1,113 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+	"description":{
+		"identifier": "ocrp:glass_white_wool",
+		"properties": {
+				"ocrp:direction": [0,1,2,3,4,5,6]
+			}
+	},
+	
+   "components": {
+	 "minecraft:unit_cube": {},
+	 "minecraft:material_instances": {      
+	  "north": {
+   		"texture": "glass", // References texture defined in terrain_textures.json
+    		"render_method": "blend" // Options 'blend', 'opaque', 'alpha_test'
+      },
+	  "south": {
+   		"texture": "glass", // References texture defined in terrain_textures.json
+    		"render_method": "blend" // Options 'blend', 'opaque', 'alpha_test'
+      },
+	  "east": {
+   		"texture": "white_wool_colored", // References texture defined in terrain_textures.json
+    		"render_method": "blend" // Options 'blend', 'opaque', 'alpha_test'
+      },
+	  "west": {
+   		"texture": "glass", // References texture defined in terrain_textures.json
+    		"render_method": "blend" // Options 'blend', 'opaque', 'alpha_test'
+      },
+	  "up": {
+   		"texture": "glass", // References texture defined in terrain_textures.json
+    		"render_method": "blend" // Options 'blend', 'opaque', 'alpha_test'
+      },
+	  "down": {
+   		"texture": "glass", // References texture defined in terrain_textures.json
+    		"render_method": "blend" // Options 'blend', 'opaque', 'alpha_test'
+      }
+	  },
+	  "minecraft:destroy_time": 1,
+
+	  "minecraft:entity_collision":{
+		"origin": [-8,0,-8],
+		"size": [16,16,16]
+	  },
+	  "minecraft:pick_collision":{
+		"origin": [-8,0,-8],
+		"size": [16,16,16]
+	  },
+	   "minecraft:ticking": {
+      "looping": false,
+      "range": [0.1, 0.1],
+      "on_tick": {
+    		"event": "onTick",
+    		"target": "self"
+      }
+	},
+	"minecraft:on_player_placing": {
+      "event": "onPlace",
+      "target": "self"
+	},
+	"minecraft:block_light_absorption": 1
+    },
+	"events":{
+		"onTick":{
+			
+		},
+		"onPlace":{
+			"set_block_property": {
+				"ocrp:direction": "(query.cardinal_player_facing)"
+			}
+		}
+	},
+	"permutations":[
+		{
+				"condition": "query.block_property('ocrp:direction') == 0",
+				"components": {
+		  			"minecraft:rotation": [-90,0,90]
+				}
+	  	},
+		{
+				"condition": "query.block_property('ocrp:direction') == 1",
+				"components": {
+		  			"minecraft:rotation": [90,0,-90]
+				}
+	  	},
+		{
+				"condition": "query.block_property('ocrp:direction') == 2",
+				"components": {
+		  			"minecraft:rotation": [0,-90,0]
+				}
+	  	},
+		{
+				"condition": "query.block_property('ocrp:direction') == 3",
+				"components": {
+		  			"minecraft:rotation": [0,90,0]
+				}
+	  	},
+		{
+				"condition": "query.block_property('ocrp:direction') == 4",
+				"components": {
+		  			"minecraft:rotation": [0,0,0]
+				}
+	  	},
+		{
+				"condition": "query.block_property('ocrp:direction') == 5",
+				"components": {
+		  			"minecraft:rotation": [0,180,0]
+				}
+	  	}
+	]
+    
+  }
+}

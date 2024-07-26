@@ -1,0 +1,110 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mythological_craft.leshy": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+						  	"idle": "(query.ground_speed == 0.0 && query.is_on_ground && !query.is_saddled && !query.is_delayed_attacking && !query.is_sheared) || (query.mark_variant == 2 && query.is_delayed_attacking)"
+						},
+						{
+						  	"attack2": "query.mark_variant == 2 && query.is_delayed_attacking"
+						}
+					],
+					"transitions": [
+					   	{
+						 	"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_saddled && !query.is_sheared"
+					   	},
+					   	{
+						 	"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					   	},
+						{
+							"summon": "query.is_saddled && !query.is_delayed_attacking"
+						},
+						{
+							"wait": "query.is_sheared"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && query.is_on_ground && !query.is_saddled && !query.is_delayed_attacking && !query.is_sheared) || (query.mark_variant == 2 && query.is_delayed_attacking)"
+					 	},
+					 	{
+					  	 	"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					 	},
+						{
+							"summon": "query.is_saddled && !query.is_delayed_attacking"
+						},
+						{
+							"wait": "query.is_sheared"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "attack1"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && query.is_on_ground && !query.is_saddled && !query.is_delayed_attacking && !query.is_sheared) || (query.mark_variant == 2 && query.is_delayed_attacking)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_saddled && !query.is_sheared"
+					 	},
+						{
+							"summon": "query.is_saddled && !query.is_delayed_attacking"
+						},
+						{
+							"wait": "query.is_sheared"
+						}
+					]
+				},
+				"summon": {
+					"animations": [
+					  "summon"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && query.is_on_ground && !query.is_saddled && !query.is_delayed_attacking && !query.is_sheared) || (query.mark_variant == 2 && query.is_delayed_attacking)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_saddled && !query.is_sheared"
+					 	},
+						{
+							"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					  	},
+						{
+							"wait": "query.is_sheared"
+						}
+					]
+				},
+				"wait": {
+					"animations": [
+					  "wait"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && query.is_on_ground && !query.is_saddled && !query.is_delayed_attacking && !query.is_sheared) || (query.mark_variant == 2 && query.is_delayed_attacking)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_saddled && !query.is_sheared"
+					 	},
+						{
+							"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					  	},
+						{
+							"summon": "query.is_saddled && !query.is_delayed_attacking"
+						}
+					]
+				}
+			}
+		}
+	}
+}

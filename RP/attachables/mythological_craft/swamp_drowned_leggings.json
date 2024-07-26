@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "ocrp:swamp_drowned_leggings",
+
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+
+			"textures": {
+				"default": "textures/models/armor/mythological_craft/swamp_drowned_leggings",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+
+			"geometry": {
+				"default": "geometry.swamp_drowned_leggings"
+			},
+
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			},
+			
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

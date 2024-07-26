@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.mc_giant": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.texture1",
+						"Texture.texture2",
+						"Texture.texture3",		
+						"Texture.texture4"		
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [ { "*": "Material.default" } ],
+			"textures": [ "Array.skins[query.variant]" ]
+		}
+	}
+}

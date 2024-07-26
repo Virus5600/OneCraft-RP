@@ -1,0 +1,469 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:cannonboat_cannon",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false,
+			"animations": {
+				"move": "controller.animation.minimalist_boats.motorboat.move"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			}
+		},
+		"component_groups": {
+			"ocrp:spawnfuel": {
+				"minecraft:timer": {
+					"time": 0.01,
+					"time_down_event": {
+						"event": "finish"
+					}
+				},
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 1,
+							"max_wait_time": 1,
+							"spawn_item": "ocrp:fuel",
+							"single_use": true,
+							"num_to_spawn": 1
+						}
+					]
+				}
+			},
+			"ocrp:initial_speed": {
+				"minecraft:movement": {
+					"value": 0
+				},
+				"minecraft:underwater_movement": {
+					"value": 0
+				},
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": false,
+					"can_walk": true,
+					"can_sink": false,
+					"avoid_damage_blocks": false
+				},
+				"minecraft:movement.amphibious": {},
+				"minecraft:input_ground_controlled": {}
+			},
+			"ocrp:move": {
+				"minecraft:movement": {
+					"value": 0.045
+				},
+				"minecraft:underwater_movement": {
+					"value": 0.1
+				},
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": false,
+					"can_walk": true,
+					"can_sink": false,
+					"avoid_damage_blocks": false
+				},
+				"minecraft:movement.amphibious": {},
+				"minecraft:input_ground_controlled": {}
+			},
+			"animation": {
+				"minecraft:is_stunned": {},
+				"minecraft:timer": {
+					"time": 0.01,
+					"time_down_event": {
+						"event": "ocrp:remove_animation"
+					}
+				}
+			},
+			"entity_despawn_full": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:cannonboat_cannon"
+						}
+					]
+				},
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:entity_sensor": {
+				"sensor_range": 0.5,
+				"relative_range": false,
+				"minimum_count": 1,
+				"event_filters": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						}
+					]
+				},
+				"event": "ocrp:shot"
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_brightness",
+									"subject": "self",
+									"operator": ">=",
+									"value": 0
+								}
+							]
+						},
+						"event": "no_riding"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"operator": "==",
+									"value": "village_hero"
+								}
+							]
+						},
+						"event": "ocrp:despawn_full"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"operator": "==",
+									"value": "conduit_power"
+								}
+							]
+						},
+						"event": "ocrp:stop"
+					},
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"operator": "==",
+									"value": "haste"
+								}
+							]
+						},
+						"event": "ocrp:spawnfuel"
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "ocrp:fuel"
+									}
+								]
+							},
+							"event": "ocrp:fill",
+							"target": "self"
+						},
+						"use_item": true,
+						"interact_text": "action.interact.add_fuel"
+					}
+				]
+			},
+			"minecraft:variant": {
+				"value": 0
+			},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"waterlily"
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"boat",
+					"inanimate",
+					"cannonboat"
+				]
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"event": "ocrp:drop"
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4,
+				"hard_distance": 6,
+				"max_distance": 10
+			},
+			"minecraft:is_stackable": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 60,
+					"max_dropped_ticks": 20,
+					"use_motion_prediction_hints": true
+				},
+				"conditional_values": [
+					{
+						"max_optimized_distance": 0,
+						"max_dropped_ticks": 0,
+						"use_motion_prediction_hints": true,
+						"conditional_values": [
+							{
+								"test": "is_moving",
+								"subject": "self",
+								"operator": "==",
+								"value": true
+							}
+						]
+					}
+				]
+			},
+			"minecraft:buoyant": {
+				"base_buoyancy": 0.6,
+				"apply_gravity": true,
+				"simulate_waves": true,
+				"big_wave_probability": 0.03,
+				"big_wave_speed": 10,
+				"liquid_blocks": [
+					"minecraft:water",
+					"minecraft:flowing_water"
+				],
+				"drag_down_on_buoyancy_removed": 5
+			},
+			"minecraft:rideable": {
+				"controlling_seat": 1,
+				"seat_count": 1,
+				"family_types": [
+					"mob",
+					"arthropod",
+					"monster",
+					"lightweight",
+					"illager",
+					"fish",
+					"piglin",
+					"hoglin",
+					"player",
+					"villager"
+				],
+				"pull_in_entities": true,
+				"interact_text": "action.interact.enter_boat",
+				"seats": [
+					{
+						"position": [
+							0,
+							0.3,
+							-0.75
+						]
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0.7,
+				"height": 0.25
+			},
+			"minecraft:physics": {},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"pivot": [
+							0,
+							0.5,
+							0
+						],
+						"width": 1.2,
+						"height": 0.25
+					}
+				]
+			}
+		},
+		"events": {
+			"no_riding": {
+				"run_command": {
+					"command": [
+						"scoreboard players set @p[rm=0, r=5] ocrp:minimalist_boats.riding 0"
+					]
+				}
+			},
+			"ocrp:shot": {
+				"run_command": {
+					"command": [
+						"scoreboard objectives add ocrp:minimalist_boats.riding dummy riding",
+						"scoreboard players set @p ocrp:minimalist_boats.riding 1"
+					]
+				}
+			},
+			"ocrp:fill": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"ocrp:initial_speed"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"ocrp:move"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"scoreboard objectives add ocrp:fuel dummy Fuel",
+								"scoreboard players add @s ocrp:fuel 1000",
+								"execute at @s run titleraw @a[r=4] actionbar {\"rawtext\":[{\"text\":\"§4Fuel §f: §e\"},{\"score\":{\"name\":\"@s\",\"objective\":\"ocrp:fuel\"}}]}",
+								"execute at @s[scores={ocrp:fuel=10999..}] run effect @s haste 1 0 true",
+								"execute at @s[scores={ocrp:fuel=10000..}] run scoreboard players set @s ocrp:fuel 10000",
+								"execute at @s[scores={ocrp:fuel=10000..}] run title @a[r=4] actionbar §4Fuel §f: §emax(10000)"
+							]
+						}
+					}
+				]
+			},
+			"finish": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"ocrp:spawnfuel"
+							]
+						},
+						"add": {}
+					}
+				]
+			},
+			"ocrp:spawnfuel": {
+				"sequence": [
+					{
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"ocrp:spawnfuel"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"ocrp:initial_speed"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"scoreboard objectives add ocrp:fuel dummy Fuel",
+								"scoreboard players set @s ocrp:fuel 0"
+							]
+						}
+					}
+				]
+			},
+			"ocrp:drop": {
+				"add": {
+					"component_groups": [
+						"animation"
+					]
+				},
+				"run_command": {
+					"command": [
+						"scoreboard objectives add ocrpdrop dummy",
+						"scoreboard players add @s ocrpdrop 1",
+						"effect @s[scores={ocrpdrop=6, ocrp:fuel=0}] village_hero 1 0 true",
+						"scoreboard players reset @s[scores={ocrpdrop=6}] ocrpdrop"
+					]
+				}
+			},
+			"ocrp:remove_animation": {
+				"remove": {
+					"component_groups": [
+						"animation"
+					]
+				}
+			},
+			"ocrp:despawn_full": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"entity_despawn_full"
+							]
+						}
+					}
+				]
+			},
+			"ocrp:stop": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"ocrp:move"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"ocrp:initial_move"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"scoreboard objectives add ocrpdrop dummy",
+								"scoreboard players set @s ocrpdrop 0"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

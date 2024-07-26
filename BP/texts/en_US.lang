@@ -1,0 +1,7 @@
+pack.name=OneCraft RP [BP]
+pack.description=An Add-on that will be used by the OneCraft server.
+
+#####################
+## ONE SIDED GLASS ##
+#####################
+itemGroup.name.oneSidedBlock=One Sided Blocks

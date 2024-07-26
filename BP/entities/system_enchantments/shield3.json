@@ -1,0 +1,122 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:shield3",
+			"is_experimental": false,
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"knockback": {
+				"minecraft:behavior.knockback_roar": {
+					"attack_time": 0.1,
+					"cooldown_time": 0,
+					"duration": 0.1,
+					"knockback_damage": 0,
+					"knockback_strength": 10,
+					"knockback_range": 3,
+					"damage_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"operator": "==",
+								"value": "none"
+							}
+						]
+					},
+					"knockback_filters": {
+						"any_of": [
+							{
+								"test": "is_family",
+								"subject": "other",
+								"operator": "==",
+								"value": "monster"
+							}
+						]
+					},
+					"on_roar_end": {
+						"event": "ocrp:remove_knockback"
+					}
+				}
+			},
+			"despawn": {
+				"minecraft:despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:entity_sensor": {
+				"sensor_range": 0.5,
+				"event_filters": {
+					"all_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "monster"
+						},
+						{
+							"test": "has_component",
+							"subject": "self",
+							"operator": "!=",
+							"value": "minecraft:behavior.knockback_roar"
+						}
+					]
+				},
+				"event": "ocrp:knockback"
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1,
+				"min": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 0.25
+			}
+		},
+		"events": {
+			"ocrp:knockback": {
+				"run_command": {
+					"command": [
+						"playsound item.shield.block @p"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"knockback"
+					]
+				}
+			},
+			"ocrp:remove_knockback": {
+				"remove": {
+					"component_groups": [
+						"knockback"
+					]
+				}
+			},
+			"ocrp:despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

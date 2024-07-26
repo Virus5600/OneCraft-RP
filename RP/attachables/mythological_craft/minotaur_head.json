@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "ocrp:trophy_minotaur_item",
+
+			"materials": {
+				"default": "armor"
+			},
+
+			"textures": {
+				"default": "textures/models/armor/mythological_craft/mc_minotaur_head"
+			},
+
+			"geometry": {
+				"default": "geometry.mc_minotaur_head"
+			},
+
+			"scripts": {
+				"parent_setup": "variable.helmet_layer_visible = 0.0;"
+			},
+			
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

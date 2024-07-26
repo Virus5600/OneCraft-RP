@@ -1,0 +1,80 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ocrp:stone_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.45,
+        "height": 0.45
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": [
+              7,
+              10
+            ],
+            "knockback": true
+          },
+          "remove_on_hit": {},
+          "particle_on_hit": {
+            "particle_type": "mobspell",
+            "particle_color": "#645e5e",
+            "num_particles": 16,
+            "on_entity_hit": true,
+            "on_other_hit": true
+          },
+          "power": 0.75,
+          "gravity": 0.09,
+          "anchor": 1
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:scale": {
+        "value": 0.66
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 4.0,
+        "time_down_event": {
+          "event": "dspn"
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "component_groups": {
+      "dspn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "dspn": {
+        "add": {
+          "component_groups": [
+            "dspn"
+          ]
+        }
+      }
+    }
+  }
+}

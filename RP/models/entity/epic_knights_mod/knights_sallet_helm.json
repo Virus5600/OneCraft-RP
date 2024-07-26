@@ -1,0 +1,205 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.epic_knights_mod.knights_sallet_helm",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "Head",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.5,
+								26.4,
+								-3.01
+							],
+							"size": [
+								1,
+								4,
+								6
+							],
+							"pivot": [
+								0,
+								24,
+								0
+							],
+							"rotation": [
+								-65,
+								15,
+								90
+							],
+							"uv": [
+								28,
+								18
+							]
+						},
+						{
+							"origin": [
+								-4,
+								24.9,
+								-4.2
+							],
+							"size": [
+								8,
+								7,
+								8
+							],
+							"inflate": 1,
+							"uv": [
+								32,
+								0
+							]
+						},
+						{
+							"origin": [
+								-6.501,
+								24.7,
+								-6.6
+							],
+							"size": [
+								1,
+								4,
+								6
+							],
+							"pivot": [
+								-4,
+								24,
+								0
+							],
+							"rotation": [
+								-115,
+								15,
+								90
+							],
+							"uv": [
+								28,
+								18
+							]
+						},
+						{
+							"origin": [
+								-9.3,
+								17.1,
+								-1.806
+							],
+							"size": [
+								8,
+								4,
+								6
+							],
+							"pivot": [
+								0,
+								24,
+								0
+							],
+							"rotation": [
+								-77.5,
+								7.5,
+								90
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-3.3,
+								18.4,
+								1.67
+							],
+							"size": [
+								8,
+								4,
+								6
+							],
+							"pivot": [
+								6,
+								24,
+								0
+							],
+							"rotation": [
+								-102.5,
+								7.5,
+								90
+							],
+							"uv": [
+								0,
+								18
+							]
+						},
+						{
+							"origin": [
+								-7.3,
+								22.5,
+								-5.6
+							],
+							"size": [
+								1,
+								11,
+								10
+							],
+							"pivot": [
+								-4,
+								24,
+								-3
+							],
+							"rotation": [
+								0,
+								15,
+								90
+							],
+							"uv": [
+								38,
+								5
+							]
+						},
+						{
+							"origin": [
+								-4.7,
+								23.6,
+								-4.7
+							],
+							"size": [
+								3,
+								3,
+								3
+							],
+							"inflate": -0.2,
+							"pivot": [
+								0,
+								24,
+								0
+							],
+							"rotation": [
+								0,
+								-45,
+								0
+							],
+							"uv": [
+								45,
+								15
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:rock_golem",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_rock_golem"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_rock_golem"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#696969",
+        "overlay_color": "#d2a243"
+      },
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.rock_golem",
+        "idle": "animation.rock_golem.idle",
+        "move": "animation.rock_golem.move",
+        "stay": "animation.rock_golem.stay",
+        "up": "animation.rock_golem.up",
+        "attack1": "animation.rock_golem.attack1",
+        "attack2": "animation.rock_golem.attack2",
+        "throw": "animation.rock_golem.throw",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:the_prince_mount",
+			"textures": {
+				"default": "textures/entity/animal_mounts/the_prince_mount"
+			},
+			"materials": {
+				"default": "vex"
+			},
+			"geometry": {
+				"default": "geometry.the_prince"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"animations": {
+				"controller": "controller.animation.the_prince_mount",
+				"idle": "animation.the_prince_mount.idle",
+				"move": "animation.the_prince_mount.move",
+				"fly": "animation.the_prince_mount.fly"
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:friendly_giant_wolf",
+      "textures": {
+        "texture1": "textures/entity/mythological_craft/mc_giant_wolf1",
+        "texture2": "textures/entity/mythological_craft/mc_giant_wolf2",
+        "texture3": "textures/entity/mythological_craft/mc_giant_wolf3",
+        "texture4": "textures/entity/mythological_craft/mc_giant_wolf4",
+        "texture5": "textures/entity/mythological_craft/mc_giant_wolf5"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_giant_wolf"
+      },
+      "render_controllers": [
+        "controller.render.giant_wolf"
+      ],
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.giant_wolf",
+        "look_at_target": "animation.common.look_at_target",
+        "idle": "animation.mc_giant_wolf.idle",
+        "move": "animation.mc_giant_wolf.move",
+        "attack1": "animation.mc_giant_wolf.attack1",
+        "attack2": "animation.mc_giant_wolf.attack2"
+      }
+    }
+  }
+}

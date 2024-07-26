@@ -1,0 +1,47 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:axe",
+			"is_experimental": false,
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:timer": {
+				"time": 0.2,
+				"time_down_event": {
+					"event": "ocrp:despawn"
+				}
+			},
+			"minecraft:pushable": {},
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			}
+		},
+		"events": {
+			"ocrp:despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

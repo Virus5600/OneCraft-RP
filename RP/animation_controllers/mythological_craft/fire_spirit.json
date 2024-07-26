@@ -1,0 +1,51 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mythological_craft.mc_fire_spirit": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+						  "idle": "(query.ground_speed == 0.0 && !query.is_delayed_attacking && !query.has_target) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.has_target)"
+						}
+					],
+					"transitions": [
+						{
+							"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.has_target"
+						},
+						{
+							"jump": "query.has_target"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && !query.is_delayed_attacking && !query.has_target) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.has_target)"
+					 	},
+					 	{
+							"jump": "query.has_target"
+					 	}
+					]
+				},
+				"jump": {
+					"animations": [
+					  "jump"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && !query.is_delayed_attacking && !query.has_target) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.has_target)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.has_target"
+					 	}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:book_enchanted",
+			"materials": {
+				"default": "zombie"
+			},
+			"textures": {
+				"default": "textures/entity/system_enchantments/book_enchanted"
+			},
+			"geometry": {
+				"default": "geometry.book_enchanted"
+			},
+			"animations": {
+				"loop": "animation.system_enchantments.book.loop",
+				"open": "animation.system_enchantments.book.open"
+			},
+			"scripts": {
+				"animate": [
+					"loop",
+					"open"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

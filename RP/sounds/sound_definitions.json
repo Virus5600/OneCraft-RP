@@ -1,0 +1,422 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		// EPIC KNIGHTS MOD
+		"epic_knights_mod.weapon.sharphit": {
+			"sounds": [
+				{
+					"load_on_low_memory": false,
+					"volume": 0.5,
+					"name": "sounds/epic_knights_mod/hit_sounds/sharp_hit/hit1.ogg",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 0.5,
+					"name": "sounds/epic_knights_mod/hit_sounds/sharp_hit/hit2",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 0.5,
+					"name": "sounds/epic_knights_mod/hit_sounds/sharp_hit/hit3",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 0.5,
+					"name": "sounds/epic_knights_mod/hit_sounds/sharp_hit/hit4",
+					"pitch": 1
+				}
+			]
+		},
+		"epic_knights_mod.weapon.blunthit": {
+			"sounds": [
+				{
+					"load_on_low_memory": false,
+					"volume": 0.75,
+					"name": "sounds/epic_knights_mod/hit_sounds/blunt_hit/blunt_hit1",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 0.75,
+					"name": "sounds/epic_knights_mod/hit_sounds/blunt_hit/blunt_hit2",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 0.75,
+					"name": "sounds/epic_knights_mod/hit_sounds/blunt_hit/blunt_hit3",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 0.75,
+					"name": "sounds/epic_knights_mod/hit_sounds/blunt_hit/blunt_hit_hard",
+					"pitch": 1
+				}
+			]
+		},
+		"epic_knights_mod.item.shield.block": {
+			"sounds": [
+				{
+					"load_on_low_memory": false,
+					"volume": 0.5,
+					"name": "sounds/epic_knights_mod/item/shield/block1",
+					"pitch": 1.4534847736358643
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 1.25,
+					"name": "sounds/epic_knights_mod/item/shield/block2",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": true,
+					"volume": 1.25,
+					"name": "sounds/epic_knights_mod/item/shield/block3",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 1,
+					"name": "sounds/epic_knights_mod/item/shield/block4",
+					"pitch": 1
+				},
+				{
+					"load_on_low_memory": false,
+					"volume": 1,
+					"name": "sounds/epic_knights_mod/item/shield/block1",
+					"pitch": 1.1584848165512085
+				}
+			],
+			"category": "player",
+			"__use_legacy_max_distance": true
+		},
+
+		// MYTHOLOGICAL CRAFT ADDON
+		"mythological_craft.mob.ogre.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/ogre_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.ogre.hurt": {
+			"category": "hostile",
+			"sounds": [
+				"sounds/mythological_craft/entities/ogre_hurt"
+			]
+		},
+
+		"mythological_craft.mob.swamp_drowned.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/swamp_drowned_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.swamp_drowned.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/swamp_drowned_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.swamp_drowned.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/swamp_drowned_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.rock_golem.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/rock_golem_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.rock_golem.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/rock_golem_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.rock_golem.roar": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/rock_golem_roar",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.minotaur.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/minotaur_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.minotaur.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/minotaur_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.minotaur.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/minotaur_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.minotaur.roar": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/minotaur_roar",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.centaur.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/giant_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.centaur.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/centaur_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.centaur.roar": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/centaur_roar",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.giant.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/giant_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.giant.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/giant_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.crocodile.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/crocodile_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.crocodile.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/crocodile_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.leshy.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/leshy_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.leshy.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/leshy_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.leshy.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/leshy_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.leshy.wood_attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/leshy_wood_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.raven.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/raven_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.raven.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/raven_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.giant_wolf.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/wolf_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.giant_wolf.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/wolf_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.giant_wolf.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/wolf_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.grizzly_bear.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/grizzly_bear_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.grizzly_bear.attack": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/grizzly_bear_attack",
+					"load_on_low_memory": true
+				}
+			]
+		},
+
+		"mythological_craft.mob.medusa.say": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/medusa_say",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.medusa.hurt": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/medusa_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		"mythological_craft.mob.medusa.scream": {
+			"category": "hostile",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/medusa_scream",
+					"load_on_low_memory": true
+				}
+			]
+		},
+		
+		"mythological_craft.mob.goblin.say": {
+			"category": "neutral",
+			"sounds": [
+				"sounds/mythological_craft/entities/goblin_say1",
+				"sounds/mythological_craft/entities/goblin_say2"
+			]
+		},
+		"mythological_craft.mob.goblin.hurt": {
+			"category": "neutral",
+			"sounds": [
+				{
+					"name": "sounds/mythological_craft/entities/goblin_hurt",
+					"load_on_low_memory": true
+				}
+			]
+		}
+	}
+}

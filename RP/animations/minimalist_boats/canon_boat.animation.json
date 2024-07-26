@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.minimalist_boats.canonboat.handler": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": [0, 0, "Math.max(-30, Math.min(30,query.yaw_speed * 0.5))*-1"]
+				},
+				"eje": {
+					"rotation": [0, "Math.max(-30, Math.min(30,query.yaw_speed * 0.5))*-1", 0]
+				},
+				"canon": {
+					"rotation": [0, "Math.max(-30, Math.min(30,query.yaw_speed * 0.5))*1", 0]
+				}
+			}
+		}
+	}
+}

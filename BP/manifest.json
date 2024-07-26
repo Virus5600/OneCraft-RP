@@ -1,0 +1,71 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Virus5600"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.29"
+			],
+			"dash": [
+				"0.11.6"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			1
+		],
+		"uuid": "2296851b-5a66-4108-9f0a-6cf2cda6786e",
+		"version": [
+			0,
+			0,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "8673b074-aff7-408b-8709-9828f7a1e1e2",
+			"version": [
+				0,
+				0,
+				1
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "5393e3bf-ea26-45a5-aa46-7071e5e30a11",
+			"entry": "scripts/index.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.12.0-beta"
+		},
+		{
+			"uuid": "f6c2a183-2629-4ad1-88c3-e750266e5d72",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	]
+}

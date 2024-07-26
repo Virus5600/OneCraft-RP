@@ -1,0 +1,299 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:raftfull",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"chest": {
+				"minecraft:transformation": {
+					"into": "ocrp:raftchest",
+					"delay": {
+						"value": 0
+					}
+				}
+			},
+			"animation": {
+				"minecraft:is_stunned": {},
+				"minecraft:timer": {
+					"time": 0.01,
+					"time_down_event": {
+						"event": "ocrp:remove_animation"
+					}
+				}
+			},
+			"entity_despawn_full": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:raftfull"
+						}
+					]
+				},
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									},
+									{
+										"test": "has_equipment",
+										"domain": "hand",
+										"subject": "other",
+										"value": "chest"
+									}
+								]
+							},
+							"event": "equip_chest",
+							"target": "self"
+						},
+						"use_item": true,
+						"interact_text": "action.interact.equip_chest"
+					}
+				]
+			},
+			"minecraft:rideable": {
+				"seat_count": 4,
+				"family_types": [
+					"mob",
+					"arthropod",
+					"monster",
+					"lightweight",
+					"illager",
+					"fish",
+					"piglin",
+					"hoglin",
+					"player",
+					"villager"
+				],
+				"pull_in_entities": true,
+				"interact_text": "action.interact.enter_boat",
+				"seats": [
+					{
+						"position": [
+							0.7,
+							0.3,
+							-1
+						]
+					},
+					{
+						"position": [
+							1,
+							0.3,
+							0.8
+						]
+					},
+					{
+						"position": [
+							-1,
+							0.3,
+							0.8
+						]
+					},
+					{
+						"position": [
+							-1,
+							0.3,
+							-0.8
+						]
+					}
+				]
+			},
+			"minecraft:variant": {
+				"value": 0
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"operator": "==",
+									"value": "village_hero"
+								}
+							]
+						},
+						"event": "ocrp:despawn_full"
+					}
+				]
+			},
+			"minecraft:navigation.generic": {
+				"is_amphibious": true,
+				"can_path_over_water": true,
+				"can_swim": false,
+				"can_walk": true,
+				"can_sink": false,
+				"avoid_damage_blocks": false
+			},
+			"minecraft:movement.amphibious": {},
+			"minecraft:movement": {
+				"value": 0.045
+			},
+			"minecraft:underwater_movement": {
+				"value": 0.06
+			},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"waterlily"
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"boat",
+					"inanimate"
+				]
+			},
+			"minecraft:scale": {
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"event": "ocrp:drop"
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4.0,
+				"hard_distance": 6.0,
+				"max_distance": 10.0
+			},
+			"minecraft:is_stackable": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 60.0,
+					"max_dropped_ticks": 20,
+					"use_motion_prediction_hints": true
+				},
+				"conditional_values": [
+					{
+						"max_optimized_distance": 0.0,
+						"max_dropped_ticks": 0,
+						"use_motion_prediction_hints": true,
+						"conditional_values": [
+							{
+								"test": "is_moving",
+								"subject": "self",
+								"operator": "==",
+								"value": true
+							}
+						]
+					}
+				]
+			},
+			"minecraft:buoyant": {
+				"base_buoyancy": 0.7,
+				"apply_gravity": true,
+				"simulate_waves": true,
+				"big_wave_probability": 0.03,
+				"big_wave_speed": 10.0,
+				"liquid_blocks": [
+					"minecraft:water",
+					"minecraft:flowing_water"
+				],
+				"drag_down_on_buoyancy_removed": 5
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:collision_box": {
+				"width": 2.1,
+				"height": 0.5
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"equip_chest": {
+				"sequence": [
+					{
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"chest"
+							]
+						}
+					}
+				]
+			},
+			"spawn": {
+				"sequence": [
+					{
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"default"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"default"
+							]
+						}
+					}
+				]
+			},
+			"ocrp:drop": {
+				"add": {
+					"component_groups": [
+						"animation"
+					]
+				},
+				"run_command": {
+					"command": [
+						"scoreboard objectives add ocrpdrop dummy",
+						"scoreboard players add @s ocrpdrop 1",
+						"effect @s[scores={ocrpdrop=6}] village_hero 1 0 true",
+						"scoreboard players reset @s[scores={ocrpdrop=6}] ocrpdrop"
+					]
+				}
+			},
+			"ocrp:remove_animation": {
+				"remove": {
+					"component_groups": [
+						"animation"
+					]
+				}
+			},
+			"ocrp:despawn_full": {
+				"add": {
+					"component_groups": [
+						"entity_despawn_full"
+					]
+				}
+			}
+		}
+	}
+}

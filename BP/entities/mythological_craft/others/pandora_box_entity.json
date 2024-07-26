@@ -1,0 +1,574 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "ocrp:pandora_box_entity",
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+
+        "components": {
+            "minecraft:type_family": {"family": [ "inanimate" ]},
+
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:knockback_resistance": {
+                "value": 100,
+                "max": 100
+            },
+            
+            "minecraft:physics": {
+            },
+
+            "minecraft:timer": {
+                "looping": false,
+                "time": 2.5,
+                "time_down_event": {
+                    "event": "dspn",
+                    "target": "self"
+                }
+            }
+        },
+
+        "component_groups": {
+            "dspn":{
+                "minecraft:timer": {
+                    "looping": false,
+                    "time": 0.5,
+                    "time_down_event": {
+                        "event": "dspn2",
+                        "target": "self"
+                    }
+                }
+            },
+
+            "dspn2":{
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": false
+                }
+            },
+
+            "spawn_monsters": {
+
+            },
+            
+            "explode": {
+                "minecraft:explode": {
+                    "fuse_length": 0.1,
+                    "fuse_lit": true,
+                    "power": 4,
+                    "causes_fire": false
+                }
+            }
+        },
+
+        "events": {
+            "dspn":{
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "dspn"
+                            ]
+                        }
+                    },
+                    {
+                        "randomize": [
+                            {
+                                "weight": 90,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:drops_pandora_box ~~~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 90,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:drops_pandora_box ~~~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 90,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:drops_pandora_box ~~~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "execute @p ~~~ structure load lava_trap1 ~-1 ~-64 ~-1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "execute @p ~~~ structure load obsidian_trap1 ~-2 ~-1 ~-2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "execute @p ~~~ structure load anvil_trap1 ~-1 ~-1 ~-1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "structure load pandora_box_temple2 ~-4 ~-1 ~-4"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 15,
+                                "run_command": {
+                                    "command": [
+                                      "execute @p ~~~ structure load diamond_base ~-3 ~-1 ~-3"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "execute @p ~~~ structure load pufferfish_base ~-2 ~-1 ~-2",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~",
+                                      "execute @p ~~~ summon minecraft:pufferfish ~ ~1 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "effect @p darkness 13 1",
+                                      "time set midnight",
+                                      "summon minecraft:zombie ~5 ~3 ~-4",
+                                      "summon minecraft:zombie ~5 ~3 ~4",
+                                      "summon minecraft:skeleton ~-5 ~3 ~-7",
+                                      "summon minecraft:skeleton ~-5 ~3 ~-7",
+                                      "summon minecraft:creeper ~-5 ~3 ~2",
+                                      "summon minecraft:zombie ~3 ~3 ~6",
+                                      "summon minecraft:zombie ~3 ~3 ~5",
+                                      "summon minecraft:skeleton ~-3 ~3 ~8",
+                                      "summon minecraft:skeleton ~-3 ~3 ~8"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 netherrack 0 replace grass",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 netherrack 0 replace sand",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 netherrack 0 replace stone",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 netherrack 0 replace end_stone",
+                                      "summon minecraft:ghast ~5 ~3 ~-4",
+                                      "summon minecraft:magma_cube ~5 ~3 ~4",
+                                      "summon minecraft:zombie_pigman ~-5 ~3 ~-7",
+                                      "summon minecraft:zombie_pigman ~-5 ~3 ~-6",
+                                      "summon minecraft:zombie_pigman ~-4 ~3 ~-7",
+                                      "summon minecraft:blaze ~-5 ~3 ~2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 end_stone 0 replace grass",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 end_stone 0 replace sand",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 end_stone 0 replace stone",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 end_stone 0 replace netherrack",
+                                      "summon minecraft:enderman ~5 ~3 ~-4",
+                                      "summon minecraft:enderman ~5 ~3 ~4",
+                                      "summon minecraft:enderman ~-5 ~3 ~-7",
+                                      "summon minecraft:enderman ~-5 ~3 ~-6",
+                                      "summon minecraft:enderman ~-4 ~3 ~-7"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~",
+                                      "summon minecraft:chicken ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:zombie ~1 ~ ~-1",
+                                      "summon minecraft:zombie ~1 ~ ~-1",
+                                      "summon minecraft:zombie ~1 ~ ~1",
+                                      "summon minecraft:zombie ~1 ~ ~1",
+                                      "summon minecraft:zombie ~-1 ~ ~1",
+                                      "summon minecraft:zombie ~-1 ~ ~1",
+                                      "summon minecraft:zombie ~-1 ~ ~-1",
+                                      "summon minecraft:zombie ~-1 ~ ~-1",
+                                      "summon minecraft:zombie ~-1 ~ ~2",
+                                      "summon minecraft:zombie ~-1 ~ ~-1",
+                                      "summon minecraft:zombie ~-1 ~ ~-1",
+                                      "summon minecraft:zombie ~-1 ~ ~2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "execute @p ~~~ summon lightning_bolt ~ ~ ~",
+                                      "execute @p ~~~ summon lightning_bolt ~ ~ ~",
+                                      "execute @p ~~~ summon lightning_bolt ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "setblock ~~~ diamond_block",
+                                      "summon lightning_bolt ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "setblock ~~~ iron_block",
+                                      "summon lightning_bolt ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "setblock ~~~ gold_block",
+                                      "summon lightning_bolt ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:fireworks_rocket ~ ~ ~",
+                                      "summon minecraft:fireworks_rocket ~ ~ ~",
+                                      "summon minecraft:fireworks_rocket ~ ~ ~",
+                                      "summon minecraft:fireworks_rocket ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon panda ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:boat ~ ~ ~",
+                                      "setblock ~~~ water"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:creeper ~ ~ ~",
+                                      "summon lightning_bolt ~ ~ ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "setblock ~~~ cake"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "setblock ~~~ ocrp:mimic_chest"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "weather rain",
+                                      "summon ocrp:swamp_drowned ~~5~",
+                                      "summon ocrp:swamp_drowned ~~5~",
+                                      "summon ocrp:swamp_drowned ~~5~",
+                                      "summon ocrp:swamp_drowned ~~5~",
+                                      "summon ocrp:swamp_drowned ~~5~",
+                                      "summon ocrp:swamp_drowned ~~5~",
+                                      "summon ocrp:swamp_drowned ~~5~"
+                                    ]
+                                }
+                            },
+                             {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                        "summon ocrp:giant_wolf ~1 ~5 ~-1",
+                                        "summon ocrp:giant_wolf ~1 ~5 ~-1",
+                                        "summon ocrp:giant_wolf ~1 ~5 ~1",
+                                        "summon ocrp:giant_wolf ~1 ~5 ~1",
+                                        "summon ocrp:giant_wolf ~-1 ~5 ~1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:giant_bear ~~5~",
+                                      "summon ocrp:grizzly_bear ~~5~",
+                                      "summon ocrp:grizzly_bear ~~5~",
+                                      "summon ocrp:grizzly_bear ~~5~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:crocodile ~~5~",
+                                      "summon ocrp:crocodile ~~5~",
+                                      "summon ocrp:crocodile ~~5~",
+                                      "summon ocrp:crocodile ~~5~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:minitaur ~~5~",
+                                      "summon ocrp:minitaur ~~5~",
+                                      "summon ocrp:minitaur ~~5~",
+                                      "summon ocrp:minitaur ~~5~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:chiron ~~5~",
+                                      "summon ocrp:centaur ~~5~",
+                                      "summon ocrp:centaur ~~5~",
+                                      "summon ocrp:centaur ~~5~",
+                                      "summon ocrp:centaur ~~5~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 netherrack 0 replace grass",
+                                      "execute @s ~~~ fill ~10 ~-10 ~10 ~-10 ~10 ~-10 netherrack 0 replace sand",
+                                      "summon ocrp:cerbero ~ ~ ~",
+                                      "summon minecraft:ghast ~5 ~3 ~-4",
+                                      "summon minecraft:magma_cube ~5 ~3 ~4",
+                                      "summon minecraft:zombie_pigman ~-5 ~3 ~-7",
+                                      "summon minecraft:zombie_pigman ~-5 ~3 ~-6",
+                                      "summon minecraft:zombie_pigman ~-4 ~3 ~-7",
+                                      "summon minecraft:blaze ~-5 ~3 ~2"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:ogre ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:cyclop ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:rock_golem ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:cerbero ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:minotaur ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:leshy ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 10,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:wither ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 5,
+                                "run_command": {
+                                    "command": [
+                                      "summon ocrp:minotaur ~ ~5 ~",
+                                      "summon ocrp:cerbero ~ ~5 ~"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "summon minecraft:tnt ~4 ~7 ~2",
+                                      "summon minecraft:tnt ~2 ~7 ~4",
+                                      "summon minecraft:tnt ~ ~7 ~6",
+                                      "summon minecraft:tnt ~-2 ~7 ~8",
+                                      "summon minecraft:tnt ~-4 ~7 ~10",
+                                      "summon minecraft:tnt ~4 ~7 ~-2",
+                                      "summon minecraft:tnt ~2 ~7 ~-4",
+                                      "summon minecraft:tnt ~ ~7 ~-6",
+                                      "summon minecraft:tnt ~-2 ~7 ~-8",
+                                      "summon minecraft:tnt ~-4 ~7 ~-10"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "add": {
+                                    "component_groups": [
+                                        "explode"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 50,
+                                "run_command": {
+                                    "command": [
+                                      "effect @p regeneration 20 4",
+                                      "effect @p speed 60 3",
+                                      "effect @p jump_boost 60 2",
+                                      "effect @p absorption 60 3",
+                                      "effect @p resistance 60 4",
+                                      "effect @p fire_resistance 60 1"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 30,
+                                "run_command": {
+                                    "command": [
+                                      "gamerule sendcommandfeedback false",
+                                      "tp @a ~~100~"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "dspn2":{
+                "add": {
+                    "component_groups": [
+                        "dspn2"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "dspn"
+                    ]
+                }
+            }
+        }
+    }
+}

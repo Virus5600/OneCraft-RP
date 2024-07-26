@@ -1,0 +1,119 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.minimalist_boats.simpleboat.hurt": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"default"
+					],
+					"transitions": [
+						{
+							"hurt": "query.is_stunned"
+						}
+					],
+					"blend_transition": 0
+				},
+				"hurt": {
+					"animations": [
+						"hurt"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_stunned"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.minimalist_boats.simpleboat.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"move": "query.modified_move_speed"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.minimalist_boats.ironboat.run": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"ground"
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"run": "query.is_in_water"
+						}
+					],
+					"blend_transition": 0
+				},
+				"run": {
+					"animations": [
+						{
+							"run": "query.modified_move_speed"
+						}
+					],
+					"transitions": [
+						{
+							"move": "!query.is_in_water"
+						}
+					],
+					"blend_transition": 0
+				}
+			}
+		},
+		"controller.animation.minimalist_boats.ironboat.ground": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"ground"
+					],
+					"transitions": [
+						{
+							"move": "query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_in_water"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.minimalist_boats.aomk1.general2": {
+			"states": {
+				"default": {
+					"variables": {
+						"moving_speed": {
+							"input": "query.modified_move_speed"
+						}
+					},
+					"animations": [
+						"handler"
+					]
+				}
+			}
+		}
+	}
+}

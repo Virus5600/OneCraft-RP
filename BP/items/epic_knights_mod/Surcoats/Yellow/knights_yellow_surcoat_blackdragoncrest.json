@@ -1,0 +1,32 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ocrp:yellow_surcoat_blackdragoncrest",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:display_name": {
+				"value": "Yellow Surcoat"
+			},
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_feet"
+			},
+			"minecraft:icon": {
+				"texture": "epic_knights_mod.knights_yellow_surcoat_blackdragoncrest"
+			},
+
+			"minecraft:armor": {
+				"protection": 1
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.boots"
+			}
+		}
+	}
+}

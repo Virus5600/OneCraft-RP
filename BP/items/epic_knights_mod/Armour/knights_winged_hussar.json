@@ -1,0 +1,55 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ocrp:winged_hussar",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:display_name": {
+				"value": "Winged Hussar Armour"
+			},
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_torso"
+			},
+			"minecraft:durability": {
+				"max_durability": 490,
+				"damage_chance": {
+					"min": 60,
+					"max": 100
+				}
+			},
+			"minecraft:icon": {
+				"texture": "epic_knights_mod.knights_winged_hussar"
+			},
+
+			"minecraft:armor": {
+				"protection": 7
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.chest"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.chestplate"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"ocrp:steel_plate"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					},
+					{
+						"items": [
+							"ocrp:winged_hussar"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					}
+				]
+			}
+		}
+	}
+}

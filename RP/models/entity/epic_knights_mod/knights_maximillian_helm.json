@@ -1,0 +1,202 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.epic_knights_mod.knights_maximillian_helm",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						23,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								23.9,
+								-3.7
+							],
+							"size": [
+								8,
+								7,
+								1
+							],
+							"inflate": 0.97,
+							"uv": [
+								38,
+								6
+							]
+						},
+						{
+							"origin": [
+								-4,
+								23.9,
+								-3.2
+							],
+							"size": [
+								8,
+								7,
+								7
+							],
+							"inflate": 1,
+							"uv": [
+								32,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "mask",
+					"parent": "head",
+					"pivot": [
+						0,
+						-1,
+						0
+					]
+				},
+				{
+					"name": "rmask",
+					"parent": "mask",
+					"pivot": [
+						0,
+						-1,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.4,
+								22.9,
+								-8.1
+							],
+							"size": [
+								7,
+								5,
+								0
+							],
+							"pivot": [
+								0,
+								23,
+								0
+							],
+							"rotation": [
+								-31.63,
+								26.63,
+								0
+							],
+							"uv": [
+								0,
+								0
+							],
+							"mirror": true
+						},
+						{
+							"origin": [
+								-3.4,
+								25.2,
+								-3.75
+							],
+							"size": [
+								7,
+								5,
+								0
+							],
+							"pivot": [
+								0,
+								23,
+								0
+							],
+							"rotation": [
+								31.63,
+								26.63,
+								0
+							],
+							"uv": [
+								0,
+								5
+							],
+							"mirror": true
+						}
+					]
+				},
+				{
+					"name": "lmask",
+					"parent": "mask",
+					"pivot": [
+						0,
+						-1,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-3.6,
+								22.9,
+								-8.1
+							],
+							"size": [
+								7,
+								5,
+								0
+							],
+							"pivot": [
+								0,
+								23,
+								0
+							],
+							"rotation": [
+								-31.63,
+								-26.63,
+								0
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-3.6,
+								25.2,
+								-3.75
+							],
+							"size": [
+								7,
+								5,
+								0
+							],
+							"pivot": [
+								0,
+								23,
+								0
+							],
+							"rotation": [
+								31.63,
+								-26.63,
+								0
+							],
+							"uv": [
+								0,
+								5
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

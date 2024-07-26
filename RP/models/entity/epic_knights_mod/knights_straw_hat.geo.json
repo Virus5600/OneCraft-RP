@@ -1,0 +1,193 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.epic_knights_mod.knights_straw_hat",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [
+					0,
+					1.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								24,
+								-4
+							],
+							"size": [
+								8,
+								8,
+								8
+							],
+							"inflate": 0.6,
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "strawhat",
+					"parent": "head",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "strawhat",
+					"pivot": [
+						0,
+						-2,
+						0
+					],
+					"rotation": [
+						0,
+						-90,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8.5,
+								22.5,
+								1
+							],
+							"size": [
+								17,
+								13,
+								0
+							],
+							"pivot": [
+								0,
+								35,
+								0
+							],
+							"rotation": [
+								50,
+								0,
+								0
+							],
+							"uv": [
+								0,
+								29
+							]
+						},
+						{
+							"origin": [
+								-8.5,
+								22.5,
+								-1
+							],
+							"size": [
+								17,
+								13,
+								0
+							],
+							"pivot": [
+								0,
+								35,
+								0
+							],
+							"rotation": [
+								-50,
+								0,
+								0
+							],
+							"uv": [
+								0,
+								29
+							]
+						}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "strawhat",
+					"pivot": [
+						0,
+						-2,
+						0
+					],
+					"rotation": [
+						0,
+						180,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8.5,
+								22.5,
+								1
+							],
+							"size": [
+								17,
+								13,
+								0
+							],
+							"pivot": [
+								0,
+								35,
+								0
+							],
+							"rotation": [
+								50,
+								0,
+								0
+							],
+							"uv": [
+								0,
+								29
+							]
+						},
+						{
+							"origin": [
+								-8.5,
+								22.5,
+								-1
+							],
+							"size": [
+								17,
+								13,
+								0
+							],
+							"pivot": [
+								0,
+								35,
+								0
+							],
+							"rotation": [
+								-50,
+								0,
+								0
+							],
+							"uv": [
+								0,
+								29
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

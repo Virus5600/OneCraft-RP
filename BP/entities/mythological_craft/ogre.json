@@ -1,0 +1,424 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ocrp:ogre",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "attack",
+          "health"
+        ]
+      },
+      "animations": {
+        "attack": "controller.animation.mythological_craft.ogre_attack",
+        "health": "controller.animation.mythological_craft.ogre_health"
+      }
+    },
+    "components": {
+      "minecraft:type_family": {"family": [ "monster", "mob", "ogre", "goblin" ]},
+
+      "minecraft:jump.static":{
+        "jump_power": 0.42
+      },
+
+      "minecraft:can_climb": {},
+
+      "minecraft:physics": {},
+
+      "minecraft:loot": {"table": "loot_tables/entities/ogre.json"},
+      
+      "minecraft:health": {"value": 400, "max": 400},
+
+      "minecraft:collision_box": {"width": 0.9, "height": 2.9},
+
+      "minecraft:movement.basic": {
+        "max_turn": 15
+      },
+
+      "minecraft:movement": {"value": 0.33},
+
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": false,
+        "avoid_damage_blocks": true
+      },
+
+      "minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? math.random(30, 50) : 35"
+      },
+
+      "minecraft:nameable": {},
+
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+
+      "minecraft:is_hidden_when_invisible": {},
+
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+
+      "minecraft:behavior.random_stroll": {"priority": 6, "speed_multiplier": 1},
+      
+      "minecraft:behavior.hurt_by_target": {"priority": 1},
+
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+
+      "minecraft:behavior.look_at_target": {
+        "priority": 9,
+        "look_distance": 8.0,
+        "probability": 1.0
+      },
+      
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {  
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "inanimate"
+                },
+                {
+                 "test": "is_family",
+                 "subject": "other",
+                 "operator": "!=",
+                 "value": "ogre"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "goblin"
+                }
+              ]
+            },
+            "max_dist": 30
+          }
+        ],
+        "must_see": true
+      },
+
+      "minecraft:follow_range": {
+        "value": 32
+      },
+      
+      "minecraft:boss": {
+        "hud_range": 32,
+        "name": "§2Ogre",
+        "should_darken_sky": false
+      },
+
+      "minecraft:scale": {
+        "value": 1.2
+      },
+
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+
+      "minecraft:break_blocks":{
+        "breakable_blocks": [
+          "planks",
+          "oak_planks",
+          "spruce_planks",
+          "birch_planks",
+          "jungle_planks",
+          "acacia_planks",
+          "dark_oak_planks",
+          "bamboo",
+          "bamboo_sapling",
+          "beetroot",
+          "brown_mushroom",
+          "carrots",
+          "carved_pumpkin",
+          "chorus_flower",
+          "chorus_plant",
+          "deadbush",
+          "double_plant",
+          "leaves",
+          "leaves2",
+          "lit_pumpkin",
+          "melon_block",
+          "melon_stem",
+          "potatoes",
+          "pumpkin",
+          "pumpkin_stem",
+          "red_flower",
+          "red_mushroom",
+          "crimson_fungus",
+          "warped_fungus",
+          "reeds",
+          "sapling",
+          "snow_layer",
+          "sweet_berry_bush",
+          "tallgrass",
+          "turtle_egg",
+          "vine",
+          "waterlily",
+          "wheat",
+          "yellow_flower",
+          "oak_leaves",
+          "spruce_leaves",
+          "birch_leaves",
+          "jungle_leaves",
+          "acacia_leaves"	,
+          "dark_oak_leaves",
+          "cobblestone"
+        ]
+      }
+    },
+
+    "component_groups": {
+      "normal_attack": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 0,
+          "track_target": true,
+          "hit_delay_pct": 0.15,
+          "reach_multiplier": 1.8,
+          "speed_multiplier": 1.0,
+          "attack_duration": 0.73
+        },
+        "minecraft:attack": {
+          "damage": 10
+        }
+      },
+      
+      "second_attack": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 0,
+          "track_target": true,
+          "hit_delay_pct": 0.15,
+          "reach_multiplier": 1.8,
+          "speed_multiplier": 1.0,
+          "attack_duration": 0.73
+        },
+        "minecraft:attack": {
+          "damage": 12
+        }
+      },
+
+      "attack3": {
+        "minecraft:is_sheared": {},
+        "minecraft:area_attack": {
+					"damage_range": 1.8,
+					"damage_per_tick": 15,
+					"cause": "entity_attack",
+          "entity_filter": {
+            "all_of": [
+              {
+                "test": "is_family",
+                "subject": "other",
+                "operator": "!=",
+                "value": "ogre"
+              }
+            ]
+          }
+				},
+        "minecraft:behavior.melee_attack": {
+          "priority": 1,
+          "track_target": true,
+          "require_complete_path": true,
+          "reach_multiplier": 1.5
+        },
+        "minecraft:attack": {
+          "damage": 0
+        },  
+        "minecraft:timer": {
+					"time": [5, 9],
+					"looping": false,
+					"time_down_event": {
+						"event": "ocrp:entity_attack",
+						"target": "self"
+					}
+				}
+      },
+
+      "roaring": {
+        "minecraft:is_stunned": {},
+        "minecraft:movement": {
+          "value": 0
+        },
+        "minecraft:damage_sensor": {
+					"triggers": [
+            {
+              "cause": "all",
+              "deals_damage": false
+					  }
+          ]
+				},
+        "minecraft:behavior.knockback_roar": {
+					"priority": 0,
+					"attack_time": 1.96,
+					"cooldown_time": 0.1,
+					"duration": 2.2,
+					"knockback_damage": 0,
+					"knockback_strength": 2.5,
+					"knockback_range": 8,
+					"knockback_filters": {
+						"all_of": [
+              {
+                "test": "is_family",
+                "subject": "other",
+                "operator": "!=",
+                "value": "ogre"
+						  }
+            ]
+					}
+				},
+        "minecraft:timer": {
+					"time": [2, 2],
+					"looping": false,
+					"time_down_event": {
+						"event": "new_model",
+						"target": "self"
+					}
+				}
+      },
+
+      "normal_model": {
+        "minecraft:variant":{
+          "value": 0
+        }
+      },
+      
+      "normal_movement": {
+        "minecraft:movement": {
+          "value": 0.33
+        }
+      },
+
+      "new_model":{
+        "minecraft:variant":{
+          "value": 1
+        }
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 60,
+            "add": {
+              "component_groups": [
+                "normal_attack",
+                "normal_model"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "second_attack"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "add": {
+              "component_groups": [
+                "second_attack",
+                "normal_model"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "normal_attack"
+              ]
+            }
+          }
+        ]
+      },
+      "ocrp:entity_attack":{
+        "randomize": [
+          {
+            "weight": 60,
+            "add": {
+              "component_groups": [
+                "normal_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "second_attack",
+                "attack3"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "add": {
+              "component_groups": [
+                "second_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "normal_attack",
+                "attack3"
+              ]
+            }
+          }
+        ]
+      },
+      "roaring": {
+        "add": {
+          "component_groups": [
+            "roaring"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "normal_attack",
+            "second_attack",
+            "attack3"
+          ]
+        }
+      },
+      "new_model": {
+        "add": {
+          "component_groups": [
+            "new_model",
+            "attack3",
+            "normal_movement"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "roaring",
+            "normal_model",
+            "normal_attack",
+            "second_attack"
+          ]
+        }
+      }
+    }
+  }
+}

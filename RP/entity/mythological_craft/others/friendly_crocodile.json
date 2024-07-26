@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:friendly_crocodile",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_crocodile"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_crocodile"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_crocodile",
+        "idle": "animation.mc_crocodile.idle",
+        "move": "animation.mc_crocodile.move",
+        "move_target_acquired": "animation.mc_crocodile.move_target_acquired",
+        "attack1": "animation.mc_crocodile.attack1",
+        "attack2": "animation.mc_crocodile.attack2",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

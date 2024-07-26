@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:snow_golem_mount",
+			"textures": {
+				"texture1": "textures/entity/animal_mounts/snow_golem_mount1",
+				"texture2": "textures/entity/animal_mounts/snow_golem_mount2"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.snow_golem_mount"
+			},
+			"render_controllers": [
+				"controller.render.snow_golem_mount"
+			],
+			"scripts": {
+				"animate": [
+					"controller",
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"controller": "controller.animation.snow_golem_mount",
+				"idle": "animation.snow_golem_mount.idle",
+				"look_at_target": "animation.common.look_at_target"
+			}
+		}
+	}
+}

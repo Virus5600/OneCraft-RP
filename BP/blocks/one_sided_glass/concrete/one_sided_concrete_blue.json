@@ -1,0 +1,164 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ocrp:glass_blue_concrete",
+            "properties": {
+                "ocrp:direction": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ]
+            }
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.oneSidedBlock"
+            },
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "north": {
+                    "texture": "glass",
+                    "render_method": "blend"
+                },
+                "south": {
+                    "texture": "glass",
+                    "render_method": "blend"
+                },
+                "east": {
+                    "texture": "blue_concrete",
+                    "render_method": "blend"
+                },
+                "west": {
+                    "texture": "glass",
+                    "render_method": "blend"
+                },
+                "up": {
+                    "texture": "glass",
+                    "render_method": "blend"
+                },
+                "down": {
+                    "texture": "glass",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:destroy_time": 1,
+
+            "minecraft:entity_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    16,
+                    16
+                ]
+            },
+            "minecraft:ticking": {
+                "looping": false,
+                "range": [
+                    0.1,
+                    0.1
+                ],
+                "on_tick": {
+                    "event": "onTick",
+                    "target": "self"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "onPlace",
+                "target": "self"
+            },
+            "minecraft:block_light_absorption": 1
+        },
+        "events": {
+            "onTick": {},
+            "onPlace": {
+                "set_block_property": {
+                    "ocrp:direction": "(query.cardinal_player_facing)"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('ocrp:direction') == 0",
+                "components": {
+                    "minecraft:rotation": [
+                        -90,
+                        0,
+                        90
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('ocrp:direction') == 1",
+                "components": {
+                    "minecraft:rotation": [
+                        90,
+                        0,
+                        -90
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('ocrp:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        -90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('ocrp:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('ocrp:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "query.block_property('ocrp:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            }
+        ]
+    }
+}

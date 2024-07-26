@@ -1,0 +1,98 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mythological_craft.mc_giant": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+						  	"idle": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && variable.attack_time == 0.0 && !query.is_interested)"
+						}
+					],
+					"transitions": [
+					   	{
+						 	"move": "query.ground_speed > 0.0 && variable.attack_time == 0.0 && !query.is_interested"
+					   	},
+					   	{
+						 	"attack1": "variable.attack_time > 0.0 && !query.is_interested"
+					   	},
+						{
+							"wiggle": "query.is_interested"
+					  	}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && variable.attack_time == 0.0 && !query.is_interested)"
+					 	},
+					 	{
+					  	 	"attack1": "variable.attack_time > 0.0 && !query.is_interested"
+					 	},
+					 	{
+							"wiggle": "query.is_interested"
+					  	}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "attack1"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && variable.attack_time == 0.0 && !query.is_interested)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && variable.attack_time == 0.0 && !query.is_interested"
+					 	},
+						{
+							"wiggle": "query.is_interested"
+					  	}
+					]
+				},
+				"pounce": {
+					"animations": [
+					  "pounce"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && variable.attack_time == 0.0 && !query.is_interested)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && variable.attack_time == 0.0 && !query.is_interested"
+					 	},
+						{
+							"attack1": "variable.attack_time > 0.0 && !query.is_interested"
+					  	},
+						{
+							"wiggle": "query.is_interested"
+						}
+					]
+				},
+				"wiggle": {
+					"animations": [
+					  "wiggle"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && variable.attack_time == 0.0 && !query.is_interested)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && variable.attack_time == 0.0 && !query.is_interested"
+					 	},
+						{
+							"attack1": "variable.attack_time > 0.0 && !query.is_interested"
+					  	},
+						{
+							"pounce" : "!query.is_on_ground"
+						}
+					]
+				}
+			}
+		}
+	}
+}

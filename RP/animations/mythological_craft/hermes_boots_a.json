@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mc_hermes_boots": {
+			"loop": true,
+			"animation_length": 0.16667,
+			"bones": {
+				"leftLeg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 70, 0],
+						"0.16667": [0, -15, 0]
+					}
+				},
+				"rightLeg2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, -70, 0],
+						"0.16667": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,253 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.epic_knights_mod.knights_buckler",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [
+					0,
+					1.25,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "shield",
+					"pivot": [
+						1,
+						15.5,
+						3
+					],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)"
+				},
+				{
+					"name": "buckler",
+					"parent": "shield",
+					"pivot": [
+						2,
+						26,
+						1
+					]
+				},
+				{
+					"name": "plate",
+					"parent": "buckler",
+					"pivot": [
+						2,
+						26,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								33,
+								-1
+							],
+							"size": [
+								4,
+								1,
+								1
+							],
+							"uv": [
+								14,
+								32
+							]
+						},
+						{
+							"origin": [
+								-3,
+								32,
+								-1
+							],
+							"size": [
+								8,
+								1,
+								1
+							],
+							"uv": [
+								12,
+								34
+							]
+						},
+						{
+							"origin": [
+								-4,
+								30,
+								-1
+							],
+							"size": [
+								10,
+								2,
+								1
+							],
+							"uv": [
+								11,
+								36
+							]
+						},
+						{
+							"origin": [
+								-5,
+								26,
+								-1
+							],
+							"size": [
+								12,
+								4,
+								1
+							],
+							"uv": [
+								10,
+								39
+							]
+						},
+						{
+							"origin": [
+								-4,
+								24,
+								-1
+							],
+							"size": [
+								10,
+								2,
+								1
+							],
+							"uv": [
+								11,
+								44
+							]
+						},
+						{
+							"origin": [
+								-3,
+								23,
+								-1
+							],
+							"size": [
+								8,
+								1,
+								1
+							],
+							"uv": [
+								12,
+								47
+							]
+						},
+						{
+							"origin": [
+								-1,
+								22,
+								-1
+							],
+							"size": [
+								4,
+								1,
+								1
+							],
+							"uv": [
+								14,
+								49
+							]
+						},
+						{
+							"origin": [
+								-1,
+								30,
+								-2
+							],
+							"size": [
+								4,
+								1,
+								1
+							],
+							"uv": [
+								47,
+								37
+							]
+						},
+						{
+							"origin": [
+								-2,
+								26,
+								-2
+							],
+							"size": [
+								6,
+								4,
+								1
+							],
+							"uv": [
+								46,
+								39
+							]
+						},
+						{
+							"origin": [
+								-1,
+								25,
+								-2
+							],
+							"size": [
+								4,
+								1,
+								1
+							],
+							"uv": [
+								47,
+								44
+							]
+						},
+						{
+							"origin": [
+								-1,
+								26,
+								-3
+							],
+							"size": [
+								4,
+								4,
+								1
+							],
+							"uv": [
+								14,
+								54
+							]
+						}
+					]
+				},
+				{
+					"name": "handle",
+					"parent": "buckler",
+					"pivot": [
+						1,
+						28,
+						1
+					],
+					"cubes": [
+						{
+							"origin": [
+								0,
+								25,
+								0
+							],
+							"size": [
+								2,
+								6,
+								6
+							],
+							"uv": [
+								48,
+								52
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:hades_projectile",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "arrow"
+		},
+		"components": {
+			"minecraft:can_climb": {},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": [
+							1,
+							2
+						],
+						"knockback": true
+					},
+					"remove_on_hit": {},
+					"particle_on_hit": {
+						"particle_type": "mobspell",
+						"particle_color": "#FF664D59",
+						"num_particles": 16,
+						"on_entity_hit": true,
+						"on_other_hit": true
+					},
+					"mob_effect": {
+						"effect": "wither",
+						"durationeasy": 0,
+						"durationnormal": 2,
+						"durationhard": 3,
+						"amplifier": 1
+					},
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "spawn_death",
+							"target": "self"
+						}
+					},
+					"power": 2,
+					"gravity": 0.03,
+					"inertia": 1,
+					"particle_color": "#FF664D59",
+					"uncertaintyBase": 4,
+					"anchor": 2,
+					"offset": [
+						0,
+						0,
+						0
+					],
+					"reflectOnHurt": false
+				}
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:scale": {
+				"value": 0.66
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 4.0,
+				"time_down_event": {
+					"event": "dspn"
+				}
+			},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:can_power_jump": {},
+			"minecraft:horse.jump_strength": {
+				"value": 0.6
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"dspn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"events": {
+			"dspn": {
+				"add": {
+					"component_groups": [
+						"dspn"
+					]
+				}
+			},
+			"spawn_death": {
+				"run_command": {
+					"command": [
+						"summon ocrp:friendly_death ~ ~ ~"
+					]
+				}
+			}
+		}
+	}
+}

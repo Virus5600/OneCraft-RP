@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.minimalist_boats.motorboat.move": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"fuel": "query.ground_speed >= 4"
+						}
+					]
+				},
+				"fuel": {
+					"on_entry": [
+						"/scoreboard players remove @s ocrp:fuel 1",
+						"/execute at @s[scores={ocrp:fuel=..0}] run effect @s conduit_power 1 0 true",
+						"/execute at @s run titleraw @a[r=4] actionbar {\"rawtext\":[{\"text\":\"§4Fuel §f: §e\"},{\"score\":{\"name\":\"@s\",\"objective\":\"ocrp:fuel\"}}]}",
+						"/execute at @s[scores={ocrp:fuel=..0}] run scoreboard players set @s ocrp:fuel 0",
+						"/execute at @s[scores={ocrp:fuel=..0}] run title @a[r=4] actionbar §4Fuel §f: §e0"
+					],
+					"transitions": [
+						{
+							"default": "query.ground_speed < 4"
+						},
+						{
+							"default": "query.ground_speed >= 4"
+						}
+					]
+				}
+			}
+		}
+	}
+}

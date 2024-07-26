@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:spider_mount",
+			"textures": {
+				"default": "textures/entity/animal_mounts/spider_mount"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.spider_mount"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"animate": [
+					"controller",
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"controller": "controller.animation.spider_mount",
+				"move": "animation.spider_mount.move",
+				"look_at_target": "animation.common.look_at_target"
+			}
+		}
+	}
+}

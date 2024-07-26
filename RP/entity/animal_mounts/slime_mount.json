@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:slime_mount",
+			"textures": {
+				"default": "textures/entity/animal_mounts/slime_mount"
+			},
+			"materials": {
+				"default": "slime_outer"
+			},
+			"geometry": {
+				"default": "geometry.slime_mount"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

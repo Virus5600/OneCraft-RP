@@ -1,0 +1,18 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "ocrp:handle",
+            "category": "items"
+        },
+        
+        "components": {
+            "minecraft:use_duration": 32,
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": {
+                "texture": "minimalist_boats.handle"
+            },
+            "minecraft:hand_equipped": true                       
+        }
+    }
+}

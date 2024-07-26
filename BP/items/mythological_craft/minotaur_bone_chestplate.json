@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "ocrp:minotaur_bone_chestplate",
+            "category": "equipment"
+        }, 
+        "components": {
+            "minecraft:display_name": {
+                "value": "Minotaur Bone Chestplate"
+            },
+
+            "minecraft:icon": {
+                "texture": "mc_minotaur_bone_chestplate"
+            },
+
+            "minecraft:creative_category": {
+				"parent": "itemGroup.name.chestplate"
+			},
+
+            "minecraft:max_stack_size": 1,
+
+            "minecraft:hand_equipped": true,
+
+            "minecraft:armor": {
+				"protection": 6
+			},
+
+            "minecraft:wearable": {
+                "dispensable": true,
+				"slot": "slot.armor.chest"
+			},
+
+            "minecraft:render_offsets": "chestplate"
+        }
+    }
+}

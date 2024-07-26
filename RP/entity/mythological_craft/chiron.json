@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:chiron",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_chiron"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_chiron"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#efefef",
+        "overlay_color": "#dcc3ab"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_chiron",
+        "idle": "animation.mc_chiron.idle",
+        "move": "animation.mc_chiron.move",
+        "target_acquired": "animation.mc_chiron.target_acquired",
+        "attack1": "animation.mc_chiron.attack1",
+        "attack2": "animation.mc_chiron.attack2",
+        "attack3": "animation.mc_chiron.attack3",
+        "shoot": "animation.mc_chiron.shoot",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

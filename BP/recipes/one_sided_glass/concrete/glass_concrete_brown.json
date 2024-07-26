@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ocrp:glass_brown_concrete"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##X",
+      "###",
+	  "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:concrete",
+		"data": 12
+      }
+    },
+    "result": {
+      "item": "ocrp:glass_brown_concrete",
+	  "count": 8
+    }
+  }
+  
+}

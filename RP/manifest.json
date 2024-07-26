@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Virus5600"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.29"
+			],
+			"dash": [
+				"0.11.6"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			1
+		],
+		"uuid": "f6c2a183-2629-4ad1-88c3-e750266e5d72",
+		"version": [
+			0,
+			0,
+			2
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "db5d4e2a-17b0-49fc-a732-9cf0ea1ca129",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "2296851b-5a66-4108-9f0a-6cf2cda6786e",
+			"version": [
+				0,
+				0,
+				1
+			]
+		}
+	]
+}

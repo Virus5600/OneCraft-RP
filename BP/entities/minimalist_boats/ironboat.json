@@ -1,0 +1,551 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:ironboat",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"default": {
+				"minecraft:variant": {
+					"value": 0
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_mob_effect",
+										"subject": "self",
+										"operator": "==",
+										"value": "village_hero"
+									}
+								]
+							},
+							"event": "ocrp:despawn"
+						}
+					]
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "ocrp:handle"
+										}
+									]
+								},
+								"event": "equip_rudder",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.equip_handle"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "ocrp:motor"
+										}
+									]
+								},
+								"event": "equip_sail",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.equip_motor"
+						}
+					]
+				},
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": false,
+					"can_walk": true,
+					"can_sink": false,
+					"avoid_damage_blocks": false
+				},
+				"minecraft:movement.amphibious": {},
+				"minecraft:movement": {
+					"value": 0.0
+				},
+				"minecraft:underwater_movement": {
+					"value": 0.02
+				},
+				"minecraft:out_of_control": {}
+			},
+			"rudder": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_mob_effect",
+										"subject": "self",
+										"operator": "==",
+										"value": "village_hero"
+									}
+								]
+							},
+							"event": "ocrp:despawn_rudder"
+						}
+					]
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "ocrp:motor"
+										}
+									]
+								},
+								"event": "full",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.equip_motor"
+						}
+					]
+				},
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": false,
+					"can_walk": true,
+					"can_sink": false,
+					"avoid_damage_blocks": false
+				},
+				"minecraft:movement.amphibious": {},
+				"minecraft:movement": {
+					"value": 0.0
+				},
+				"minecraft:underwater_movement": {
+					"value": 0.03
+				},
+				"minecraft:input_ground_controlled": {}
+			},
+			"sail": {
+				"minecraft:variant": {
+					"value": 2
+				},
+				"minecraft:environment_sensor": {
+					"triggers": [
+						{
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_mob_effect",
+										"subject": "self",
+										"operator": "==",
+										"value": "village_hero"
+									}
+								]
+							},
+							"event": "ocrp:despawn_sail"
+						}
+					]
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": [
+										{
+											"test": "is_family",
+											"subject": "other",
+											"value": "player"
+										},
+										{
+											"test": "has_equipment",
+											"domain": "hand",
+											"subject": "other",
+											"value": "ocrp:handle"
+										}
+									]
+								},
+								"event": "full",
+								"target": "self"
+							},
+							"use_item": true,
+							"interact_text": "action.interact.equip_handle"
+						}
+					]
+				},
+				"minecraft:navigation.generic": {
+					"is_amphibious": true,
+					"can_path_over_water": true,
+					"can_swim": false,
+					"can_walk": true,
+					"can_sink": false,
+					"avoid_damage_blocks": false
+				},
+				"minecraft:movement.amphibious": {},
+				"minecraft:movement": {
+					"value": 0.02
+				},
+				"minecraft:underwater_movement": {
+					"value": 0.05
+				},
+				"minecraft:out_of_control": {}
+			},
+			"full": {
+				"minecraft:transformation": {
+					"into": "ocrp:motorboat",
+					"delay": {
+						"value": 0
+					}
+				}
+			},
+			"animation": {
+				"minecraft:is_stunned": {},
+				"minecraft:timer": {
+					"time": 0.01,
+					"time_down_event": {
+						"event": "ocrp:remove_animation"
+					}
+				}
+			},
+			"entity_despawn": {
+				"minecraft:spawn_entity": {
+					"entities": {
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"spawn_item": "ocrp:ironboat"
+					}
+				},
+				"minecraft:instant_despawn": {}
+			},
+			"entity_despawn_rudder": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:ironboat"
+						},
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:handle"
+						}
+					]
+				},
+				"minecraft:instant_despawn": {}
+			},
+			"entity_despawn_sail": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:ironboat"
+						},
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:motor"
+						}
+					]
+				},
+				"minecraft:instant_despawn": {}
+			},
+			"entity_despawn_full": {
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"spawn_item": "ocrp:motorboat"
+						}
+					]
+				},
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"waterlily"
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"boat",
+					"inanimate"
+				]
+			},
+			"minecraft:scale": {
+				"value": 1.85
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {
+							"event": "ocrp:drop"
+						},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:leashable": {
+				"soft_distance": 4.0,
+				"hard_distance": 6.0,
+				"max_distance": 10.0
+			},
+			"minecraft:is_stackable": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 60.0,
+					"max_dropped_ticks": 20,
+					"use_motion_prediction_hints": true
+				},
+				"conditional_values": [
+					{
+						"max_optimized_distance": 0.0,
+						"max_dropped_ticks": 0,
+						"use_motion_prediction_hints": true,
+						"conditional_values": [
+							{
+								"test": "is_moving",
+								"subject": "self",
+								"operator": "==",
+								"value": true
+							}
+						]
+					}
+				]
+			},
+			"minecraft:buoyant": {
+				"base_buoyancy": 0.6,
+				"apply_gravity": true,
+				"simulate_waves": true,
+				"big_wave_probability": 0.03,
+				"big_wave_speed": 10.0,
+				"liquid_blocks": [
+					"minecraft:water",
+					"minecraft:flowing_water"
+				],
+				"drag_down_on_buoyancy_removed": 5
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [
+					"mob",
+					"arthropod",
+					"monster",
+					"lightweight",
+					"illager",
+					"fish",
+					"piglin",
+					"hoglin",
+					"player",
+					"villager"
+				],
+				"pull_in_entities": true,
+				"interact_text": "action.interact.enter_boat",
+				"seats": [
+					{
+						"position": [
+							0,
+							0.3,
+							0.2
+						]
+					},
+					{
+						"position": [
+							0,
+							0.3,
+							-0.45
+						]
+					}
+				]
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:custom_hit_test": {
+				"hitboxes": [
+					{
+						"pivot": [
+							0,
+							0.5,
+							0
+						],
+						"width": 1.5,
+						"height": 0.75
+					}
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.7,
+				"height": 0.5
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 1,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"default"
+							]
+						}
+					}
+				]
+			},
+			"ocrp:drop": {
+				"add": {
+					"component_groups": [
+						"animation"
+					]
+				},
+				"run_command": {
+					"command": [
+						"scoreboard objectives add ocrpdrop dummy",
+						"scoreboard players add @s ocrpdrop 1",
+						"effect @s[scores={ocrpdrop=6}] village_hero 1 0 true",
+						"scoreboard players reset @s[scores={ocrpdrop=6}] ocrpdrop"
+					]
+				}
+			},
+			"ocrp:remove_animation": {
+				"remove": {
+					"component_groups": [
+						"animation"
+					]
+				}
+			},
+			"ocrp:despawn": {
+				"add": {
+					"component_groups": [
+						"entity_despawn"
+					]
+				}
+			},
+			"equip_rudder": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"default"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"rudder"
+							]
+						}
+					}
+				]
+			},
+			"equip_sail": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"default"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"sail"
+							]
+						}
+					}
+				]
+			},
+			"full": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"default",
+								"rudder",
+								"sail"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"full"
+							]
+						}
+					}
+				]
+			},
+			"ocrp:despawn_rudder": {
+				"add": {
+					"component_groups": [
+						"entity_despawn_rudder"
+					]
+				}
+			},
+			"ocrp:despawn_sail": {
+				"add": {
+					"component_groups": [
+						"entity_despawn_sail"
+					]
+				}
+			},
+			"ocrp:despawn_full": {
+				"add": {
+					"component_groups": [
+						"entity_despawn_full"
+					]
+				}
+			}
+		}
+	}
+}

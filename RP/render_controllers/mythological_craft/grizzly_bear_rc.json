@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.grizzly_bear": {
+      "arrays": {
+        "geometries": {
+					"Array.mc_grizzly_bear_saddled": [
+						"Geometry.default",
+						"Geometry.saddled"
+					]
+				}
+      },
+      "geometry": "Array.mc_grizzly_bear_saddled[query.is_saddled]",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ocrp:raftchest",
+            "materials": {
+                "default": "parrot"
+            },
+            "textures": {
+                "default": "textures/entity/minimalist_boats/raftchest",
+                "rudder": "textures/entity/minimalist_boats/raftchest",
+                "sail": "textures/entity/minimalist_boats/raftchest",
+                "full": "textures/entity/minimalist_boats/raftchest",
+                "rowing": "textures/entity/minimalist_boats/raftchest"
+            },
+            "geometry": {
+                "default": "geometry.raft"
+            },
+            "animations": {
+                "hurt": "animation.minimalist_boats.simpleboat.hurt",
+                "handlersail": "animation.minimalist_boats.simpleboat.handlersail",
+                "move": "animation.minimalist_boats.raft.move",
+                "chestopen": "animation.minimalist_boats.raft.chest",
+                "canceldeath": "animation.minimalist_boats.raft.canceldeath"
+            },
+            "animation_controllers": [
+                {
+                    "idle": "controller.animation.minimalist_boats.simpleboat.hurt"
+                },
+                {
+                    "handlersail": "controller.animation.minimalist_boats.aomk1.general2"
+                },
+                {
+                    "move": "controller.animation.minimalist_boats.raft.move"
+                },
+                {
+                    "handlersail": "controller.animation.minimalist_boats.aomk1.general1"
+                },
+                {
+                    "general": "controller.animation.minimalist_boats.aomk1.general1"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.minimalist_boats.simpleboat"
+            ]
+        }
+    }
+}

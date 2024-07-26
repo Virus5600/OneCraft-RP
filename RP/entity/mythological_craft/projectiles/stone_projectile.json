@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:stone_projectile",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_rock_golem_attack"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_rock_golem_attack"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "controller"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.stone_projectile",
+        "move": "animation.stone_projectile.move"
+      }
+    }
+  }
+}

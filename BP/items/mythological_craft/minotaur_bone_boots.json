@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "ocrp:minotaur_bone_boots",
+            "category": "equipment"
+        }, 
+        "components": {
+            "minecraft:display_name": {
+                "value": "Minotaur Bone Boots"
+            },
+
+            "minecraft:icon": {
+                "texture": "mc_minotaur_bone_boots"
+            },
+
+            "minecraft:creative_category": {
+				"parent": "itemGroup.name.boots"
+			},
+
+            "minecraft:max_stack_size": 1,
+
+            "minecraft:hand_equipped": true,
+
+            "minecraft:armor": {
+				"protection": 3
+			},
+
+            "minecraft:wearable": {
+                "dispensable": true,
+				"slot": "slot.armor.feet"
+			},
+
+            "minecraft:render_offsets": "boots"
+        }
+    }
+}

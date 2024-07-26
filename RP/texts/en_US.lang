@@ -1,0 +1,500 @@
+pack.name=OneCraft RP [RP]
+pack.description=An Add-on that will be used by the OneCraft server.
+
+##########################
+## CUSTOM JOIN MESSAGES ##
+##########################
+## This line is for when a player joins your world or server 
+multiplayer.player.joined= %s joined the game! Welcome!
+
+## This line is for when a player joins your realm. 
+multiplayer.player.joined.realms= %s joined the Realm
+
+## This line is for when a player leaves your world or server 
+multiplayer.player.left= %s left the game! Goodbye!
+
+## This line is for when a player leaves your realm. 
+multiplayer.player.left.realms= %s left the Realm
+
+###############################
+## MYTHOLOGICAL CRAFT ADD ON ##
+###############################
+entity.ocrp:centaur.name=Centaur
+entity.ocrp:cerbero.name=Cerberus
+entity.ocrp:chiron.name=Chiron
+entity.ocrp:crocodile.name=§2Crocodile
+entity.ocrp:cyclop.name=§eCyclops
+entity.ocrp:death.name=§4Death
+entity.ocrp:fire_spirit.name=§4Fire Spirit
+entity.ocrp:friendly_crocodile.name=§2Friendly Crocodile
+entity.ocrp:friendly_giant_bear.name=§eFriendly Giant Bear
+entity.ocrp:friendly_death.name=§4Friendly Death
+entity.ocrp:friendly_giant_wolf.name=Friendly Giant Wolf
+entity.ocrp:giant_bear.name=§eGiant Bear
+entity.ocrp:giant_turtle.name=§3Giant Turtle
+entity.ocrp:giant_wolf.name=Giant Wolf
+entity.ocrp:giant.name=Giant
+entity.ocrp:goblin.name=§aGoblin
+entity.ocrp:griffin.name=Griffin
+entity.ocrp:grizzly_bear.name=§eGrizzly Bear
+entity.ocrp:leshy.name=§0Leshy
+entity.ocrp:medusa.name=§2Medusa
+entity.ocrp:mimic.name=§0Mimic
+entity.ocrp:minitaur.name=Minitaur
+entity.ocrp:minotaur.name=Minotaur
+entity.ocrp:ogre.name=§2Ogre
+entity.ocrp:raven.name=§Raven
+entity.ocrp:rock_golem.name=§8Rock Golem
+entity.ocrp:swamp_drowned.name=§3Swamp Drowned
+
+entity.ocrp:chiron_spear.name=Chiron Spear
+entity.ocrp:knockback_minotaur.name=Knockback Minotaur
+entity.ocrp:knockback_player.name=Knockback Player
+entity.ocrp:knockback_rock_golem.name=Knockback Rock Golem
+entity.ocrp:leshy_wood_attack1.name=§0Leshy Wood Attack
+entity.ocrp:griffin_projectile.name=Griffin Projectile
+entity.ocrp:minotaur_attack.name=Minotaur Attack
+entity.ocrp:player_minotaur_attack.name=Minotaur Axe Attack
+entity.ocrp:pandora_box_entity.name=Pandora Box Effects
+entity.ocrp:lightning_bolt.name=Lightning Bolt
+entity.ocrp:stone_projectile.name=Stone Projectile
+
+item.spawn_egg.entity.ocrp:centaur.name=Spawn Centaur
+item.spawn_egg.entity.ocrp:cerbero.name=Spawn §4Cerberus
+item.spawn_egg.entity.ocrp:chiron.name=Spawn §eChiron
+item.spawn_egg.entity.ocrp:crocodile.name=Spawn §2Crocodile
+item.spawn_egg.entity.ocrp:cyclop.name=Spawn §eCyclops 
+item.spawn_egg.entity.ocrp:death.name=Spawn §4Death
+item.spawn_egg.entity.ocrp:ogre.name=Spawn §2Ogre
+item.spawn_egg.entity.ocrp:fire_spirit.name=Spawn §4Fire Spirit
+item.spawn_egg.entity.ocrp:giant_bear.name=Spawn §eGiant Bear
+item.spawn_egg.entity.ocrp:giant_turtle.name=Spawn §3Giant Turtle
+item.spawn_egg.entity.ocrp:giant_wolf.name=Spawn Giant Wolf
+item.spawn_egg.entity.ocrp:giant.name=Spawn Giant
+item.spawn_egg.entity.ocrp:goblin.name=Spawn §aGoblin
+item.spawn_egg.entity.ocrp:griffin.name=Spawn Griffin
+item.spawn_egg.entity.ocrp:grizzly_bear.name=Spawn §eGrizzly Bear
+item.spawn_egg.entity.ocrp:leshy.name=Spawn §7Leshy
+item.spawn_egg.entity.ocrp:medusa.name=Spawn §2Medusa
+item.spawn_egg.entity.ocrp:mimic.name=Spawn §7Mimic
+item.spawn_egg.entity.ocrp:minitaur.name=Spawn Minitaur
+item.spawn_egg.entity.ocrp:minotaur.name=Spawn Minotaur
+item.spawn_egg.entity.ocrp:raven.name=Spawn Raven
+item.spawn_egg.entity.ocrp:rock_golem.name=Spawn §8Rock Golem
+item.spawn_egg.entity.ocrp:swamp_drowned.name=Spawn §3Swamp Drowned
+item.spawn_egg.entity.ocrp:water_spirit.name=Spawn §3Water Spirit
+
+tile.ocrp:cloud_block.name=§3Cloud Block§f
+tile.ocrp:cyclops_trophy.name=§eCyclops §fTrophy
+tile.ocrp:griffin_egg.name=§eGriffin Gold Egg§f
+tile.ocrp:labirint_block.name=Maze Block
+tile.ocrp:leshy_trophy.name=Leshy Trophy
+tile.ocrp:grassy_leshy_wood.name=Grassy leshy Log
+tile.ocrp:leshy_leaves.name=Leshy Leves
+tile.ocrp:leshy_wood.name=leshy Log
+tile.ocrp:lighting_block.name=Lighting Block
+tile.ocrp:medusa_stone.name=§fStone with Soul
+tile.ocrp:minotaur_trophy.name=Minotaur Trophy
+tile.ocrp:mimic_chest.name=Mimic Chest
+tile.ocrp:monument_block.name=Monument Block
+tile.ocrp:nest_block.name=Nest Block
+tile.ocrp:ogre_trophy.name=§2Ogre §fTrophy
+tile.ocrp:pandora_box.name=§ePandora Box§f
+tile.ocrp:petrified_player.name=Petrified Player
+tile.ocrp:rock_golem_trophy.name=§8Rock Golem §fTrophy
+tile.ocrp:spawn_golem_block.name=Spawn Golem Block
+tile.ocrp:spawn_ogre_block.name=Spawn Ogre Block
+
+item.ocrp:bestial_axe.name=Bestial Axe
+item.ocrp:cyclop_eye_helmet.name=Cyclops Eye Helmet\n§3Interact To Acquire Night Vision Like The Cyclops
+item.ocrp:cyclop_eye.name=Cyclops Eye\n§3Use To Craft The Cyclops Eye Helmet
+item.ocrp:medusa_head.name=Medusa Head\n§3Interact To Cover All Mobs With Stone
+item.ocrp:mimic_heart.name=Mimic Heart\n§3Use To Craft The Mimic Chest
+item.ocrp:rock_golem_fist.name=Rock Golem Fist\n§3Interact To Launch Rocks
+
+action.hint.exit.ocrp:cyclop=§eGet out of there or §4DIE
+action.hint.exit.ocrp:cerbero=Tap sneak to dismount
+action.hint.exit.ocrp:giant_turtle=Tap sneak to dismount
+action.hint.exit.ocrp:grizzly_bear=Tap sneak to dismount
+action.hint.exit.ocrp:griffin=Tap sneak to dismount
+interaction.text.inventory_goblin= Inventory Mode
+interaction.text.sit_goblin= Sit Mode §c(Be Careful, If He Has Items in His Inventory They Will Disappear)
+
+###################
+## UNIQUE SWORDS ##
+###################
+item.ocrp:_arc_katana=Arc Katana
+item.ocrp:kryn_great_sword=Kryn Great Sword
+item.ocrp:krypto_sword=Krypto Sword
+item.ocrp:luna_thin_sword=Luna Thin Sword
+item.ocrp:sarenity_holy_sword=Sarenity Holy Sword
+
+######################
+## MINIMALIST BOATS ##
+######################
+action.interact.equip_rudder=Equip Rudder
+action.interact.equip_sail=Equip Sail
+action.interact.enter_boat=Board
+action.interact.equip_handle=Equip Steering Wheel
+action.interact.equip_motor=Equip Motor
+action.interact.equip_rowing=Equip Rowing
+action.interact.add_fuel=Refill
+action.interact.equip_cannon=Equip Cannon
+action.interact.enter_boat=Board
+
+action.hint.exit.ocrp:simpleboat=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:sailboat=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:ironboat=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:motorboat=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:raft=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:raftchest=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:raftfull=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:cannonboat=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:cannonboat_full=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:cannonboat_cannon=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:hovercraft=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:hovercraftfull=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:jetski=Tap jump or crouch to exit the boat
+action.hint.exit.ocrp:jetskifull=Tap jump or crouch to exit the boat
+
+entity.ocrp:simpleboat.name=Simple Boat
+entity.ocrp:sailboat.name=Sail Boat
+entity.ocrp:ironboat.name=Iron Boat
+entity.ocrp:motorboat.name=Motor Boat
+entity.ocrp:raft.name=Wood Platform
+entity.ocrp:raftfull.name=Raft
+entity.ocrp:raftchest.name=Raft With Chest
+entity.ocrp:cannonboat.name=Little Iron Boat
+entity.ocrp:cannonboat_full.name=Little Motor Boat
+entity.ocrp:cannonboat_cannon.name=Cannon Boat
+entity.ocrp:hovercraft.name=Large Ironboat
+entity.ocrp:hovercraftfull.name=Hovercraft
+entity.ocrp:jetski.name=Little single-seater Boat
+entity.ocrp:jetskifull.name=Jetski
+
+tile.ocrp:craftboat.name=Boat Building Table
+
+item.ocrp:fuel=Fuel
+item.ocrp:handle=Steering Wheel
+item.ocrp:ironboat=Iron Boat
+item.ocrp:motor=Motor
+item.ocrp:motorboat=Motor Boat
+item.ocrp:rudder=Rudder
+item.ocrp:sail=Sail
+item.ocrp:sailboat=Sail Boat
+item.ocrp:simpleboat=Simple Boat
+item.ocrp:raft=Wood Platform
+item.ocrp:raftfull=Raft
+item.ocrp:rowing=Rowing
+item.ocrp:cannonboat=Little Iron Boat
+item.ocrp:cannonboat_full=Little Motor Boat
+item.ocrp:cannonboat_cannon=Cannon Boat
+item.ocrp:cannonball=Cannonball
+item.ocrp:cannon=Cannon
+item.ocrp:hovercraft=Large Ironboat
+item.ocrp:hovercraftfull=Hovercraft
+item.ocrp:hovercraft_motor=Propellers
+item.ocrp:jetski=Little single-seater Boat
+item.ocrp:jetskifull=Jetski
+
+##################
+## UASSIST HOME ##
+##################
+## Item
+item.ocrp:homes=§c§lAdmin Homes§r
+
+## Forms
+ocrp.homes.form.accts.add=Add
+ocrp.homes.form.accts.remove=Remove
+ocrp.homes.form.accts.removeClic=§r§c§oTap here to remove
+ocrp.homes.form.accts.edit=§r§6§oTap here to edit
+ocrp.homes.form.accts.clic=§r§7§oTap or click here
+ocrp.homes.form.accts.addName=Enter name:
+ocrp.homes.form.accts.action=Select an action:
+ocrp.homes.form.accts.ninguno=None
+ocrp.homes.form.accts.back=Go back
+ocrp.homes.form.accts.creator=§r§d§oOwner:
+ocrp.homes.form.accts.allow=Allow
+ocrp.homes.form.accts.deny=Deny
+ocrp.homes.form.general.title=Manage Homes
+ocrp.homes.form.general.body=These are all the options you can use:
+ocrp.homes.form.general.body.0=You have
+ocrp.homes.form.general.body.1=homes.
+ocrp.homes.form.home.add.ui.title=Edit this home
+ocrp.homes.form.home.add.ui.body=These are all the options you need to complete before adding your home.
+ocrp.homes.form.home.add.ui.description=You can enter a description: §8§o(This is optional)
+ocrp.homes.form.home.add.ui.dropdown=Select an icon:
+ocrp.homes.form.home.edit.ui.body=These are the options you can edit for this home
+ocrp.homes.form.home.edit.ui.textField=Location: §o§8(Replace spaces with "_")
+ocrp.homes.form.home.edit.ui.dropdown=Select the dimension:
+ocrp.homes.form.home.edit.ui.dropdown.0=Update
+ocrp.homes.form.home.edit.ui.dropdown.1=Go to home
+ocrp.homes.form.home.edit.ui.description=This is all the information for the home:
+ocrp.homes.form.home.edit.ui.description.name=Name:
+ocrp.homes.form.home.edit.ui.description.info=Description:
+ocrp.homes.form.admin.users.title=All players
+ocrp.homes.form.admin.users.body=In this section, you will find all the players.
+ocrp.homes.form.admin.users.body.1=Select what you want to manage for the player.
+ocrp.homes.form.admin.users.boton.1=Homes
+ocrp.homes.form.admin.users.boton.2=Home Settings
+ocrp.homes.form.admin.options.user=In this section, you can configure the options that the player will have available.
+ocrp.homes.form.admin.options.slider=Home limit
+ocrp.homes.form.general.title.1=Share Home
+ocrp.homes.form.general.drop=Note that by sharing this home, the other user can only travel to it but cannot edit it.
+ocrp.homes.form.general.drop.1=Select the player:
+ocrp.homes.form.general.drop.2=Permissions:
+ocrp.homes.form.general.drop.2.1=Teleport only
+ocrp.homes.form.general.drop.2.2=Allow modification
+ocrp.homes.form.general.drop.2.3=Cannot delete or remove the home.
+ocrp.homes.form.general.body.2.1=Here you can add other players who can use your home.
+ocrp.homes.form.general.toggle=Allow sharing of homes:
+ocrp.homes.form.general.edit.particles=Select the particle color you want to add:
+ocrp.homes.form.general.edit.particles.def=§6§lDefault
+ocrp.homes.form.general.edit.particles.black=§8§lDark
+ocrp.homes.form.general.edit.particles.red=§c§lRed
+ocrp.homes.form.general.edit.particles.purple=§d§lPurple
+ocrp.homes.form.general.edit.particles.white=§f§lWhite
+ocrp.homes.form.general.edit.particles.green=§a§lGreen
+
+## Send
+ocrp.homes.send.add.home=Home added:
+ocrp.homes.send.remove.home=Home removed:
+ocrp.homes.send.error.edit.home=Error in new coordinates, when entering new coordinates, follow the format xx_xx_xx.
+ocrp.homes.send.error.create.home=You cannot add more homes; you are already at the limit.
+ocrp.homes.send.error.movement.home=You cannot move during the countdown.
+ocrp.homes.send.error.no.have.home=To use this function, you must first create a home.
+ocrp.homes.send.error.iam=You cannot select yourself.
+ocrp.homes.send.error.no.acc=You do not have access to this option.
+ocrp.homes.send.error.no.friends.share=Oops, it seems an admin blocked you from sharing your home.
+ocrp.homes.send.teleport=You were teleported to the home:
+ocrp.homes.send.update=The home was successfully updated.
+ocrp.homes.send.teleport.current=We will send you in
+ocrp.homes.send.ampli.limit.home=Home limit:
+ocrp.homes.send.ampli.settings.player=Applied settings:
+ocrp.homes.send.ampli.particles=Particle added:
+ocrp.homes.send.share.limit.home=Share homes:
+ocrp.homes.send.share.limit.home.1=disabled
+ocrp.homes.send.share.limit.home.2=enabled
+ocrp.homes.send.accts.add.friend=Added
+ocrp.homes.send.accts.add.friend.1=to the home:
+ocrp.homes.send.accts.remove.friend=Removed
+ocrp.homes.send.accts.remove.friend.1=from the home:
+ocrp.homes.send.accts.add.friend.user=added you to the home friends list:
+ocrp.homes.send.accts.remove.friend.user=removed you from the home friends list:
+
+###################
+## LAND CLAIM V1 ##
+###################
+item.ocrp:protection.name=§lProtection tool§r
+
+#########################
+## SYSTEM ENCHANTMENTS ##
+#########################
+action.ocrp.cancel=§l§cYou do not have the appropriate item for this enchantment
+action.ocrp.no_xp=§l§cYou don't have enough experience
+action.ocrp.repit=§l§cYou cannot repeat an enchantment
+action.ocrp.max_enchant=§l§cYou've applied the maximum amount of enchantments (3)
+
+tile.ocrp:new_enchanted_table.name=Advanced Enchantment Table
+
+#####################
+## ONE SIDED GLASS ##
+#####################
+itemGroup.name.oneSidedBlock=One Sided Blocks
+
+## Concretes
+tile.ocrp:glass_black_concrete.name=One Sided Black Concrete
+tile.ocrp:glass_blue_concrete.name=One Sided Blue Concrete
+tile.ocrp:glass_brown_concrete.name=One Sided Brown Concrete
+tile.ocrp:glass_cyan_concrete.name=One Sided Cyan Concrete
+tile.ocrp:glass_gray_concrete.name=One Sided Gray Concrete
+tile.ocrp:glass_green_concrete.name=One Sided Green Concrete
+tile.ocrp:glass_light_blue_concrete.name=One Sided Light Blue Concrete
+tile.ocrp:glass_light_gray_concrete.name=One Sided Light Gray Concrete
+tile.ocrp:glass_lime_concrete.name=One Sided Lime Concrete
+tile.ocrp:glass_magenta_concrete.name=One Sided Magenta Concrete
+tile.ocrp:glass_orange_concrete.name=One Sided Orange Concrete
+tile.ocrp:glass_pink_concrete.name=One Sided Pink Concrete
+tile.ocrp:glass_purple_concrete.name=One Sided Purple Concrete
+tile.ocrp:glass_red_concrete.name=One Sided Red Concrete
+tile.ocrp:glass_white_concrete.name=One Sided White Concrete
+tile.ocrp:glass_yellow_concrete.name=One Sided Yellow Concrete
+
+## Stonebricks
+tile.ocrp:glass_stonebrick.name=One Sided Stone Bricks
+tile.ocrp:glass_mossy_stonebrick.name=One Sided Mossy Stone Bricks
+tile.ocrp:glass_cracked_stonebrick.name=One Sided Cracked Stone Bricks
+tile.ocrp:glass_carved_stonebrick.name=One Sided Chiseled Stone Bricks
+
+## Stripped Logs
+tile.ocrp:glass_stripped_acacia.name=One Sided Stripped Acacia Log
+tile.ocrp:glass_stripped_birch.name=One Sided Stripped Birch Log
+tile.ocrp:glass_stripped_crimson.name=One Sided Stripped Crimson Stem
+tile.ocrp:glass_stripped_dark_oak.name=One Sided Stripped Dark Oak Log
+tile.ocrp:glass_stripped_jungle.name=One Sided Stripped Jungle Log
+tile.ocrp:glass_stripped_oak.name=One Sided Stripped Oak Log
+tile.ocrp:glass_stripped_spruce.name=One Sided Stripped Spruce Log
+tile.ocrp:glass_stripped_warped.name=One Sided Stripped Warped Stem
+
+## Logs
+tile.ocrp:glass_log_acacia.name=One Sided Acacia Log
+tile.ocrp:glass_log_birch.name=One Sided Birch Log
+tile.ocrp:glass_log_crimson.name=One Sided Crimson Stem
+tile.ocrp:glass_log_dark_oak.name=One Sided Dark Oak Log
+tile.ocrp:glass_log_jungle.name=One Sided Jungle Log
+tile.ocrp:glass_log_oak.name=One Sided Oak Log
+tile.ocrp:glass_log_spruce.name=One Sided Spruce Log
+tile.ocrp:glass_log_warped.name=One Sided Warped Stem
+
+## Planks
+tile.ocrp:glass_acacia.name=One Sided Acacia Planks
+tile.ocrp:glass_birch.name=One Sided Birch Planks
+tile.ocrp:glass_crimson.name=One Sided Crimson Planks
+tile.ocrp:glass_dark_oak.name=One Sided Dark Oak Planks
+tile.ocrp:glass_jungle.name=One Sided Jungle Planks
+tile.ocrp:glass_oak.name=One Sided Oak Planks
+tile.ocrp:glass_spruce.name=One Sided Spruce Planks
+tile.ocrp:glass_warped.name=One Sided Warped Planks
+
+## Nether Bricks
+tile.ocrp:glass_netherrack.name=One Sided Netherrack
+tile.ocrp:glass_nether_brick.name=One Sided Nether Bricks
+tile.ocrp:glass_nether_brick_chiseled.name=One Sided Chiseled Nether Bricks
+tile.ocrp:glass_nether_brick_cracked.name=One Sided Cracked Nether Bricks
+
+## Prismarine
+tile.ocrp:glass_prismarine_dark.name=One Sided Dark Prismarine
+tile.ocrp:glass_prismarine.name=One Sided Prismarine
+
+## Quartz
+tile.ocrp:glass_quartz.name=One Sided Quartz
+tile.ocrp:glass_quartz_bricks.name=One Sided Quartz Bricks
+tile.ocrp:glass_quartz_chiseled.name=One Sided Chiseled Quartz Bricks
+tile.ocrp:glass_quartz_smooth.name=One Sided Smooth Quartz
+
+## Sandstones
+tile.ocrp:glass_carved_sandstone.name=One Sided Carved Sandstone
+tile.ocrp:glass_sandstone.name=One Sided Sandstone
+tile.ocrp:glass_smooth_sandstone.name=One Sided Smooth Sandstone
+
+## Terracotta
+tile.ocrp:glass_black_terracotta.name=One Sided Black Terracotta
+tile.ocrp:glass_blue_terracotta.name=One Sided Blue Terracotta
+tile.ocrp:glass_brown_terracotta.name=One Sided Brown Terracotta
+tile.ocrp:glass_cyan_terracotta.name=One Sided Cyan Terracotta
+tile.ocrp:glass_gray_terracotta.name=One Sided Gray Terracotta
+tile.ocrp:glass_green_terracotta.name=One Sided Green Terracotta
+tile.ocrp:glass_light_blue_terracotta.name=One Sided Light Blue Terracotta
+tile.ocrp:glass_light_gray_terracotta.name=One Sided Light Gray Terracotta
+tile.ocrp:glass_lime_terracotta.name=One Sided Lime Terracotta
+tile.ocrp:glass_magenta_terracotta.name=One Sided Magenta Terracotta
+tile.ocrp:glass_orange_terracotta.name=One Sided Orange Terracotta
+tile.ocrp:glass_pink_terracotta.name=One Sided Pink Terracotta
+tile.ocrp:glass_purple_terracotta.name=One Sided Purple Terracotta
+tile.ocrp:glass_red_terracotta.name=One Sided Red Terracotta
+tile.ocrp:glass_white_terracotta.name=One Sided White Terracotta
+tile.ocrp:glass_yellow_terracotta.name=One Sided Yellow Terracotta
+tile.ocrp:glass_terracotta.name=One Sided Terracotta
+
+## Mineral Blocks
+tile.ocrp:glass_iron.name=One Sided Iron Block
+tile.ocrp:glass_gold.name=One Sided Gold Block
+tile.ocrp:glass_diamond.name=One Sided Diamond Block
+tile.ocrp:glass_emerald.name=One Sided Emerald Block
+tile.ocrp:glass_coal.name=One Sided Coal Block
+tile.ocrp:glass_redstone.name=One Sided Redstone Block
+tile.ocrp:glass_lapis.name=One Sided Lapis Lazuli Block
+tile.ocrp:glass_netherite.name=One Sided Netherite Block
+
+## Lightsource
+tile.ocrp:glass_glowstone.name=One Sided Glowstone
+tile.ocrp:glass_sea_lantern.name=One Sided Sea Lantern
+
+## Redstone Components
+tile.ocrp:glass_noteblock.name=One Sided Noteblock
+tile.ocrp:glass_redstone_lamp.name=One Sided Redstone Lamp
+tile.ocrp:glass_target.name=One Sided Target Block
+tile.ocrp:glass_tnt.name=One Sided TNT
+
+## Gravity Blocks
+tile.ocrp:glass_red_sand.name=One Sided Red Sand
+tile.ocrp:glass_sand.name=One Sided Sand
+
+## Cobblestone Family
+tile.ocrp:glass_cobblestone.name=One Sided Cobblestone
+tile.ocrp:glass_stone.name=One Sided Stone
+tile.ocrp:glass_smooth_stone.name=One Sided Smooth Stone
+tile.ocrp:glass_mossy_cobblestone.name=One Sided Mossy Cobblestone
+
+## Nature Blocks
+tile.ocrp:glass_grass.name=One Sided Grass Block
+tile.ocrp:glass_dirt.name=One Sided Dirt
+tile.ocrp:glass_granite.name=One Sided Granite
+tile.ocrp:glass_diorite.name=One Sided Diorite
+tile.ocrp:glass_andesite.name=One Sided Andesite
+tile.ocrp:glass_Clay.name=One Sided Clay Block
+tile.ocrp:glass_endstone.name=One Sided Endstone
+tile.ocrp:glass_ancient_debris.name=One Sided Ancient Debris
+
+## Unique Blocks
+tile.ocrp:glass_brick.name=One Sided Bricks
+tile.ocrp:glass_bookshelf.name=One Sided Bookshelf
+tile.ocrp:glass_loom.name=One Sided Loom
+tile.ocrp:glass_dried_kelp.name=One Sided Dried Kelp Block
+tile.ocrp:glass_sponge.name=One Sided Sponge
+tile.ocrp:glass_honeycomb.name=One Sided Honeycomb Block
+tile.ocrp:glass_haybale.name=One Sided Hay Bale
+tile.ocrp:glass_bone.name=One Sided Bone Block
+
+## Test Block(s?)
+tile.ocrp:glass_test.name=One Sided Glass' Test Block
+
+####################
+## ART ENTHUSIASM ##
+####################
+entity.ocrp:painting_stand.name=Painting Stand
+item.spawn_egg.entity.ocrp:painting_stand.name=Painting Stand
+action.hint.exit.ocrp:painting_stand=Press :_input_key.jump: to exit the Painting Stand
+action.hint.exit.scheme.ocrp:painting_stand=Press :_input_key.jump: to exit the Painting Stand
+action.interact.ride.boat=Use
+
+###################
+## ANIMAL MOUNTS ##
+###################
+entity.ocrp:bat_mount.name=Bat Mount
+entity.ocrp:spider_mount.name=Spider Mount
+entity.ocrp:giant_turtle_mount.name=Giant Turtle Mount
+entity.ocrp:chicken_mount.name=Chicken Mount
+entity.ocrp:notch_mount.name=Notch Mount
+entity.ocrp:the_prince_mount.name=The Prince Mount
+entity.ocrp:slime_mount.name=Slime Mount
+entity.ocrp:pig_mount.name=Pig Mount
+entity.ocrp:iron_golem_mount.name=Iron Golem Mount
+entity.ocrp:snow_golem_mount.name=Snow Golem Mount
+entity.ocrp:cow_mount.name=Cow Mount
+entity.ocrp:creeper_mount.name=Creeper Mount
+entity.ocrp:sheep_mount.name=Sheep Mount
+entity.ocrp:enderman_mount.name=Enderman Mount
+entity.ocrp:ender_dragon_mount.name=Ender Dragon Mount
+entity.ocrp:squid_mount.name=Squid Mount
+entity.ocrp:wolf_mount.name=Wolf Mount
+entity.ocrp:wither_mount.name=Wither Mount
+
+action.hint.exit.ocrp:chicken_mount=Tap sneak to dismount
+action.hint.exit.ocrp:notch_mount=Tap sneak to dismount
+action.hint.exit.ocrp:the_prince_mount=Tap sneak to dismount
+action.hint.exit.ocrp:slime_mount=Tap sneak to dismount
+action.hint.exit.ocrp:bat_mount=Tap sneak to dismount
+action.hint.exit.ocrp:spider_mount=Tap sneak to dismount
+action.hint.exit.ocrp:giant_turtle_mount=Tap sneak to dismount
+action.hint.exit.ocrp:pig_mount=Tap sneak to dismount
+action.hint.exit.ocrp:iron_golem_mount=Tap sneak to dismount
+action.hint.exit.ocrp:snow_golem_mount=Tap sneak to dismount
+action.hint.exit.ocrp:cow_mount=Tap sneak to dismount
+action.hint.exit.ocrp:creeper_mount=Tap sneak to dismount
+action.hint.exit.ocrp:sheep_mount=Tap sneak to dismount
+action.hint.exit.ocrp:enderman_mount=Tap sneak to dismount
+action.hint.exit.ocrp:ender_dragon_mount=Tap sneak to dismount
+action.hint.exit.ocrp:squid_mount=Tap sneak to dismount
+action.hint.exit.ocrp:wolf_mount=Tap sneak to dismount
+action.hint.exit.ocrp:wither_mount=Tap sneak to dismount

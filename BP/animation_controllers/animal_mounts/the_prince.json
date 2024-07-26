@@ -1,0 +1,55 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.animal_mounts.the_prince.fly": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/function the_prince"
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/function the_prince"
+					]
+				}
+			}
+		},
+		"controller.animation.animal_mounts.the_prince.remove_effect": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/tag @s remove rider"
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "!query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/tag @s remove rider"
+					]
+				}
+			}
+		}
+	}
+}

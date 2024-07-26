@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:player_minotaur_attack",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_minotaur_attack"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_minotaur_attack"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

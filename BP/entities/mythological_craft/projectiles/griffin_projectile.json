@@ -1,0 +1,109 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ocrp:griffin_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.45,
+        "height": 0.45
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": [
+              3,
+              4
+            ],
+            "knockback": true
+          },
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "hit"
+            }
+          },
+          "remove_on_hit": {}
+        },
+        "power": 2.2,
+        "gravity": 0.00,
+        "inertia": 1,
+        "liquid_inertia": 1,
+        "uncertainty_base": 0,
+        "uncertainty_multiplier": 0,
+        "anchor": 1,
+        "offset": [
+          0,
+          0.7,
+          0
+        ],
+        "reflect_on_hurt": true
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 4.0,
+        "time_down_event": {
+          "event": "dspn"
+        }
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "in_water",
+              "value": true,
+              "subject": "self"
+            },
+            "event": "dspn"
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:entity_sensor": {
+        "sensor_range": 2,
+        "event": "mob_sensor"
+      }
+    },
+    "component_groups": {
+      "dspn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "dspn": {
+        "add": {
+          "component_groups": [
+            "dspn"
+          ]
+        }
+      },
+      "mob_sensor": {
+        "run_command": {
+          "command": [
+            "effect @e[type=!ocrp:griffin,r=3] levitation 3 2 true"
+          ]
+        }
+      }
+    }
+  }
+}

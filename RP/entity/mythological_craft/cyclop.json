@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:cyclop",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_cyclop"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_cyclops"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "texture": "mc_cyclop_spawn_egg"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_cyclops",
+        "idle": "animation.mc_cyclops.idle",
+        "move": "animation.mc_cyclops.move",
+        "attack1": "animation.mc_cyclops.attack1",
+        "attack2": "animation.mc_cyclops.attack2",
+        "attack3": "animation.mc_cyclops.attack3",
+        "eat": "animation.mc_cyclops.eat",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

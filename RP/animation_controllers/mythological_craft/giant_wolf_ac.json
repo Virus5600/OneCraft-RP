@@ -1,0 +1,79 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mythological_craft.giant_wolf": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+						  	"idle": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && !query.is_delayed_attacking && !query.is_sitting) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.is_sitting)"
+						},
+						{
+						  	"attack2": "query.mark_variant == 2 && query.is_delayed_attacking"
+						}
+					],
+					"transitions": [
+					   	{
+						 	"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_sitting"
+					   	},
+					   	{
+						 	"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					   	},
+						{
+							"sit": "query.is_sitting && !query.is_delayed_attacking"
+					  	}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && !query.is_delayed_attacking && !query.is_sitting) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.is_sitting)"
+					 	},
+					 	{
+					  	 	"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					 	},
+					 	{
+							"sit": "query.is_sitting && !query.is_delayed_attacking"
+					  	}
+					]
+				},
+				"attack1": {
+					"animations": [
+					  "attack1"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && !query.is_delayed_attacking && !query.is_sitting) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.is_sitting)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_sitting"
+					 	},
+						{
+							"sit": "query.is_sitting && !query.is_delayed_attacking"
+					  	}
+					]
+				},
+				"sit": {
+					"animations": [
+					  "sit"
+					],
+					"transitions": [
+					 	{
+					   		"default": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water) && !query.is_delayed_attacking && !query.is_sitting) || (query.mark_variant == 2 && query.is_delayed_attacking && !query.is_sitting)"
+					 	},
+					 	{
+					   		"move": "query.ground_speed > 0.0 && !query.is_delayed_attacking && !query.is_sitting"
+					 	},
+						{
+							"attack1": "query.mark_variant == 1 && query.is_delayed_attacking"
+					  	}
+					]
+				}
+			}
+		}
+	}
+}

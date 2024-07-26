@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ocrp:new_enchanted_table"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" V ",
+			"CEC",
+			"BBB"
+		],
+		"key": {
+			"C": {
+				"item": "minecraft:gold_block"
+			},
+			"V": {
+				"item": "minecraft:book"
+			},
+			"B": {
+				"item": "minecraft:obsidian"
+			},
+			"E": {
+				"item": "minecraft:enchanting_table"
+			}
+		},
+		"result": {
+			"item": "ocrp:new_enchanted_table"
+		}
+	}
+}

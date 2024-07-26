@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ocrp:raft",
+            "materials": {
+                "default": "parrot"
+            },
+            "textures": {
+                "default": "textures/entity/minimalist_boats/raft",
+                "rudder": "textures/entity/minimalist_boats/raftrudder",
+                "sail": "textures/entity/minimalist_boats/raftrowing",
+                "full": "textures/entity/minimalist_boats/raftfull",
+                "rowing": "textures/entity/minimalist_boats/raftrowing"
+            },
+            "geometry": {
+                "default": "geometry.raft"
+            },
+            "animations": {
+                "hurt": "animation.minimalist_boats.simpleboat.hurt",
+                "handlersail": "animation.minimalist_boats.simpleboat.handlersail",
+                "move": "animation.minimalist_boats.raft.move",
+                "rudder": "animation.minimalist_boats.raft.rudder"
+            },
+            "animation_controllers": [
+                {
+                    "idle": "controller.animation.minimalist_boats.simpleboat.hurt"
+                },
+                {
+                    "general": "controller.animation.minimalist_boats.aomk1.general1"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.minimalist_boats.simpleboat"
+            ]
+        }
+    }
+}

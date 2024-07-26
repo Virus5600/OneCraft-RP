@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:grizzly_bear",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_grizzly_bear"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_grizzly_bear",
+        "saddled": "geometry.mc_grizzly_bear_saddled"
+      },
+      "render_controllers": [
+        "controller.render.grizzly_bear"
+      ],
+      "spawn_egg": {
+        "base_color": "#392718",
+        "overlay_color": "#312114"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.grizzly_bear",
+        "look_at_target": "animation.common.look_at_target",
+        "idle": "animation.grizzly_bear.idle",
+        "move": "animation.grizzly_bear.move",
+        "attack1": "animation.grizzly_bear.attack1",
+        "attack2": "animation.grizzly_bear.attack2",
+        "sit": "animation.grizzly_bear.sit"
+      }
+    }
+  }
+}

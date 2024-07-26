@@ -1,0 +1,87 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "ocrp:knockback_rock_golem",
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+
+        "components": {
+            "minecraft:type_family": {"family": [ "inanimate" ]},
+
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:knockback_resistance": {
+                "value": 100,
+                "max": 100
+            },
+            
+            "minecraft:physics": {
+            }
+        },
+
+        "component_groups": {
+            "dspn":{
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": false
+                }
+            },
+            "knockback": {
+                "minecraft:behavior.knockback_roar": {
+					"priority": 0,
+					"attack_time": 0.1,
+					"cooldown_time": 0.1,
+					"duration": 0.1,
+					"knockback_damage": 2,
+					"knockback_strength": 2,
+					"knockback_range": 6.5,
+					"knockback_filters": {
+						"all_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "operator": "!=",
+                                "value": "rock_golem"
+						    }
+                        ]
+					},
+					"on_roar_end": {
+						"event": "dspn"
+					}
+				}
+            }
+        },
+
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "knockback"
+                    ]
+                }
+            },
+            "dspn":{
+                "add": {
+                    "component_groups": [
+                        "dspn"
+                    ]
+                }
+            }
+        }
+    }
+}

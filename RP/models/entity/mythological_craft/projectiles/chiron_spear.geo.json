@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mc_chiron_spear",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "weapon",
+					"pivot": [0.00761, 4.82141, 7.17338],
+					"rotation": [22.5, 0, 0],
+					"cubes": [
+						{"origin": [-0.99239, 3.82141, -0.74328], "size": [2, 2, 31], "uv": [0, 0]},
+						{"origin": [0.00761, -0.17859, -9.74328], "size": [0, 10, 9], "uv": [0, 0]},
+						{"origin": [0.00761, -0.17859, -9.74328], "size": [0, 10, 9], "pivot": [0.00761, 4.82141, -5.24328], "rotation": [0, 0, -90], "uv": [0, 0]},
+						{"origin": [-1.49239, 3.32141, 30.25672], "size": [3, 3, 2], "uv": [16, 17]},
+						{"origin": [-1.49239, 3.32141, 6.75672], "size": [3, 3, 4], "uv": [0, 0]},
+						{"origin": [-0.99239, 3.32141, -2.74328], "size": [2, 3, 3], "pivot": [0.00761, 4.82141, -1.24328], "rotation": [-45, 0, 0], "uv": [14, 0]}
+					]
+				}
+			]
+		}
+	]
+}

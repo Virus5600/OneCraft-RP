@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:medusa",
+      "textures": {
+        "texture1": "textures/entity/mythological_craft/mc_medusa",
+        "texture2": "textures/entity/mythological_craft/mc_medusa_angry"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_medusa"
+      },
+      "render_controllers": [
+        "controller.render.medusa"
+      ],
+      "spawn_egg": {
+        "base_color": "#3a4213",
+        "overlay_color": "#ceac75"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_medusa",
+        "idle": "animation.mc_medusa.idle",
+        "move": "animation.mc_medusa.move",
+        "attack1": "animation.mc_medusa.attack1",
+        "attack2": "animation.mc_medusa.attack2",
+        "scream": "animation.mc_medusa.scream",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

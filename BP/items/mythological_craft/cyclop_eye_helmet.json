@@ -1,0 +1,30 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "ocrp:cyclop_eye_helmet",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:display_name": {
+                "value": "Cyclops Eye Helmet\n§3Sight To Acquire Night Vision Like Cyclops"
+            },
+            "minecraft:icon": {
+                "texture": "mc_cyclop_eye_helmet"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.helmet"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:armor": {
+                "protection": 3
+            },
+            "minecraft:wearable": {
+                "dispensable": true,
+                "slot": "slot.armor.head"
+            },
+            "minecraft:render_offsets": "helmets"
+        }
+    }
+}

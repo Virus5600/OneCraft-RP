@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+      "description": {
+        "category": "items",
+        "identifier": "ocrp:hovercraft"
+      },
+        "components": {
+            "minecraft:liquid_clipped": true,
+            "minecraft:icon": {
+            "texture": "minimalist_boats.hovercraft"
+            },
+            "minecraft:entity_placer": {
+            "entity": "ocrp:hovercraft"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": false
+        },
+        "events": {
+        }
+    }
+}

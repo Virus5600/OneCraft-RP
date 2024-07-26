@@ -1,0 +1,96 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ocrp:genie_lamp_entity",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "genie_lamp_entity"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:can_climb": {},
+      "minecraft:projectile": {
+        "on_hit": {
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "tp_genie_room",
+              "target": "self"
+            }
+          },
+          "particle_on_hit": {
+            "particle_type": "mobspell",
+            "particle_color": "#c67e33",
+            "num_particles": 16,
+            "on_entity_hit": true
+          },
+          "power": 4.6,
+          "gravity": 0.09,
+          "anchor": 1
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "component_groups": {
+      "dspn": {
+        "minecraft:timer": {
+          "time": [
+            0,
+            0
+          ],
+          "looping": true,
+          "time_down_event": {
+            "event": "dspn2",
+            "target": "self"
+          }
+        }
+      },
+      "dspn2": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "tp_genie_room": {
+        "add": {
+          "component_groups": [
+            "dspn"
+          ]
+        },
+        "run_command": {
+          "command": [
+            "gamerule sendcommandfeedback false",
+            "structure load genie_room ~ ~150 ~",
+            "replaceitem entity @p slot.weapon.mainhand 0 ocrp:genie_lamp_captured",
+            "tag @e[c=1,r=5,type=!player,family=!genie_lamp_entity] add captured",
+            "tp @e[c=1,r=5,type=!player,family=!genie_lamp_entity] ^3 ^10 ^3"
+          ]
+        }
+      }
+    }
+  }
+}

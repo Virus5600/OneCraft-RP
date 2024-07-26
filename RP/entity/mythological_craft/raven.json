@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:raven",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_raven"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_raven"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#2d2a3d",
+        "overlay_color": "#14141b"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_raven",
+        "idle": "animation.mc_raven.idle",
+        "move": "animation.mc_raven.move",
+        "fly": "animation.mc_raven.fly",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

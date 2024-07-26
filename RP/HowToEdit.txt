@@ -1,0 +1,42 @@
+
+
+  ------------------------------------------------------------------How to use this pack--------------------------------------------------------------
+      Go into the texts folder, you should see 4 files, only edit the ones named en_US and en_GB.
+      You should see 4 lines in the file.
+      Everything after the "=" is what you will see in game when someone leaves or joins, so only delete and change stuff that is after the "=".
+      %s is the player name.
+      en_GB is English (Great Britain)
+      en_US is English (United States)
+      I would suggest changing all two since some ppl might use GB and some might use US.
+
+How to add color to the messages:
+
+          You can change the color of the messages by using the Section Sign (§) followed by a Hex Digit. This hex digit is the color code, and each digit is assigned a specific color. 
+          For instance, the code §0 would result in the color black.
+          Code §6, on the other hand, would result in the color gold.
+          You must add the color code before the text, since any text after the color code will be colored, and if you enter another color code, the text will be colored with that color.
+          You can also use the color code to make the text have a different format. For instance, the code §l would make the text bold.
+          You can also stack color codes, for example §l§6 would make the text bold and gold. However, you can only have 1 color code applied for text, but you can have multiple format codes applied to the text.
+          Here are a list of all the color codes:
+          §0 = Black
+          §1 = Dark Blue
+          §2 = Dark Green
+          §3 = Dark Aqua
+          §4 = Dark Red
+          §5 = Dark Purple
+          §6 = Gold
+          §7 = Gray
+          §8 = Dark Gray
+          §9 = Blue
+          §a = Green
+          §b = Aqua
+          §c = Red
+          §d = Purple
+          §e = Yellow
+          §f = White
+          §k = Obfuscated (hidden)
+          §l = Bold
+          §m = Strikethrough
+          §n = Underline
+          §o = Italic
+          §r = Reset to normal text (No effects applied to the text)                                                                                                                                                                                                                                                                                  

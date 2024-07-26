@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:chiron_spear",
+			"textures": {
+				"default": "textures/entity/mythological_craft/mc_chiron_spear"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"animations": {
+				"move": "animation.weapon.default_thrown"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			},
+			"geometry": {
+				"default": "geometry.mc_chiron_spear"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

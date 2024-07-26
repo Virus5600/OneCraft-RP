@@ -1,0 +1,509 @@
+{
+	"individual_event_sounds" : {
+		"events" :{}
+	},
+
+	"block_sounds": {},
+
+	"entity_sounds": {
+		"defaults": {
+			"volume": 1.0,
+			"pitch": [0.8, 1.2],
+			"events": {
+				"fall.big": {"sound": "damage.fallbig", "volume": 0.75, "pitch": 1.0},
+				"fall.small": {"sound": "damage.fallsmall","volume": 0.75, "pitch": 1.0},
+				"splash": {"sound": "random.splash","pitch": [ 0.6, 1.4 ]},
+				"swim": {"sound": "random.swim","pitch": [ 0.6, 1.4 ]},
+				"fizz": {"sound": "random.fizz","volume": 0.7,"pitch": [ 1.2, 2.0 ]},
+				"drink": {"sound": "random.drink","volume": 0.5,"pitch": [ 0.9, 1.0 ]},
+				"eat": {"sound": "random.eat","volume": [ 0.5, 1.5 ],"pitch": [ 0.8, 1.2 ]},
+				"ambient": "",
+				"flop":	"",
+				"hurt": "game.player.hurt",
+				"death": "game.player.die",
+				"ambient.in.water": "",
+				"hurt.in.water": "",
+				"death.in.water": "",
+				"ambient.in.raid": ""
+			}
+		},
+
+		"entities": {
+			////////////////////////
+			// MYTHOLOGICAL CRAFT //
+			////////////////////////
+			"ocrp:ogre": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.ogre.say",
+					"attack": "mythological_craft.mob.minotaur.attack",
+					"death": "mythological_craft.mob.ogre.hurt",
+					"hurt": "mythological_craft.mob.ogre.hurt"
+				}
+			},
+			"ocrp:rock_golem": {
+				"volume": 2.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.rock_golem.say",
+					"attack": "mythological_craft.mob.minotaur.attack",
+					"hurt": "mythological_craft.mob.rock_golem.hurt",
+					"death": "mythological_craft.mob.rock_golem.hurt"
+				}
+			},
+			"ocrp:leshy": {
+				"volume": 2.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.leshy.say",
+					"attack": "mythological_craft.mob.leshy.say",
+					"hurt": "mythological_craft.mob.leshy.hurt",
+					"death": "mythological_craft.mob.leshy.hurt"
+				}
+			},
+			"ocrp:raven": {
+				"volume": 4.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.raven.say",
+					"hurt": "mythological_craft.mob.raven.hurt",
+					"death": "mythological_craft.mob.raven.hurt"
+				}
+			},
+			"ocrp:giant_wolf": {
+				"volume": 2.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.giant_wolf.say",
+					"attack": "mythological_craft.mob.giant_wolf.attack",
+					"hurt": "mythological_craft.mob.giant_wolf.hurt",
+					"death": "mythological_craft.mob.giant_wolf.hurt"
+				}
+			},
+			"ocrp:crocodile": {
+				"volume": 2.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.crocodile.say",
+					"attack": "mythological_craft.mob.crocodile.attack"
+				}
+			},
+			"ocrp:giant_bear": {
+				"volume": 2.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.grizzly_bear.say",
+					"attack": "mythological_craft.mob.minotaur.attack",
+					"hurt": "mythological_craft.mob.minotaur.attack",
+					"death": "mythological_craft.mob.minotaur.attack"
+				}
+			},
+			"ocrp:grizzly_bear": {
+				"volume": 2.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.grizzly_bear.say",
+					"attack": "mythological_craft.mob.minotaur.attack",
+					"hurt": "mythological_craft.mob.minotaur.attack",
+					"death": "mythological_craft.mob.minotaur.attack"
+				}
+			},
+			"ocrp:cerbero": {
+				"volume": 2.0,
+				"pitch": [ 0.5, 0.9 ],
+				"events": {
+					"ambient": "mythological_craft.mob.giant_wolf.say",
+					"attack": "mythological_craft.mob.giant_wolf.attack",
+					"hurt": "mythological_craft.mob.giant_wolf.hurt",
+					"death": "mythological_craft.mob.giant_wolf.hurt"
+				}
+			},
+			"ocrp:centaur": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.centaur.say",
+					"attack": "mythological_craft.mob.centaur.attack",
+					"hurt": "mythological_craft.mob.centaur.roar",
+					"death": "mythological_craft.mob.centaur.roar"
+				}
+			},
+			"ocrp:chiron": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.centaur.say",
+					"hurt": "mythological_craft.mob.centaur.roar",
+					"death": "mythological_craft.mob.centaur.roar"
+				}
+			},
+			"ocrp:minotaur": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.minotaur.attack",
+					"attack": "mythological_craft.mob.centaur.attack",
+					"hurt": "mythological_craft.mob.minotaur.attack",
+					"death": "mythological_craft.mob.minotaur.attack"
+				}
+			},
+			"ocrp:minitaur": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.minotaur.attack",
+					"attack": "mythological_craft.mob.minotaur.attack",
+					"hurt": "mythological_craft.mob.minotaur.attack",
+					"death": "mythological_craft.mob.minotaur.hurt"
+				}
+			},
+			"ocrp:medusa": {
+				"volume": 2.5,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.medusa.say",
+					"death": "mythological_craft.mob.medusa.hurt"
+				}
+			},
+			"ocrp:swamp_drowned": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.swamp_drowned.say",
+					"attack": "mythological_craft.mob.swamp_drowned.attack",
+					"hurt": "mythological_craft.mob.swamp_drowned.hurt",
+					"death": "mythological_craft.mob.swamp_drowned.hurt"
+				}
+			},
+			"ocrp:mimic": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"attack": "mythological_craft.mob.crocodile.attack",
+					"hurt": "mythological_craft.mob.leshy.hurt",
+					"death": "mythological_craft.mob.leshy.hurt"
+				}
+			},
+			"ocrp:giant": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": {
+					"sound":	"mythological_craft.mob.giant.say",
+					"volume": 2.5
+						},
+					"attack": "mythological_craft.mob.giant.attack",
+					"hurt": "mythological_craft.mob.giant.hurt",
+					"death": "mythological_craft.mob.giant.hurt"
+				}
+			},
+			"ocrp:goblin": {
+				"volume": 1.0,
+				"pitch": [ 0.8, 1.2 ],
+				"events": {
+					"ambient": "mythological_craft.mob.goblin.say",
+					"hurt": "mythological_craft.mob.goblin.hurt",
+					"death": "mythological_craft.mob.goblin.hurt"
+				}
+			},
+			/////////////////////////
+			// SYSTEM ENCHANTMENTS //
+			/////////////////////////
+			"ocrp:shared_damage": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "hurt": ""
+                }
+            },
+            "ocrp:shared_damage2": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "hurt": ""
+                }
+            },
+            "ocrp:shared_damage3": {
+                "pitch" : [ 1.0, 1.0 ],
+                "volume" : 1.0,
+                "events": {
+                    "hurt": ""
+                }
+            },
+			///////////////////
+			// ANIMAL MOUNTS //
+			///////////////////
+			"ocrp:bat_mount": {
+				"events": {
+					"ambient": "mob.bat.idle",
+					"death": "mob.bat.death",
+					"hurt": "mob.bat.hurt",
+					"takeoff": {
+						"pitch": [
+							0.80,
+							1.20
+						],
+						"sound": "mob.bat.takeoff",
+						"volume": 0.050
+					}
+				},
+				"pitch": [
+					0.760,
+					1.140
+				],
+				"volume": 0.10
+			},
+			"ocrp:chicken_mount": {
+				"events": {
+					"ambient": "mob.chicken.say",
+					"death": "mob.chicken.hurt",
+					"hurt": "mob.chicken.hurt",
+					"plop": "mob.chicken.plop",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.chicken.step",
+						"volume": 0.250
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:cow_mount": {
+				"events": {
+					"ambient": "mob.cow.say",
+					"death": "mob.cow.hurt",
+					"hurt": "mob.cow.hurt",
+					"step": {
+						"pitch": [
+							0.90,
+							1.10
+						],
+						"sound": "mob.cow.step",
+						"volume": 0.650
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:creeper_mount": {
+				"events": {
+					"death": "mob.creeper.death",
+					"fuse": {
+						"pitch": 0.50,
+						"sound": "random.fuse",
+						"volume": 1.0
+					},
+					"hurt": "mob.creeper.say"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:ender_dragon_mount": {
+				"events": {
+					"death": "mob.enderdragon.death",
+					"flap": "mob.enderdragon.flap",
+					"hurt": "mob.enderdragon.hit",
+					"mad": "mob.enderdragon.growl"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 80.0
+			},
+			"ocrp:enderman_mount": {
+				"events": {
+					"ambient": "mob.endermen.idle",
+					"death": "mob.endermen.death",
+					"hurt": "mob.endermen.hit",
+					"mad": "mob.endermen.scream",
+					"stare": {
+						"pitch": 1.0,
+						"sound": "mob.endermen.stare",
+						"volume": 1.0
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:iron_golem_mount": {
+				"events": {
+					"ambient": "mob.irongolem.say",
+					"death": "mob.irongolem.death",
+					"hurt": "mob.irongolem.hit",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.irongolem.walk",
+						"volume": 1.0
+					},
+					"throw": {
+						"pitch": 1.0,
+						"sound": "mob.irongolem.throw",
+						"volume": 1.0
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:pig_mount": {
+				"events": {
+					"ambient": "mob.pig.say",
+					"boost": {
+						"pitch": 1.0,
+						"sound": "mob.pig.boost",
+						"volume": 1.0
+					},
+					"death": "mob.pig.death",
+					"death.to.zombie": {
+						"sound": "mob.pig.death",
+						"volume": 2.0
+					},
+					"hurt": "mob.pig.say",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.pig.step",
+						"volume": 0.20
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:sheep_mount": {
+				"events": {
+					"ambient": "mob.sheep.say",
+					"death": "mob.sheep.say",
+					"hurt": "mob.sheep.say",
+					"step": {
+						"pitch": 1.0,
+						"sound": "mob.sheep.step",
+						"volume": 0.40
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:slime_mount": {
+				"events": {
+					"ambient": "",
+					"attack": {
+						"pitch": [
+							0.80,
+							1.20
+						],
+						"sound": "mob.attack"
+					},
+					"death": "mob.slime.small",
+					"hurt": "mob.slime.small",
+					"squish.big": {
+						"pitch": [
+							0.640,
+							0.960
+						],
+						"sound": "mob.slime.big"
+					},
+					"squish.small": {
+						"pitch": [
+							0.640,
+							0.960
+						],
+						"sound": "mob.slime.small"
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:snow_golem_mount": {
+				"events": {
+					"death": "mob.snowgolem.death",
+					"hurt": "mob.snowgolem.hurt",
+					"shoot": "mob.snowgolem.shoot"
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:spider_mount": {
+				"events": {
+					"ambient": "mob.spider.say",
+					"death": "mob.spider.death",
+					"hurt": "mob.spider.say",
+					"step": {
+						"pitch": [
+							0.90,
+							1.10
+						],
+						"sound": "mob.spider.step",
+						"volume": 0.350
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			},
+			"ocrp:wither_mount": {
+				"events": {
+					"ambient": "mob.wither.ambient",
+					"break.block": {
+						"pitch": 1.0,
+						"sound": "mob.wither.break_block",
+						"volume": 1.0
+					},
+					"death": "mob.wither.death",
+					"death.mid.volume": {
+						"sound": "mob.wither.death",
+						"volume": 0.750
+					},
+					"death.min.volume": {
+						"sound": "mob.wither.death",
+						"volume": 0.50
+					},
+					"hurt": "mob.wither.hurt",
+					"shoot": {
+						"pitch": 1.0,
+						"sound": "mob.wither.shoot",
+						"volume": 3.0
+					},
+					"spawn": {
+						"pitch": 1.0,
+						"sound": "mob.wither.spawn",
+						"volume": 1.0
+					}
+				},
+				"pitch": [
+					0.80,
+					1.20
+				],
+				"volume": 1.0
+			}
+		}
+	}
+}

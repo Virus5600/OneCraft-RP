@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ocrp:glass_crimson"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##X",
+      "###",
+	  "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:crimson_planks"
+      }
+    },
+    "result": {
+      "item": "ocrp:glass_crimson",
+	  "count": 8
+    }
+  }
+  
+}

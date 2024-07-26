@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ocrp:glass_respawn_anchor"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##X",
+      "###",
+	  "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:respawn_anchor",
+		"data": 0
+      }
+    },
+    "result": {
+      "item": "ocrp:glass_respawn_anchor",
+	  "count": 8
+    }
+  }
+  
+}

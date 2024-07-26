@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ocrp:glass_clay"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##X",
+      "###",
+	  "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:clay",
+		"data": 0
+      }
+    },
+    "result": {
+      "item": "ocrp:glass_clay",
+	  "count": 8
+    }
+  }
+  
+}

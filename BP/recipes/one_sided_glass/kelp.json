@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ocrp:glass_dried_kelp"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##X",
+      "###",
+	  "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:dried_kelp_block"
+      }
+    },
+    "result": {
+      "item": "ocrp:glass_dried_kelp",
+	  "count": 8
+    }
+  }
+  
+}

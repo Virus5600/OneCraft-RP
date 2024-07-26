@@ -1,0 +1,28 @@
+{
+	"namespace": "hud",
+	"crosshair_render": {
+		"type": "image",
+		"texture": "textures/debug/cross_hair",
+		"anchor_from": "center",
+		"anchor_to": "center",
+		"size": [
+			10,
+			10
+		],
+		"layer": 1,
+		"alpha": 1
+	},
+	"root_panel": {
+		"modifications": [
+			{
+				"array_name": "controls",
+				"operation": "insert_front",
+				"value": [
+					{
+						"crosshair_render@hud.crosshair_render": {}
+					}
+				]
+			}
+		]
+	}
+}

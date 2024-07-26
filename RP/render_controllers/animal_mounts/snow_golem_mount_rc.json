@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.snow_golem_mount": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.texture1",
+						"Texture.texture2"			
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [ { "*": "Material.default" } ],
+			"textures": [ "Array.skins[query.variant]" ]
+		}
+	}
+}

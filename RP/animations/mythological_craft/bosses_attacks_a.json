@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.leshy_wood_attack1": {
+			"loop": true,
+			"animation_length": 2.25,
+			"bones": {
+				"all": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.4167": [1, 1, 1],
+						"1.8333": [1, 1, 1],
+						"2.25": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

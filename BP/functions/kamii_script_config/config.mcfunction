@@ -1,0 +1,1 @@
+scriptevent config:open open_script

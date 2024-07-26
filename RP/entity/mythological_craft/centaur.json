@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:centaur",
+      "textures": {
+        "texture1": "textures/entity/mythological_craft/mc_centaur1",
+        "texture2": "textures/entity/mythological_craft/mc_centaur2",
+        "texture3": "textures/entity/mythological_craft/mc_centaur3",
+        "texture4": "textures/entity/mythological_craft/mc_centaur4",
+        "texture5": "textures/entity/mythological_craft/mc_centaur5"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_centaur"
+      },
+      "render_controllers": [
+        "controller.render.centaur"
+      ],
+      "spawn_egg": {
+        "base_color": "#413418",
+        "overlay_color": "#c8af82"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_centaur",
+        "idle": "animation.mc_centaur.idle",
+        "move": "animation.mc_centaur.move",
+        "target_acquired": "animation.mc_centaur.target_acquired",
+        "attack1": "animation.mc_centaur.attack1",
+        "attack2": "animation.mc_centaur.attack2",
+        "attack3": "animation.mc_centaur.attack3",
+        "shoot": "animation.mc_centaur.shoot",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

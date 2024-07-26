@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.spider_mount": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"idle": "query.ground_speed == 0.0 && query.is_on_ground"
+						}
+					],
+					"transitions": [
+						{
+							"move": "query.ground_speed > 0.0"
+						}
+					]
+				},
+				"move": {
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "query.ground_speed == 0.0 && query.is_on_ground"
+						}
+					]
+				}
+			}
+		}
+	}
+}

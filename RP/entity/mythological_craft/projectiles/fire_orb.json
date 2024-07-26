@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:fire_orb",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_fire_orb"
+      },
+      "materials": {
+        "default": "snowball"
+      },
+      "geometry": {
+        "default": "geometry.item_sprite"
+      },
+      "render_controllers": [
+        "controller.render.item_sprite"
+      ],
+      "scripts": {
+        "animate": [
+          "flying"
+        ]
+      },
+      "animations": {
+        "flying": "animation.actor.billboard"
+      }
+    }
+  }
+}

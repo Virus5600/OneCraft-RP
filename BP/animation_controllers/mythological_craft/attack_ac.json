@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mythological_craft.entity_attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [ 
+            { 
+              "attack": "query.is_delayed_attacking && !query.is_sitting"
+            }
+          ]
+        },
+        "attack": {
+          "transitions": [ 
+            { 
+              "default": "!query.is_delayed_attacking && !query.is_sitting" 
+            } 
+          ],
+          "on_exit": [ 
+            "@s ocrp:entity_attack" 
+          ]
+        }
+      }
+    }
+  }
+}

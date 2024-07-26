@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:sheep_mount",
+			"textures": {
+				"default": "textures/entity/sheep/sheep"
+			},
+			"materials": {
+				"default": "sheep"
+			},
+			"geometry": {
+				"default": "geometry.sheep"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"animate": [
+					"controller",
+					"look_at_target",
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"animations": {
+				"controller": "controller.animation.sheep_mount",
+				"walk": "animation.quadruped.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.chicken.baby_transform"
+			}
+		}
+	}
+}

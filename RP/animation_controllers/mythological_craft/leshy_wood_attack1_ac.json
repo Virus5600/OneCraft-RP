@@ -1,0 +1,17 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mythological_craft.leshy_wood_attack1": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+						  	"attack1": "(query.ground_speed == 0.0 && (query.is_on_ground || query.is_in_water))"
+						}
+					]
+				}
+			}
+		}
+	}
+}

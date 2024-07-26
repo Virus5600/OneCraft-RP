@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ocrp:glass_smooth_sandstone"
+    },
+
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "##X",
+      "###",
+	  "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:glass"
+      },
+      "X": {
+        "item": "minecraft:sandstone",
+		"data": 3
+      }
+    },
+    "result": {
+      "item": "ocrp:glass_smooth_sandstone",
+	  "count": 8
+    }
+  }
+  
+}

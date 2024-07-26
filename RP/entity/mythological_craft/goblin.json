@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:goblin",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_goblin"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_goblin"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#42821e",
+        "overlay_color": "#70461b"
+      },
+      "scripts": {
+        "animate": [
+          "walk_controller",
+          "sitting_controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "walk_controller": "controller.animation.mythological_craft.goblin.walk",
+        "sitting_controller": "controller.animation.mythological_craft.goblin.sitting",
+        "look_at_target": "animation.common.look_at_target",
+        "idle": "animation.goblin.idle",
+        "move": "animation.goblin.move",
+        "sitting": "animation.goblin.sitting"
+      }
+    }
+  }
+}

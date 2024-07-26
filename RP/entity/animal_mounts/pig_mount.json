@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ocrp:pig_mount",
+			"textures": {
+				"default": "textures/entity/animal_mounts/pig_mount"
+			},
+			"materials": {
+				"default": "skeleton"
+			},
+			"geometry": {
+				"default": "geometry.pig_mount"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"animate": [
+					"controller",
+					"look_at_target",
+					{
+						"walk": "query.modified_move_speed"
+					},
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"animations": {
+				"controller": "controller.animation.pig_mount",
+				"walk": "animation.quadruped.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.chicken.baby_transform"
+			}
+		}
+	}
+}

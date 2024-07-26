@@ -1,0 +1,567 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ocrp:grizzly_bear",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "attack"
+        ]
+      },
+      "animations": {
+        "attack": "controller.animation.mythological_craft.entity_attack"
+      }
+    },
+    "components": {
+      "minecraft:type_family": {"family": [ "animal", "mob", "grizzly_bear" ]},
+
+      "minecraft:jump.static":{
+        "jump_power": 0.42
+      },
+
+      "minecraft:can_climb": {},
+
+      "minecraft:physics": {},
+      
+      "minecraft:health": {"value": 40, "max": 40},
+
+      "minecraft:collision_box": {"width": 0.9, "height": 1.0},
+
+      "minecraft:movement.generic": {},
+
+      "minecraft:movement": {"value": 0.29},
+
+      "minecraft:underwater_movement": {
+        "value": 0.19
+      },
+
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_break_doors": true,
+        "can_swim": true,
+        "can_walk": true,
+        "avoid_sun": true
+      },
+
+      "minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? math.random(30, 50) : 35"
+      },
+
+      "minecraft:nameable": {},
+
+     
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+
+      "minecraft:is_hidden_when_invisible": {},
+
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+
+      "minecraft:behavior.random_look_around": {"priority": 7},
+
+      "minecraft:behavior.random_stroll": {"priority": 6, "speed_multiplier": 1},
+
+      "minecraft:behavior.look_at_player": {"priority": 7, "look_distance": 6, "probability": 0.02},
+      
+      "minecraft:behavior.hurt_by_target": {"priority": 1},
+      
+      "minecraft:behavior.look_at_entity": {
+				"priority": 7,
+				"angle_of_view_horizontal": 45,
+				"angle_of_view_vertical": 0,
+				"probability": 100
+			},
+
+      "minecraft:behavior.look_at_target": {
+        "priority": 9,
+        "look_distance": 8.0,
+        "probability": 1.0
+      },
+      
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {  
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "pupperfish"
+                },
+                {
+                 "test": "is_family",
+                 "subject": "other",
+                 "value": "salmon"
+                },
+                {
+                 "test": "is_family",
+                 "subject": "other",
+                 "value": "tropicalfish"
+                },
+                {
+                 "test": "is_family",
+                 "subject": "other",
+                 "value": "turtle"
+                }
+              ]
+            },
+            "max_dist": 30
+          }
+        ],
+        "must_see": true
+      },
+
+      "minecraft:follow_range": {
+        "value": 64
+      },
+
+      "minecraft:knockback_resistance": {
+        "value": 0.3
+      },
+
+      "minecraft:scale": {
+        "value": 1.3
+      },
+
+      "minecraft:on_target_acquired": {
+				"event": "angry_mode",
+				"target": "self"
+
+			},
+			"minecraft:on_target_escape": {
+				"event": "peace_mode",
+				"target": "self"
+			}
+    },
+
+    "component_groups": {
+      "normal_attack": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 2,
+          "track_target": true,
+          "hit_delay_pct": 0.15,
+          "reach_multiplier": 1.8,
+          "speed_multiplier": 1.0,
+          "attack_duration": 0.73
+        },
+        "minecraft:attack": {
+          "damage": 5
+        }
+      },
+      
+      "second_attack": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 2,
+          "track_target": true,
+          "hit_delay_pct": 0.15,
+          "reach_multiplier": 1.8,
+          "speed_multiplier": 1.0,
+          "attack_duration": 0.73
+        },
+        "minecraft:attack": {
+          "damage": 8
+        }
+      },
+
+      "angry_mode":{
+        "minecraft:movement": {
+          "value": 0.39
+        }
+      },
+
+      "minecraft:pig_baby": {
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:despawn": {
+          "despawn_from_distance": {}
+        },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": "minecraft:salmon",
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 6,
+          "speed_multiplier": 1.1
+        }
+      },
+
+      "minecraft:bear_adult": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/grizzly_bear.json"
+        },
+        "minecraft:despawn": {
+          "despawn_from_distance": {}
+        },
+        "minecraft:scale": {
+          "value": 1.3
+        },
+        "minecraft:tameable": {
+          "probability": 0.10,
+          "tame_items": [
+            "minecraft:salmon"
+          ],
+          "tame_event": {
+            "event": "minecraft:on_tame"
+          }
+        },
+        "minecraft:breedable": {
+          "require_tame": false,
+          "breeds_with": {
+            "mate_type": "ocrp:grizzly_bear",
+            "baby_type": "ocrp:grizzly_bear",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [ "honeycomb" ]
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 2,
+          "track_target": true,
+          "hit_delay_pct": 0.15,
+          "reach_multiplier": 1.8,
+          "speed_multiplier": 1.0,
+          "attack_duration": 0.73
+        },
+        "minecraft:attack": {
+          "damage": 8
+        }
+      },
+
+      "minecraft:wolf_tame": {
+        "minecraft:is_tamed": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+        "minecraft:behavior.follow_caravan": {
+          "priority": 1,
+          "speed_multiplier": 1.0,
+          "entity_count": 1,
+          "entity_types": {
+            "filters": { 
+             "test" :  "is_family", 
+              "subject" : "other", 
+             "value" :  "player"
+            }
+          }
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 2
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 3
+        },
+        "minecraft:sittable": {
+        },
+        "minecraft:behavior.stay_while_sitting": {
+          "priority": 1
+        },
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0
+        },
+        "minecraft:scale": {
+          "value": 1.3
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0, 1.2, -0.1 ]
+          }
+        },
+        "minecraft:inventory": {
+          "inventory_size": 20,
+          "container_type": "horse"
+        },
+        "minecraft:equippable": {
+					"slots": [
+            {
+							"slot": 0,
+							"item": "saddle",
+							"accepted_items": [
+								"saddle"
+							],
+							"on_equip": {
+								"event": "mob_saddled"
+							},
+							"on_unequip": {
+								"event": "mob_unsaddled"
+							}
+						},
+						{
+							"slot": 1,
+							"item": "ocrp:giant_turtle_armor",
+							"accepted_items": [
+								"ocrp:giant_turtle_armor"
+							]
+						}
+					]
+				},
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "salmon",
+              "heal_amount": 15
+            }
+          ]
+        },
+        "minecraft:behavior.breed": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:breedable": {
+          "require_tame": false,
+          "breeds_with": {
+            "mate_type": "ocrp:grizzly_bear",
+            "baby_type": "ocrp:grizzly_bear",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [ "honeycomb" ]
+        },
+        "minecraft:behavior.delayed_attack": {
+          "priority": 2,
+          "track_target": true,
+          "hit_delay_pct": 0.15,
+          "reach_multiplier": 1.8,
+          "speed_multiplier": 1.0,
+          "attack_duration": 0.73
+        },
+        "minecraft:attack": {
+          "damage": 8
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {  
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "empty"
+                  }
+                ]
+              },
+              "max_dist": 30
+            }
+          ],
+          "must_see": true
+        }
+      },
+
+      "mob_saddled": {
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:behavior.player_ride_tamed": {
+        }
+      },
+
+      "mob_unsaddled": {
+        "minecraft:behavior.mount_pathing": {
+					"priority": 5,
+					"speed_multiplier": 1.25,
+					"target_dist": 0.0,
+					"track_target": true
+				}
+      }
+    },
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 65,
+            "add": {
+              "component_groups": [
+                "minecraft:bear_adult"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "minecraft:pig_baby"
+              ]
+
+            }
+          },
+          {
+            "weight": 35,
+            "remove": {
+              "component_groups": [
+                "minecraft:bear_adult"
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:pig_baby"
+              ]
+
+            }
+          }
+        ]
+      },
+      "minecraft:entity_born": {
+        "remove": {
+          "component_groups": [
+            "minecraft:bear_adult"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:pig_baby"
+          ]
+        }
+      },
+      "minecraft:ageable_grow_up": {
+        "remove": {
+          "component_groups": [
+            "minecraft:pig_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:bear_adult"
+          ]
+        }
+      },
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "minecraft:bear_adult",
+            "minecraft:pig_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:wolf_tame"
+          ]
+        }
+      },
+      "ocrp:entity_attack":{
+        "randomize": [
+          {
+            "weight": 60,
+            "add": {
+              "component_groups": [
+                "normal_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "second_attack"
+              ]
+            }
+          },
+          {
+            "weight": 45,
+            "add": {
+              "component_groups": [
+                "second_attack"
+              ]
+            },
+            "remove": {
+              "component_groups": [
+                "normal_attack"
+              ]
+            }
+          }
+        ]
+      },
+      "angry_mode": {
+        "add": {
+          "component_groups": [
+            "angry_mode"
+          ]
+        }
+      },
+      "peace_mode": {
+        "remove": {
+          "component_groups": [
+            "angry_mode"
+          ]
+        }
+      },
+      "mob_saddled": {
+        "add": {
+          "component_groups": [
+            "mob_saddled"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "mob_unsaddled"
+          ]
+        }
+      },
+      "mob_unsaddled": {
+        "remove": {
+          "component_groups": [
+            "mob_saddled"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "mob_unsaddled"
+          ]
+        }
+      }
+    }
+  }
+}

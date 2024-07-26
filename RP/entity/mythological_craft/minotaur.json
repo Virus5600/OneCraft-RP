@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ocrp:minotaur",
+      "textures": {
+        "default": "textures/entity/mythological_craft/mc_minotaur"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.mc_minotaur"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#613c23",
+        "overlay_color": "#892c32"
+      },
+      "scripts": {
+        "animate": [
+          "controller",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "controller": "controller.animation.mythological_craft.mc_minotaur",
+        "idle": "animation.mc_minotaur.idle",
+        "move": "animation.mc_minotaur.move",
+        "roaring": "animation.mc_minotaur.roaring",
+        "attack1": "animation.mc_minotaur.attack1",
+        "attack2": "animation.mc_minotaur.attack2",
+        "attack3": "animation.mc_minotaur.attack3",
+        "dash_attack": "animation.mc_minotaur.dash_attack",
+        "super_attack": "animation.mc_minotaur.super_attack",
+        "look_at_target": "animation.common.look_at_target"
+      }
+    }
+  }
+}

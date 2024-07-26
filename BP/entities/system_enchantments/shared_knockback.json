@@ -1,0 +1,82 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ocrp:shared_knockback",
+			"is_experimental": false,
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"on_damage": {},
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:behavior.knockback_roar": {
+				"attack_time": 0.1,
+				"cooldown_time": 0,
+				"duration": 0.1,
+				"knockback_damage": 0,
+				"knockback_strength": 1,
+				"knockback_range": 3,
+				"damage_filters": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "==",
+							"value": "none"
+						}
+					]
+				},
+				"knockback_filters": {
+					"any_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"operator": "==",
+							"value": "monster"
+						}
+					]
+				},
+				"on_roar_end": {
+					"event": "ocrp:despawn"
+				}
+			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1,
+				"min": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			}
+		},
+		"events": {
+			"ocrp:despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

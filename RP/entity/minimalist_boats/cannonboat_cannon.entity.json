@@ -1,0 +1,45 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "ocrp:cannonboat_cannon",
+            "materials": {
+                "default": "parrot"
+            },
+            "textures": {
+                "default": "textures/entity/minimalist_boats/ironboatcannon",
+                "rudder": "textures/entity/minimalist_boats/ironboatcannon",
+                "sail": "textures/entity/minimalist_boats/ironboatcannon",
+                "full": "textures/entity/minimalist_boats/ironboatcannon",
+                "rowing": "textures/entity/minimalist_boats/ironboatcannon"
+            },
+            "geometry": {
+                "default": "geometry.cannon_boat"
+            },
+            "animations": {
+                "hurt": "animation.minimalist_boats.simpleboat.hurt",
+                "move": "animation.minimalist_boats.simpleboat.move",
+                "run": "animation.minimalist_boats.ironboat.run",
+                "handler": "animation.minimalist_boats.canonboat.handler",
+                "ground": "animation.minimalist_boats.ironboat.ground"
+            },
+            "animation_controllers": [
+                {
+                    "hurt": "controller.animation.minimalist_boats.simpleboat.hurt"
+                },
+                {
+                    "move": "controller.animation.minimalist_boats.simpleboat.move"
+                },
+                {
+                    "ground": "controller.animation.minimalist_boats.ironboat.ground"
+                },
+                {
+                    "general": "controller.animation.minimalist_boats.aomk1.general2"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.minimalist_boats.simpleboat"
+            ]
+        }
+    }
+}

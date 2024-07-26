@@ -1,0 +1,847 @@
+{
+	"resource_pack_name": "OneCraft RP [RP]",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		//////////////////////
+		// EPIC KNIGHTS MOD //
+		//////////////////////
+		"epic_knights_mod.knights_small_steel_plate": {
+			"textures": "textures/items/epic_knights_mod/knights_small_steel_plate"
+		},
+		"epic_knights_mod.knights_lamellar_rows": {
+			"textures": "textures/items/epic_knights_mod/knights_lamellar_rows"
+		},
+		"epic_knights_mod.knights_mountain_pattern_rows": {
+			"textures": "textures/items/epic_knights_mod/knights_mountain_pattern_rows"
+		},
+		"epic_knights_mod.knights_lacquered_iron_plate": {
+			"textures": "textures/items/epic_knights_mod/knights_lacquered_iron_plate"
+		},
+		"epic_knights_mod.knights_pole": {
+			"textures": "textures/items/epic_knights_mod/knights_pole"
+		},
+		"epic_knights_mod.knights_armour_pattern_blackcross": {
+			"textures": "textures/items/epic_knights_mod/knights_armour_pattern_blackcross"
+		},
+		"epic_knights_mod.knights_armour_pattern_blackdragon": {
+			"textures": "textures/items/epic_knights_mod/knights_armour_pattern_blackdragon"
+		},
+		"epic_knights_mod.knights_armour_pattern_blacktwoheadedeagle": {
+			"textures": "textures/items/epic_knights_mod/knights_armour_pattern_blacktwoheadedeagle"
+		},
+		"epic_knights_mod.knights_leather_strip": {
+			"textures": "textures/items/epic_knights_mod/knights_leather_strip"
+		},
+		"epic_knights_mod.knights_bundle_of_straw": {
+			"textures": "textures/items/epic_knights_mod/knights_bundle_of_straw"
+		},
+		"epic_knights_mod.knights_woollen_cloth": {
+			"textures": "textures/items/epic_knights_mod/knights_woollen_cloth"
+		},
+		"epic_knights_mod.knights_maximillian_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_maximilllian_helm"
+		},
+		"epic_knights_mod.knights_maximillian_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_maximillian_armour"
+		},
+		"epic_knights_mod.knights_maximillian_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_maximillian_leggings"
+		},
+		"epic_knights_mod.knights_jousting_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_jousting_helm"
+		},
+		"epic_knights_mod.knights_jousting_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_jousting_armour"
+		},
+		"epic_knights_mod.knights_jousting_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_jousting_leggings"
+		},
+		"epic_knights_mod.knights_armet_helm_black": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_black"
+		},
+		"epic_knights_mod.knights_armet_helm_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_blue"
+		},
+		"epic_knights_mod.knights_armet_helm_green": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_green"
+		},
+		"epic_knights_mod.knights_armet_helm_orange": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_orange"
+		},
+		"epic_knights_mod.knights_armet_helm_purple": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_purple"
+		},
+		"epic_knights_mod.knights_armet_helm_red": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_red"
+		},
+		"epic_knights_mod.knights_armet_helm_yellow": {
+			"textures": "textures/items/epic_knights_mod/knights_armet_helm_yellow"
+		},
+		"epic_knights_mod.knights_knight_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_knight_armour"
+		},
+		"epic_knights_mod.knights_knight_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_knights_leggings"
+		},
+		"epic_knights_mod.knights_sallet_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_sallet_helm"
+		},
+		"epic_knights_mod.knights_gothic_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_gothic_armour"
+		},
+		"epic_knights_mod.knights_gothic_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_gothic_leggings"
+		},
+		"epic_knights_mod.knights_grand_bascinet_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_grand_bascinet_helm"
+		},
+		"epic_knights_mod.knights_kastenbrust_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_kastenbrust_armour"
+		},
+		"epic_knights_mod.knights_kastenbrust_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_kastenbrust_leggings"
+		},
+		"epic_knights_mod.knights_bascinet_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_bascinet_helm"
+		},
+		"epic_knights_mod.knights_xiv_century_knightarmour": {
+			"textures": "textures/items/epic_knights_mod/knights_xivcentury_knightarmour"
+		},
+		"epic_knights_mod.knights_xiv_century_knightleggings": {
+			"textures": "textures/items/epic_knights_mod/knights_xivcentury_knightleggings"
+		},
+		"epic_knights_mod.knights_great_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_great_helm"
+		},
+		"epic_knights_mod.knights_crusader_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour"
+		},
+		"epic_knights_mod.knights_crusader_armour_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_blue"
+		},
+		"epic_knights_mod.knights_crusader_armour_green": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_green"
+		},
+		"epic_knights_mod.knights_crusader_armour_orange": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_orange"
+		},
+		"epic_knights_mod.knights_crusader_armour_purple": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_purple"
+		},
+		"epic_knights_mod.knights_crusader_armour_red": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_red"
+		},
+		"epic_knights_mod.knights_crusader_armour_white": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_white"
+		},
+		"epic_knights_mod.knights_crusader_armour_yellow": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_armour_yellow"
+		},
+		"epic_knights_mod.knights_crusader_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_leggings"
+		},
+		"epic_knights_mod.knights_kettle_hat": {
+			"textures": "textures/items/epic_knights_mod/knights_kettle_hat"
+		},
+		"epic_knights_mod.knights_platemail_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_platemail_armour"
+		},
+		"epic_knights_mod.knights_platemail_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_platemail_leggings"
+		},
+		"epic_knights_mod.knights_ceremonial_armet_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_ceremonial_armet_helm"
+		},
+		"epic_knights_mod.knights_ceremonial_knight_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_ceremonial_knight_armour"
+		},
+		"epic_knights_mod.knights_coif": {
+			"textures": "textures/items/epic_knights_mod/knights_coif"
+		},
+		"epic_knights_mod.knights_chainmail_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_chainmail_armour"
+		},
+		"epic_knights_mod.knights_chainmail_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_chainmail_leggings"
+		},
+		"epic_knights_mod.knights_quilted_coif": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif"
+		},
+		"epic_knights_mod.knights_quilted_coif_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_blue"
+		},
+		"epic_knights_mod.knights_quilted_coif_green": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_green"
+		},
+		"epic_knights_mod.knights_quilted_coif_orange": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_orange"
+		},
+		"epic_knights_mod.knights_quilted_coif_purple": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_purple"
+		},
+		"epic_knights_mod.knights_quilted_coif_red": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_red"
+		},
+		"epic_knights_mod.knights_quilted_coif_white": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_white"
+		},
+		"epic_knights_mod.knights_quilted_coif_yellow": {
+			"textures": "textures/items/epic_knights_mod/knights_quilted_coif_yellow"
+		},
+		"epic_knights_mod.knights_gambeson": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson"
+		},
+		"epic_knights_mod.knights_gambeson_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_blue"
+		},
+		"epic_knights_mod.knights_gambeson_green": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_green"
+		},
+		"epic_knights_mod.knights_gambeson_orange": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_orange"
+		},
+		"epic_knights_mod.knights_gambeson_purple": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_purple"
+		},
+		"epic_knights_mod.knights_gambeson_red": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_red"
+		},
+		"epic_knights_mod.knights_gambeson_white": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_white"
+		},
+		"epic_knights_mod.knights_gambeson_yellow": {
+			"textures": "textures/items/epic_knights_mod/knights_gambeson_yellow"
+		},
+		"epic_knights_mod.knights_pantyhose": {
+			"textures": "textures/items/epic_knights_mod/knights_pantyhose"
+		},
+		"epic_knights_mod.knights_barbute": {
+			"textures": "textures/items/epic_knights_mod/knights_barbute"
+		},
+		"epic_knights_mod.knights_half_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_half_armour"
+		},
+		"epic_knights_mod.knights_face_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_face_helm"
+		},
+		"epic_knights_mod.knights_lamellar_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_lamellar_armour"
+		},
+		"epic_knights_mod.knights_norman_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_norman_helm"
+		},
+		"epic_knights_mod.knights_shishak_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_shishak_helm"
+		},
+		"epic_knights_mod.knights_winged_hussar": {
+			"textures": "textures/items/epic_knights_mod/knights_winged_hussar_armour"
+		},
+		"epic_knights_mod.knights_brigadine": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine"
+		},
+		"epic_knights_mod.knights_brigadine_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine_blue"
+		},
+		"epic_knights_mod.knights_brigadine_green": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine_green"
+		},
+		"epic_knights_mod.knights_brigadine_orange": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine_orange"
+		},
+		"epic_knights_mod.knights_brigadine_purple": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine_purple"
+		},
+		"epic_knights_mod.knights_brigadine_red": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine_red"
+		},
+		"epic_knights_mod.knights_brigadine_yellow": {
+			"textures": "textures/items/epic_knights_mod/knights_brigadine_yellow"
+		},
+		"epic_knights_mod.knights_leather_boots": {
+			"textures": "textures/items/epic_knights_mod/knights_leather_boots"
+		},
+		"epic_knights_mod.knights_rusted_barbute": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_barbute"
+		},
+		"epic_knights_mod.knights_rusted_half_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_half_armour"
+		},
+		"epic_knights_mod.knights_rusted_great_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_great_helm"
+		},
+		"epic_knights_mod.knights_rusted_crusader_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_crudader_armour"
+		},
+		"epic_knights_mod.knights_rusted_coif": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_coif"
+		},
+		"epic_knights_mod.knights_rusted_chainmail_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_chainmail_armour"
+		},
+		"epic_knights_mod.knights_rusted_chainmail_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_chainmail_leggings"
+		},
+		"epic_knights_mod.knights_rusted_kettle_hat": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_kettle_hat"
+		},
+		"epic_knights_mod.knights_rusted_norman_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_rusted_norman_helm"
+		},
+		"epic_knights_mod.knights_steel_chain": {
+			"textures": "textures/items/epic_knights_mod/knights_steel_chain"
+		},
+		"epic_knights_mod.knights_steel_chainmail": {
+			"textures": "textures/items/epic_knights_mod/knights_steel_chainmail"
+		},
+		"epic_knights_mod.knights_steel_ingot": {
+			"textures": "textures/items/epic_knights_mod/knights_steel_ingot"
+		},
+		"epic_knights_mod.knights_steel_nugget": {
+			"textures": "textures/items/epic_knights_mod/knights_steel_nugget"
+		},
+		"epic_knights_mod.knights_steel_plate": {
+			"textures": "textures/items/epic_knights_mod/knights_steel_plate"
+		},
+		"epic_knights_mod.knights_steel_ring": {
+			"textures": "textures/items/epic_knights_mod/knights_steel_ring"
+		},
+		"epic_knights_mod.knights_kabuto_black_menpo": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_black_menpo"
+		},
+		"epic_knights_mod.knights_kabuto_black": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_black"
+		},
+		"epic_knights_mod.knights_kabuto_blue_menpo": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_blue_menpo"
+		},
+		"epic_knights_mod.knights_kabuto_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_blue"
+		},
+		"epic_knights_mod.knights_kabuto_red_menpo": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_red_menpo"
+		},
+		"epic_knights_mod.knights_kabuto_red": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_red"
+		},
+		"epic_knights_mod.knights_kabuto_white_menpo": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_white_menpo"
+		},
+		"epic_knights_mod.knights_kabuto_white": {
+			"textures": "textures/items/epic_knights_mod/knights_kabuto_white"
+		},
+		"epic_knights_mod.knights_samurai_armour_black": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_armour_black"
+		},
+		"epic_knights_mod.knights_samurai_armour_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_armour_blue"
+		},
+		"epic_knights_mod.knights_samurai_armour_red": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_armour_red"
+		},
+		"epic_knights_mod.knights_samurai_armour_white": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_armour_white"
+		},
+		"epic_knights_mod.knights_samurai_leggings_black": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_leggings_black"
+		},
+		"epic_knights_mod.knights_samurai_leggings_blue": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_leggings_blue"
+		},
+		"epic_knights_mod.knights_samurai_leggings_red": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_leggings_red"
+		},
+		"epic_knights_mod.knights_samurai_leggings_white": {
+			"textures": "textures/items/epic_knights_mod/knights_samurai_leggings_white"
+		},
+		"epic_knights_mod.knights_mongolian_lamellar_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_lamellar_helm"
+		},
+		"epic_knights_mod.knights_mongolian_lamellar_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_mongolian_lamellar_armour"
+		},
+		"epic_knights_mod.knights_mongolian_lamellar_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_mongolian_lamellar_leggings"
+		},
+		"epic_knights_mod.knights_mountain_pattern_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_mountain_pattern_armour"
+		},
+		"epic_knights_mod.knights_straw_hat": {
+			"textures": "textures/items/epic_knights_mod/knights_straw_hat"
+		},
+		"epic_knights_mod.knights_travellers_robe": {
+			"textures": "textures/items/epic_knights_mod/knights_black_robe"
+		},
+		"epic_knights_mod.knights_travellers_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_travellers_leggings"
+		},
+		"epic_knights_mod.knights_hooded_cowl": {
+			"textures": "textures/items/epic_knights_mod/knights_hooded_cowl"
+		},
+		"epic_knights_mod.knights_ninja_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_ninja_armour"
+		},
+		"epic_knights_mod.knights_ninja_leggings": {
+			"textures": "textures/items/epic_knights_mod/knights_ninja_leggings"
+		},
+		"epic_knights_mod.knights_saracen_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_saracen_helm"
+		},
+		"epic_knights_mod.knights_mamluk_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_mamluk_helm"
+		},
+		"epic_knights_mod.knights_saracen_armour": {
+			"textures": "textures/items/epic_knights_mod/knights_saracen_armour"
+		},
+		"epic_knights_mod.knights_black_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_black_cloak"
+		},
+		"epic_knights_mod.knights_blue_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_cloak"
+		},
+		"epic_knights_mod.knights_green_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_green_cloak"
+		},
+		"epic_knights_mod.knights_orange_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_orange_cloak"
+		},
+		"epic_knights_mod.knights_purple_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_purple_cloak"
+		},
+		"epic_knights_mod.knights_red_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_red_cloak"
+		},
+		"epic_knights_mod.knights_white_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_white_cloak"
+		},
+		"epic_knights_mod.knights_yellow_cloak": {
+			"textures": "textures/items/epic_knights_mod/knights_yellow_cloak"
+		},
+		"epic_knights_mod.knights_black_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_surcoat"
+		},
+		"epic_knights_mod.knights_black_blue_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_blue_surcoat"
+		},
+		"epic_knights_mod.knights_black_gray_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_gray_surcoat"
+		},
+		"epic_knights_mod.knights_black_green_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_green_surcoat"
+		},
+		"epic_knights_mod.knights_black_orange_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_orange_surcoat"
+		},
+		"epic_knights_mod.knights_black_purple_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_purple_surcoat"
+		},
+		"epic_knights_mod.knights_black_red_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_red_surcoat"
+		},
+		"epic_knights_mod.knights_black_white_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_white_surcoat"
+		},
+		"epic_knights_mod.knights_black_yellow_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_black_yellow_surcoat"
+		},
+		"epic_knights_mod.knights_blue_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_surcoat"
+		},
+		"epic_knights_mod.knights_blue_black_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_black_surcoat"
+		},
+		"epic_knights_mod.knights_blue_gray_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_gray_surcoat"
+		},
+		"epic_knights_mod.knights_blue_green_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_green_surcoat"
+		},
+		"epic_knights_mod.knights_blue_orange_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_orange_surciat"
+		},
+		"epic_knights_mod.knights_blue_purple_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_purple_surcoat"
+		},
+		"epic_knights_mod.knights_blue_red_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_red_surcoat"
+		},
+		"epic_knights_mod.knights_blue_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_blue_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_blue_white_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_white_surcoat"
+		},
+		"epic_knights_mod.knights_blue_yellow_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_blue_yellow_surcoat"
+		},
+		"epic_knights_mod.knights_green_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_green_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_green_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_green_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_orange_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_orange_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_orange_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_orange_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_purple_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_purple_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_purple_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_purple_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_red_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_surcoat"
+		},
+		"epic_knights_mod.knights_red_black_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_black_surcoat"
+		},
+		"epic_knights_mod.knights_red_blue_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_blue_surcoat"
+		},
+		"epic_knights_mod.knights_red_gray_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_gray_surcoat"
+		},
+		"epic_knights_mod.knights_red_green_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_green_surcoat"
+		},
+		"epic_knights_mod.knights_red_orange_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_orange_surcoat"
+		},
+		"epic_knights_mod.knights_red_purple_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_purple_surcoat"
+		},
+		"epic_knights_mod.knights_red_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_red_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_red_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_red_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_red_white_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_white_surcoat"
+		},
+		"epic_knights_mod.knights_red_yellow_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_red_yellow_surcoat"
+		},
+		"epic_knights_mod.knights_white_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_white_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_white_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_white_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_yellow_surcoat_blackdragoncrest": {
+			"textures": "textures/items/epic_knights_mod/knights_yellow_surcoat_blackdragoncrest"
+		},
+		"epic_knights_mod.knights_yellow_surcoat_blacktwoheadedeaglecrest": {
+			"textures": "textures/items/epic_knights_mod/knights_yellow_surcoat_blacktwoeadedeaglecrest"
+		},
+		"epic_knights_mod.knights_crusader_surcoat": {
+			"textures": "textures/items/epic_knights_mod/knights_crusader_surcoat"
+		},
+		"epic_knights_mod.knights_enclosed_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_enclosed_helm"
+		},
+		"epic_knights_mod.knights_mountain_pattern_helm": {
+			"textures": "textures/items/epic_knights_mod/knights_mountain_pattern_helm"
+		},
+		//////////////////////////////
+		// MYTHOLOGICAL CRAFT ADDON //
+		//////////////////////////////
+		"mc_hercules_sword": {
+			"textures": "textures/items/mythological_craft/mc_hercules_sword"
+		},
+		"mc_hermes_boots": {
+			"textures": "textures/items/mythological_craft/mc_hermes_boots"
+		},
+		"mc_lightning_zeus": {
+			"textures": "textures/items/mythological_craft/mc_lightning_zeus"
+		},
+		"mc_hades_bident": {
+			"textures": "textures/items/mythological_craft/mc_hades_bident"
+		},
+		"mc_cyclop_eye": {
+			"textures": "textures/items/mythological_craft/mc_cyclop_eye"
+		},
+		"mc_cyclop_eye_helmet": {
+			"textures": "textures/items/mythological_craft/mc_cyclop_eye_helmet"
+		},
+		"mc_bandana": {
+			"textures": "textures/items/mythological_craft/mc_bandana"
+		},
+		"mc_chiron_spear": {
+			"textures": "textures/items/mythological_craft/mc_chiron_spear"
+		},
+		"mc_centaur_axe": {
+			"textures": "textures/items/mythological_craft/mc_centaur_axe"
+		},
+		"mc_fire_orb": {
+			"textures": "textures/items/mythological_craft/mc_fire_orb"
+		},
+		"mc_genie_lamp": {
+			"textures": "textures/items/mythological_craft/mc_genie_lamp"
+		},
+		"mc_griffin_item_egg": {
+			"textures": "textures/items/mythological_craft/mc_griffin_item_egg"
+		},
+		"mc_sun_orb": {
+			"textures": "textures/items/mythological_craft/mc_sun_orb"
+		},
+		"mc_bestial_axe": {
+			"textures": "textures/items/mythological_craft/mc_bestial_axe"
+		},
+		"mc_leshy_hand": {
+			"textures": "textures/items/mythological_craft/mc_leshy_hand"
+		},
+		"mc_sun_staff": {
+			"textures": "textures/items/mythological_craft/mc_sun_staff"
+		},
+		"mc_leshy_stick": {
+			"textures": "textures/items/mythological_craft/mc_leshy_stick"
+		},
+		"mc_grizzly_bear_fur": {
+			"textures": "textures/items/mythological_craft/mc_grizzly_bear_fur"
+		},
+		"mc_giant_wolf_fur": {
+			"textures": "textures/items/mythological_craft/mc_giant_wolf_fur"
+		},
+		"mc_medusa_head": {
+			"textures": "textures/items/mythological_craft/mc_medusa_head"
+		},
+		"mc_mimic_heart": {
+			"textures": "textures/items/mythological_craft/mc_mimic_heart"
+		},
+		"mc_minitaur_meat": {
+			"textures": "textures/items/mythological_craft/mc_minitaur_meat"
+		},
+		"mc_minotaur_axe": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_axe"
+		},
+		"mc_rock_golem_fist": {
+			"textures": "textures/items/mythological_craft/mc_rock_golem_fist"
+		},
+		"mc_swamp_drowned_scale": {
+			"textures": "textures/items/mythological_craft/mc_swamp_drowned_scale"
+		},
+		"mc_swamp_drowned_helmet": {
+			"textures": "textures/items/mythological_craft/mc_swamp_drowned_helmet"
+		},
+		"mc_swamp_drowned_chestplate": {
+			"textures": "textures/items/mythological_craft/mc_swamp_drowned_chestplate"
+		},
+		"mc_swamp_drowned_leggings": {
+			"textures": "textures/items/mythological_craft/mc_swamp_drowned_leggings"
+		},
+		"mc_swamp_drowned_boots": {
+			"textures": "textures/items/mythological_craft/mc_swamp_drowned_boots"
+		},
+		"mc_grizzly_bear_helmet": {
+			"textures": "textures/items/mythological_craft/mc_grizzly_bear_helmet"
+		},
+		"mc_grizzly_bear_chestplate": {
+			"textures": "textures/items/mythological_craft/mc_grizzly_bear_chestplate"
+		},
+		"mc_grizzly_bear_leggings": {
+			"textures": "textures/items/mythological_craft/mc_grizzly_bear_leggings"
+		},
+		"mc_grizzly_bear_boots": {
+			"textures": "textures/items/mythological_craft/mc_grizzly_bear_boots"
+		},
+		"mc_minotaur_bone": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_bone"
+		},
+		"mc_minotaur_bone_helmet": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_bone_helmet"
+		},
+		"mc_minotaur_bone_chestplate": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_bone_chestplate"
+		},
+		"mc_minotaur_bone_leggings": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_bone_leggings"
+		},
+		"mc_minotaur_bone_boots": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_bone_boots"
+		},
+		"mc_giant_bear_head": {
+			"textures": "textures/items/mythological_craft/mc_giant_bear_head"
+		},
+		"mc_griffin_feather": {
+			"textures": "textures/items/mythological_craft/mc_griffin_feather"
+		},
+		"mc_cyclops_item_trophy": {
+			"textures": "textures/items/mythological_craft/mc_cyclops_item_trophy"
+		},
+		"mc_minotaur_item_trophy": {
+			"textures": "textures/items/mythological_craft/mc_minotaur_item_trophy"
+		},
+		"mc_ogre_item_trophy": {
+			"textures": "textures/items/mythological_craft/mc_ogre_item_trophy"
+		},
+		"mc_rock_golem_item_trophy": {
+			"textures": "textures/items/mythological_craft/mc_rock_golem_item_trophy"
+		},
+		"mc_leshy_item_trophy": {
+			"textures": "textures/items/mythological_craft/mc_leshy_item_trophy"
+		},
+		"mc_cyclop_spawn_egg": {
+			"textures": "textures/items/mythological_craft/mc_cyclop_spawn_egg"
+		},
+		"mc_ogre_spawn_egg": {
+			"textures": "textures/items/mythological_craft/mc_ogre_spawn_egg"
+		},
+		//////////////////
+		// UNIQUE SWORD //
+		//////////////////
+		"unique_sword._arc_katana": {
+			"textures": "textures/items/unique_sword/_arc_katana"
+		},
+		"unique_sword.kryn_great_sword": {
+			"textures": "textures/items/unique_sword/kryn_great_sword"
+		},
+		"unique_sword.krypto_sword": {
+			"textures": "textures/items/unique_sword/krypto_sword"
+		},
+		"unique_sword.luna_thin_sword": {
+			"textures": "textures/items/unique_sword/luna_thin_sword"
+		},
+		"unique_sword.sarenity_holy_sword": {
+			"textures": "textures/items/unique_sword/sarenity_holy_sword"
+		},
+		/////////////////////
+		// MINIMALIST BOAT //
+		/////////////////////
+		"minimalist_boats.simpleboat":{
+			"textures": [
+				"textures/items/minimalist_boats/simpleboatoak"
+			]
+		},
+		"minimalist_boats.rudder":{
+			"textures": [
+				"textures/items/minimalist_boats/rudder"
+			]
+		},
+		"minimalist_boats.sail":{
+			"textures": [
+				"textures/items/minimalist_boats/sail"
+			]
+		},
+		"minimalist_boats.sailboat":{
+			"textures": [
+				"textures/items/minimalist_boats/sailboat"
+			]
+		},
+		"minimalist_boats.handle":{
+			"textures": [
+				"textures/items/minimalist_boats/handle"
+			]
+		},
+		"minimalist_boats.motor":{
+			"textures": [
+				"textures/items/minimalist_boats/motor"
+			]
+		},
+		"minimalist_boats.hovercraft_motor":{
+			"textures": [
+				"textures/items/minimalist_boats/hovercraft_motor"
+			]
+		},
+		"minimalist_boats.ironboat":{
+			"textures": [
+				"textures/items/minimalist_boats/ironboat"
+			]
+		},
+		"minimalist_boats.hovercraft":{
+			"textures": [
+				"textures/items/minimalist_boats/hovercraft"
+			]
+		},
+		"minimalist_boats.hovercraftfull":{
+			"textures": [
+				"textures/items/minimalist_boats/hovercraftfull"
+			]
+		},
+		"minimalist_boats.motorboat":{
+			"textures": [
+				"textures/items/minimalist_boats/motorboat"
+			]
+		},
+		"minimalist_boats.fuel":{
+			"textures": [
+				"textures/items/minimalist_boats/fuel"
+			]
+		},
+		
+		"minimalist_boats.rowing":{
+			"textures": [
+				"textures/items/minimalist_boats/rowing"
+			]
+		},
+		"minimalist_boats.raft":{
+			"textures": [
+				"textures/items/minimalist_boats/raft"
+			]
+		},
+		"minimalist_boats.raftfull":{
+			"textures": [
+				"textures/items/minimalist_boats/raftfull"
+			]
+		},
+		
+		"minimalist_boats.cannonboat":{
+			"textures":[
+				"textures/items/minimalist_boats/cannonboat"
+			]
+		},
+		"minimalist_boats.cannonboat_full":{
+			"textures":[
+				"textures/items/minimalist_boats/cannonboat_full"
+			]
+		},
+		"minimalist_boats.cannonboat_cannon":{
+			"textures":[
+				"textures/items/minimalist_boats/cannonboat_cannon"
+			]
+		},
+		"minimalist_boats.cannon":{
+			"textures":[
+				"textures/items/minimalist_boats/cannon"
+			]
+		},
+		"minimalist_boats.cannonball":{
+			"textures":[
+				"textures/items/minimalist_boats/cannonball"
+			]
+		},
+		"minimalist_boats.jetski":{
+			"textures":[
+				"textures/items/minimalist_boats/jetski"
+			]
+		},
+		"minimalist_boats.jetskifull":{
+			"textures":[
+				"textures/items/minimalist_boats/jetskifull"
+			]
+		},
+		//////////////////
+		// UASSIST HOME //
+		//////////////////
+		"uassist_home.homes": {
+			"textures": "textures/items/uassist_home/homes"
+		},
+		///////////////////
+		// LAND CLAIM V1 //
+		///////////////////
+		"land_claim_v1.protection": {
+			"textures": "textures/items/land_claim_v1/sh_protection"
+		},
+		////////////////////
+		// ART ENTHUSIASM //
+		////////////////////
+		"art_enthusiasm.painting_stand_spawn_egg": {
+			"textures": ["textures/items/art_enthusiasm/painting_stand_spawn_egg"]
+		}
+	}
+}

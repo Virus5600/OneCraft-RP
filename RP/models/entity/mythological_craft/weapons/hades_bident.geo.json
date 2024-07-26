@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mc_hades_bident",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pole",
+					"pivot": [1, 23, -3],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{"origin": [-0.99239, 3.52141, -25.04328], "size": [2, 2, 31], "pivot": [0.00761, 4.52141, -2.99328], "rotation": [-90, 0, 0], "uv": [0, 0]},
+						{"origin": [-1.49239, 3.02141, -17.54328], "size": [3, 3, 4], "pivot": [0.00761, 4.52141, -2.99328], "rotation": [-90, 0, 0], "uv": [0, 0]},
+						{"origin": [-0.99239, -12.92384, -20.43854], "size": [2, 3, 3], "pivot": [0.00761, 4.52141, -2.99328], "rotation": [-135, 0, 0], "uv": [14, 0]},
+						{"origin": [-1.00761, -16.92384, -19.13854], "size": [2, 4, 2], "pivot": [-0.00761, 4.52141, -2.69328], "rotation": [-135, 0, 0], "uv": [27, 34], "mirror": true},
+						{"origin": [-1.00761, 34.89984, -7.64303], "size": [2, 5, 2], "pivot": [-0.00761, 34.89984, -6.64303], "rotation": [180, 0, 0], "uv": [19, 34], "mirror": true},
+						{"origin": [-1.00761, 34.89984, -0.35697], "size": [2, 5, 2], "pivot": [-0.00761, 34.89984, 0.64303], "rotation": [-180, 0, 0], "uv": [19, 34], "mirror": true},
+						{"origin": [-1.00761, -16.92384, 11.13854], "size": [2, 4, 2], "pivot": [-0.00761, 4.52141, -3.30672], "rotation": [135, 0, 0], "uv": [27, 34], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

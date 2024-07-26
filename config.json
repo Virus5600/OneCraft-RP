@@ -1,0 +1,45 @@
+{
+	"type": "minecraftBedrock",
+	"name": "OneCraft RP",
+	"namespace": "ocrp",
+	"authors": [
+		"Virus5600"
+	],
+	"targetVersion": "1.21.1",
+	"description": "An Add-on that will be used by the OneCraft server.",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": false
+	},
+	"bdsProject": true,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "OneCraft RP"
+				}
+			]
+		]
+	}
+}
