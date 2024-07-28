@@ -3,7 +3,6 @@ import DISTANCE_INDICATOR from './distance_indicator/main';
 import EPIC_KNIGHTS_MOD from './epic_knights_mod/index';
 import HEALTH_BAR from './health_bar/main';
 import LAND_CLAIM_V1 from './land_claim_v1/main';
-import SYSTEM_ENCHANTMENTS from './system_enchantments/main';
 import UASSIST_HOME from './uassist_home/zxk';
 import UI_QUEUE from './ui_queue/main';
 import ART_ENTHUSIASM from './art_enthusiasm/index';
@@ -43,11 +42,6 @@ UASSIST_HOME.init();
 // LAND CLAIM V1 //
 ///////////////////
 LAND_CLAIM_V1.init();
-
-/////////////////////////
-// SYSTEM ENCHANTMENTS //
-/////////////////////////
-SYSTEM_ENCHANTMENTS.init();
 
 ////////////////////
 // ART ENTHUSIASM //

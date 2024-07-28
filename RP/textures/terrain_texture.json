@@ -4,12 +4,6 @@
 	"num_mip_levels": 4,
 	"padding": 8,
 	"texture_data": {
-		/////////////////////////
-		// SYSTEM ENCHANTMENTS //
-		/////////////////////////
-		"new_enchanted_table": {
-			"textures": "textures/blocks/system_enchantments/new_enchanted_table"
-		},
 		/////////////////////
 		// ONE SIDED GLASS //
 		/////////////////////

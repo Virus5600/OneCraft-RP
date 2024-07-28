@@ -1,9 +1,0 @@
-execute as @s if block ~~~ stripped_crimson_stem [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_acacia_log [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_birch_log [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_dark_oak_log [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_oak_log [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_jungle_log [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_spruce_log [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_warped_stem [] run fill ~~32~~~~ air [] destroy
-execute as @s if block ~~~ stripped_acacia_log [] run fill ~~32~~~~ air [] destroy

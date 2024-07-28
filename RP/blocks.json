@@ -3,9 +3,5 @@
 		1,
 		19,
 		0
-	],
-	"ocrp:new_enchanted_table": {
-		"textures": "new_enchanted_table",
-		"sound": "stone"
-	}
+	]
 }
