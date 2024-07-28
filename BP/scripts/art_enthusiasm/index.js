@@ -183,6 +183,11 @@ export default {
 					location = playerUseItem.getBlockFromViewDirection()?.block.location
 				}
 				
+				// Sets the playerUseItem to undefined if the player is not loaded.
+				if (!playerUseItem?.isValid()) {
+					playerUseItem = undefined;
+				}
+
 				if (playerUseItem?.isSneaking &&
 					brushProp.color !== "none" &&
 					typeof location !== 'undefined' &&
