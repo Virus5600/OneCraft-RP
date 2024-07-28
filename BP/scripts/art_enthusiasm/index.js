@@ -147,7 +147,7 @@ export default {
 		system.runInterval(
 			() => {
 				if (!universalCheck) {
-					checkDrawer()
+					checkDrawer();
 				};
 
 				let formatColor = brushProp.color.replace("_", ' ').charAt(0).toUpperCase() + brushProp.color.slice(1).replace("_", ' ');
@@ -183,6 +183,11 @@ export default {
 					location = playerUseItem.getBlockFromViewDirection()?.block.location
 				}
 				
+				// Sets the playerUseItem to undefined if the player is not loaded.
+				if (!playerUseItem?.isValid()) {
+					playerUseItem = undefined;
+				}
+
 				if (playerUseItem?.isSneaking &&
 					brushProp.color !== "none" &&
 					typeof location !== 'undefined' &&

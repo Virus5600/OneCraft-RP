@@ -18,8 +18,9 @@ export default {
 		system.runInterval(() => {
 			const players = world.getAllPlayers();
 			players.forEach((player) => {
-				if (player.hasTag("dmc_indicator-Stop"))
+				if (player.hasTag("dmc_indicator-Stop") || !player.isSneaking)
 					return;
+
 				player.onScreenDisplay.setActionBar(`${Utilities.getDistanceAll(player, players, true)}`);
 			});
 		});

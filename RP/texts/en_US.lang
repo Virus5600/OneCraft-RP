@@ -287,16 +287,6 @@ ocrp.homes.send.accts.remove.friend.user=removed you from the home friends list:
 ###################
 item.ocrp:protection.name=§lProtection tool§r
 
-#########################
-## SYSTEM ENCHANTMENTS ##
-#########################
-action.ocrp.cancel=§l§cYou do not have the appropriate item for this enchantment
-action.ocrp.no_xp=§l§cYou don't have enough experience
-action.ocrp.repit=§l§cYou cannot repeat an enchantment
-action.ocrp.max_enchant=§l§cYou've applied the maximum amount of enchantments (3)
-
-tile.ocrp:new_enchanted_table.name=Advanced Enchantment Table
-
 #####################
 ## ONE SIDED GLASS ##
 #####################

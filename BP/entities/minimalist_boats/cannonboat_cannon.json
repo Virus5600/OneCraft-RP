@@ -413,10 +413,7 @@
 				},
 				"run_command": {
 					"command": [
-						"scoreboard objectives add ocrpdrop dummy",
-						"scoreboard players add @s ocrpdrop 1",
-						"effect @s[scores={ocrpdrop=6, ocrp:fuel=0}] village_hero 1 0 true",
-						"scoreboard players reset @s[scores={ocrpdrop=6}] ocrpdrop"
+						"effect @s village_hero 1 0 true"
 					]
 				}
 			},

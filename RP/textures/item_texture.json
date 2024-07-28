@@ -551,14 +551,8 @@
 		//////////////////////////////
 		// MYTHOLOGICAL CRAFT ADDON //
 		//////////////////////////////
-		"mc_hercules_sword": {
-			"textures": "textures/items/mythological_craft/mc_hercules_sword"
-		},
 		"mc_hermes_boots": {
 			"textures": "textures/items/mythological_craft/mc_hermes_boots"
-		},
-		"mc_lightning_zeus": {
-			"textures": "textures/items/mythological_craft/mc_lightning_zeus"
 		},
 		"mc_hades_bident": {
 			"textures": "textures/items/mythological_craft/mc_hades_bident"
@@ -842,6 +836,19 @@
 		////////////////////
 		"art_enthusiasm.painting_stand_spawn_egg": {
 			"textures": ["textures/items/art_enthusiasm/painting_stand_spawn_egg"]
+		},
+		///////////////////////
+		// DYNAMIC LIGHTNING //
+		///////////////////////
+		"torch": {
+			"textures": [
+				"textures/blocks/torch_on"
+			]
+		},
+		"dynamic_lightning.sea_torch": {
+			"textures": [
+				"textures/items/dynamic_lightning/sea_torch"
+			]
 		}
 	}
 }
