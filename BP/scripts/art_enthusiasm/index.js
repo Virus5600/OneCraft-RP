@@ -147,7 +147,7 @@ export default {
 		system.runInterval(
 			() => {
 				if (!universalCheck) {
-					checkDrawer()
+					checkDrawer();
 				};
 
 				let formatColor = brushProp.color.replace("_", ' ').charAt(0).toUpperCase() + brushProp.color.slice(1).replace("_", ' ');
