@@ -6,6 +6,7 @@ import LAND_CLAIM_V1 from './land_claim_v1/main';
 import UASSIST_HOME from './uassist_home/zxk';
 import ART_ENTHUSIASM from './art_enthusiasm/index';
 import SDC from './simple_death_counter/main';
+import DYNAMIC_LIGHTNING from './dynamic_lightning/index';
 
 //////////////////////
 // EPIC KNIGHTS MOD //
@@ -46,3 +47,8 @@ ART_ENTHUSIASM.init();
 /// SIMPLE DEATH COUNTER ///
 ////////////////////////////
 SDC.init();
+
+/////////////////////////
+/// DYNAMIC LIGHTNING ///
+/////////////////////////
+DYNAMIC_LIGHTNING.init();

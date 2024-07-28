@@ -235,6 +235,12 @@
 		},
 		"black_hardened_clay_stained": {
 			"textures": "textures/blocks/hardened_clay_stained_black"
+		},
+		///////////////////////
+		// DYNAMIC LIGHTNING //
+		///////////////////////
+		"underwater_torch": {
+			"textures": "textures/blocks/dynamic_lightning/torch_underwater"
 		}
 	}
 }
