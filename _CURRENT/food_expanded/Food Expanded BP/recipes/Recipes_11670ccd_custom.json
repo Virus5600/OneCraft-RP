@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "furnace"
+    ],
+    "output": {
+      "item": "ber:cooked_camel_skewer_f",
+      "data": 0
+    },
+    "input": {
+      "item": "ber:raw_camel_skewer",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_edb3b9f6"
+    }
+  }
+}

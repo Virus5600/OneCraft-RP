@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "smoker"
+    ],
+    "output": {
+      "item": "ber:toasted_pumpkin_seeds",
+      "data": 0
+    },
+    "input": {
+      "item": "minecraft:pumpkin_seeds",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_dc9fd2ad"
+    }
+  }
+}

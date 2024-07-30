@@ -1,0 +1,1 @@
+give @s ber:fried_egg

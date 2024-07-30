@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "potato_steak_dish_613e4f77"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A B",
+      " C "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:baked_potato",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:cooked_beef",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:plate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:potato_steak_dish",
+      "count": 1
+    }
+  }
+}

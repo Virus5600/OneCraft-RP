@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_c9104706"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:mangrove_planks",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:plate",
+      "count": 1
+    }
+  }
+}

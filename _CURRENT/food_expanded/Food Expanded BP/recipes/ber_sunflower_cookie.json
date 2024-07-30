@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "sunflower_cookie_a01f5b3b"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "BCB"
+    ],
+    "key": {
+      "A": {
+        "item": "ber:roasted_sunflower_seeds",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:wheat",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:sugar",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:sunflower_cookie",
+      "count": 1
+    }
+  }
+}

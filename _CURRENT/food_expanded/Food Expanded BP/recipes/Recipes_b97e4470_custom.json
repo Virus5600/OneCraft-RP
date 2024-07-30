@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "smoker"
+    ],
+    "output": {
+      "item": "ber:cooked_squid_tentacle",
+      "data": 0
+    },
+    "input": {
+      "item": "ber:squid_tentacle",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_ba14b029"
+    }
+  }
+}

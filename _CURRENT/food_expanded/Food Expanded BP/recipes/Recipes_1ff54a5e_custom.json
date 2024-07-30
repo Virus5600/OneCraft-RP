@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_8e0d6a04"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:warped_planks",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:plate",
+      "count": 1
+    }
+  }
+}

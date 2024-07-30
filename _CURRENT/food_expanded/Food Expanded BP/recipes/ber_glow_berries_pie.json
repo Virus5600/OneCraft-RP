@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "glow_berries_pie_688d4b8f"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:glow_berries",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:egg",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:sugar",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:glow_berries_pie",
+      "count": 1
+    }
+  }
+}

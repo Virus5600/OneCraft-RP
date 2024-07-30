@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "smoker"
+    ],
+    "output": {
+      "item": "ber:cooked_horse_meat",
+      "data": 0
+    },
+    "input": {
+      "item": "ber:horse_meat",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_2ee1a28b"
+    }
+  }
+}

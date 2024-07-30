@@ -1,0 +1,1 @@
+give @s ber:cooked_camel_skewer_l

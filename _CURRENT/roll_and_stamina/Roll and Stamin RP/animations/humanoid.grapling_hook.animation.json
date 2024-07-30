@@ -1,0 +1,110 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humanoid.grapling_hook.fire": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 72,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": ["(5 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person"],
+						"0.375": ["(-12.5 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person"],
+						"0.5": ["(10 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person"],
+						"0.7083": [0, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2917": ["(-110 - this) * !variable.is_first_person", "(27.5 - this) * !variable.is_first_person", "(0 - this) * !variable.is_first_person"],
+						"0.4583": [
+							"(-129.2552 - this) * !variable.is_first_person",
+							"(16.5431 - this) * !variable.is_first_person",
+							"(-18.1189 - this) * !variable.is_first_person"
+						],
+						"0.7917": [
+							"(-96.56 - this) * !variable.is_first_person",
+							"(16.28 - this) * !variable.is_first_person",
+							"(0.13 - this) * !variable.is_first_person"
+						]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": ["(-1 * !variable.is_first_person)", "(0 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"],
+						"0.3333": ["(-1 * !variable.is_first_person)", "(0 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"],
+						"0.7917": ["(-1 * !variable.is_first_person)", "(-2 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": ["(-102.4628 - this) * !variable.is_first_person", "(-15.0424 - this) * !variable.is_first_person", "(0.2225 - this) * !variable.is_first_person"],
+						"0.4583": ["(-149.5525 - this) * !variable.is_first_person", "(-9.1622 - this) * !variable.is_first_person", "(16.6716 - this) * !variable.is_first_person"],
+						"0.75": [
+							"(-86.8882 - this) * !variable.is_first_person",
+							"(-15.5471 - this) * !variable.is_first_person",
+							"(-0.9353 - this) * !variable.is_first_person"
+						]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": ["(2 * !variable.is_first_person)", "(1 * !variable.is_first_person)", "(-3 * !variable.is_first_person)"],
+						"0.375": ["(2 * !variable.is_first_person)", "(2 * !variable.is_first_person)", "(-3 * !variable.is_first_person)"],
+						"0.75": ["(2 * !variable.is_first_person)", "(1 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"]
+					}
+				}
+			}
+		},
+		"animation.humanoid.grapling_hook.cooldown": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.58333,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": [
+							"(-96.5586 - this) * !variable.is_first_person",
+							"(16.2833 - this) * !variable.is_first_person",
+							"(0.1287 - this) * !variable.is_first_person"
+						],
+						"0.1667": ["(-57.6105 - this) * !variable.is_first_person", "(31.4138 - this) * !variable.is_first_person", "(9.7893 - this) * !variable.is_first_person"],
+						"0.4167": ["(-63.9906 - this) * !variable.is_first_person", "(51.3494 - this) * !variable.is_first_person", "(30.5953 - this) * !variable.is_first_person"],
+						"0.5833": [0, 0, 0]
+					},
+					"position": {
+						"0.0": ["(-1 * !variable.is_first_person)", "(-2 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"],
+						"0.25": ["(0 * !variable.is_first_person)", "(-1 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"],
+						"0.3333": ["(0 * !variable.is_first_person)", "(-1 * !variable.is_first_person)", "(0 * !variable.is_first_person)"],
+						"0.5833": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [
+							"(-86.8882 - this) * !variable.is_first_person",
+							"(-15.5471 - this) * !variable.is_first_person",
+							"(-0.9353 - this) * !variable.is_first_person"
+						],
+						"0.2083": [
+							"(-44.9411 - this) * !variable.is_first_person",
+							"(-32.8302 - this) * !variable.is_first_person",
+							"(-21.8049 - this) * !variable.is_first_person"
+						],
+						"0.375": [
+							"(-44.9411 - this) * !variable.is_first_person",
+							"(-32.8302 - this) * !variable.is_first_person",
+							"(-21.8049 - this) * !variable.is_first_person"
+						],
+						"0.5833": [0, 0, 0]
+					},
+					"position": {
+						"0.0": ["(2 * !variable.is_first_person)", "(1 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"],
+						"0.2083": ["(1 * !variable.is_first_person)", "(-3 * !variable.is_first_person)", "(-1 * !variable.is_first_person)"],
+						"0.3333": ["(0 * !variable.is_first_person)", "(-2 * !variable.is_first_person)", "(0 * !variable.is_first_person)"],
+						"0.5833": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

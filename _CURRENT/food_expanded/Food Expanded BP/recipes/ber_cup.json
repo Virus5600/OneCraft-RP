@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cup_d54b306a"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:cup",
+      "count": 4
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "tropical_salad_e226ffc6"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AB ",
+      "CDE",
+      " F "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:sugar",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:apple",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:pumpkin_slice",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:sweet_berries",
+        "data": 0
+      },
+      "E": {
+        "item": "minecraft:melon_slice",
+        "data": 0
+      },
+      "F": {
+        "item": "ber:plate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:tropical_salad",
+      "count": 1
+    }
+  }
+}

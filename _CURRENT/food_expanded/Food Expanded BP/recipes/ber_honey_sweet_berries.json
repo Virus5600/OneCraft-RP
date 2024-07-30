@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "honey_sweet_berries_7b0f5d83"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:sweet_berries",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:honeycomb",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:honey_sweet_berries",
+      "count": 1
+    }
+  }
+}

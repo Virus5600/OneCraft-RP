@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Created by kamii",
+        "name": "Roll & Stamina Data [STABLE]",
+        "uuid": "19926e40-6800-42df-b7f3-feda5e1e67b6",
+        "version": [1, 11, 0],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "33206c4d-8059-40d1-bfb6-65d56085d71f",
+            "version": [1, 11, 0],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		},
+        {
+            "uuid": "ca4915ab-1f7e-4b4d-bd61-cd4a4037e975",
+            "version": [1, 11, 0]
+        }
+    ]
+}

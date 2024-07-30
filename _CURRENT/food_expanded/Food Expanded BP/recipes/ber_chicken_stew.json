@@ -1,0 +1,42 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "chicken_stew_eba78c85"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "BCD",
+      " E "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:carrot",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:brown_mushroom",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:cooked_chicken",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:baked_potato",
+        "data": 0
+      },
+      "E": {
+        "item": "minecraft:bowl",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:chicken_stew",
+      "count": 1
+    }
+  }
+}

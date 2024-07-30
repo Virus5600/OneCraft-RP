@@ -1,0 +1,33 @@
+{
+"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+		  "identifier": "rns:elevator_pad"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"XYX",
+			"ZZZ"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:tripwire_hook"
+			},
+			"Y": {
+				"item": "minecraft:redstone"
+			},
+			"Z": {
+				"item": "minecraft:stone_block_slab"
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:copper_ingot"
+			}
+        ],
+		"result": {
+			"item": "rns:elevator_pad_block",
+            "count": 1
+		}
+	}
+}

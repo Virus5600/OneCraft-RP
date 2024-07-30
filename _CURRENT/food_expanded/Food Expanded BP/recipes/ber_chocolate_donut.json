@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "chocolate_donut_8444f454"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:sugar",
+        "data": 0
+      },
+      "B": {
+        "item": "ber:plain_donut",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:chocolate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:chocolate_donut",
+      "count": 1
+    }
+  }
+}

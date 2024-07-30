@@ -1,0 +1,73 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.grappling_hook_item",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "rightitem",
+					"pivot": [0, 0, 0],
+					"rotation": [15, 0, 0],
+					"cubes": [
+						{"origin": [-3, -10, -3.5], "size": [6, 9, 5], "inflate": 0.1, "uv": [0, 14]},
+						{"origin": [-3, -10, -3.5], "size": [6, 9, 5], "inflate": 0.5, "uv": [0, 0]}
+					],
+					"locators": {
+						"smoke_location": [0, -25, -1.5]
+					}
+				},
+				{
+					"name": "hook",
+					"parent": "rightitem",
+					"pivot": [0, -18, -1],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{
+							"origin": [-5, -18, -3],
+							"size": [5, 5, 8],
+							"uv": {
+								"west": {"uv": [8, 33], "uv_size": [-8, 5]},
+								"down": {"uv": [8, 42], "uv_size": [5, -8]}
+							}
+						},
+						{
+							"origin": [0, -23, -3],
+							"size": [5, 5, 8],
+							"uv": {
+								"east": {"uv": [0, 38], "uv_size": [8, 5]},
+								"up": {"uv": [13, 34], "uv_size": [5, 8]}
+							}
+						},
+						{
+							"origin": [-3, -19.5, 5],
+							"size": [6, 3, 5],
+							"uv": {
+								"north": {"uv": [21, 31], "uv_size": [6, 3]},
+								"east": {"uv": [22, 28], "uv_size": [5, 3]},
+								"south": {"uv": [16, 28], "uv_size": [6, 3]},
+								"west": {"uv": [16, 31], "uv_size": [5, 3]},
+								"up": {"uv": [24, 34], "uv_size": [6, 5]},
+								"down": {"uv": [18, 39], "uv_size": [6, -5]}
+							}
+						}
+					]
+				},
+				{
+					"name": "slider",
+					"parent": "rightitem",
+					"pivot": [0, -4, -1.5],
+					"cubes": [
+						{"origin": [-5, -5, -1.5], "size": [10, 2, 1], "uv": [17, 0]}
+					]
+				}
+			]
+		}
+	]
+}

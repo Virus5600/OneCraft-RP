@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "sweet_berry_bottle_87afc57b"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      " C "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:glass_bottle",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:sugar",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:sweet_berries",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:sweet_berry_bottle",
+      "count": 1
+    }
+  }
+}

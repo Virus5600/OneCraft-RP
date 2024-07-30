@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "rns:elevator_pad_block",
+			"menu_category": {
+			  	"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3.0
+			},
+            "minecraft:geometry": "geometry.elevator_pad_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "elevator_pad",
+                    "render_method": "alpha_test",
+                    "ambient_occlusion": false
+                }
+            },
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": false
+		}
+	}
+}

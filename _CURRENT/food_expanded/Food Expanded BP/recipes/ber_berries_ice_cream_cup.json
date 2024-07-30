@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "berries_ice_cream_cup_5882ffca"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A",
+      "B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:sweet_berries",
+        "data": 0
+      },
+      "B": {
+        "item": "ber:ice_cream_cup",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:berries_ice_cream_cup",
+      "count": 1
+    }
+  }
+}

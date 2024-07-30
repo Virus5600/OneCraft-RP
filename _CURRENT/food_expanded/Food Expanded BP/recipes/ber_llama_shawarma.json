@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "llama_shawarma_9cdc9b6b"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "ber:pita_bread",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:cooked_llama",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:llama_shawarma",
+      "count": 1
+    }
+  }
+}

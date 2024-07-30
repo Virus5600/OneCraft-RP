@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corp_salad_6954cb2a"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A B",
+      " C ",
+      " D "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:carrot",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:beetroot",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:bowl",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:potato",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:corp_salad",
+      "count": 1
+    }
+  }
+}

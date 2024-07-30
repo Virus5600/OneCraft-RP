@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Created by kamii",
+        "name": "Roll & Stamina Resource",
+        "uuid": "ca4915ab-1f7e-4b4d-bd61-cd4a4037e975",
+        "version": [1, 11, 0],
+        "min_engine_version": [ 1, 20, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Created by kamii",
+            "type": "resources",
+            "uuid": "08127805-3574-4f1c-a7aa-d411b9286ec0",
+            "version": [1, 11, 0]
+        }
+    ]
+}

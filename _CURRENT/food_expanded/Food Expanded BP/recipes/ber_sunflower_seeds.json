@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "sunflower_seeds_291b87e7"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:double_plant",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:sunflower_seeds",
+      "count": 2
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "campfire",
+      "soul_campfire"
+    ],
+    "output": {
+      "item": "ber:roasted_ribs",
+      "data": 0
+    },
+    "input": {
+      "item": "ber:raw_ribs",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_ab36a865"
+    }
+  }
+}

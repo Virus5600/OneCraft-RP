@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "rns:elevator_pad",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/elevator_pad"
+      },
+      "geometry": {
+        "default": "geometry.elevator_pad"
+      },
+      "animations": {
+        "setup": "animation.elevator_pad.setup"
+      },
+      "scripts": {
+        "animate": [
+          "setup"
+        ]
+      },
+      "render_controllers": [ "controller.render.default" ]
+    }
+  }
+}

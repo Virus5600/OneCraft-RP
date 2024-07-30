@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ber:wheat_cone",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "ber:wheat_cone",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

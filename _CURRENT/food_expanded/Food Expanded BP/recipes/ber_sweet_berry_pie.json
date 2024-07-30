@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "sweet_berry_pie_4ee8dfc4"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:sweet_berries",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:sugar",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:egg",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:sweet_berry_pie",
+      "count": 1
+    }
+  }
+}

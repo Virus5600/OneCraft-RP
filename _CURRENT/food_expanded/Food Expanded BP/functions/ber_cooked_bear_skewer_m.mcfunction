@@ -1,0 +1,1 @@
+give @s ber:cooked_bear_skewer_m

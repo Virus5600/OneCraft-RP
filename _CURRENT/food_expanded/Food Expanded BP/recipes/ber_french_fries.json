@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "french_fries_caabb0d2"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABA",
+      "BCB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:baked_potato",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:potato",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:cup",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:french_fries",
+      "count": 1
+    }
+  }
+}

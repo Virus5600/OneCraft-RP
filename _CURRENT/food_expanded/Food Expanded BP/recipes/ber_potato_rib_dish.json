@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "potato_rib_dish_f3e00a68"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A B",
+      " C "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:baked_potato",
+        "data": 0
+      },
+      "B": {
+        "item": "ber:roasted_ribs",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:plate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:potato_rib_dish",
+      "count": 1
+    }
+  }
+}

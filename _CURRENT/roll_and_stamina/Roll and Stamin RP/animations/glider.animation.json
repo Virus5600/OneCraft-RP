@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.glider.first_person.idle": {
+			"loop": true,
+			"bones": {
+				"glider": {
+					"rotation": [170.04313, -11.92521, -52.47808],
+					"position": [-2, 0, 0]
+				}
+			}
+		},
+		"animation.glider.third_person.idle": {
+			"loop": true,
+			"bones": {
+				"glider": {
+					"rotation": [87.25285, -12.19908, 60.29362],
+					"position": [3, 1, -2]
+				}
+			}
+		},
+		"animation.glider.first_person.use": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [83.28822, 60.6873, -50.97865],
+					"position": [-5, -8, -11]
+				},
+				"ancor": {
+					"position": [0, -5, 0]
+				}
+			}
+		},
+		"animation.glider.third_person.use": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"rightitem": {
+					"rotation": [175, 0, 0],
+					"position": [0, -3, 2]
+				}
+			}
+		},
+		"animation.glider.item.use": {
+			"loop": true,
+			"bones": {
+				"rightItem": {
+					"rotation": [-57.2528, -27.8009, -60.2936],
+					"position": [-3, -1, 2]
+				},
+				"ancor": {
+					"rotation": [93.5, 12.5, -60],
+					"position": [-3, -4, 3]
+				}
+			}
+		},
+		"animation.glider.item.idle": {
+			"loop": true,
+			"bones": {
+				"rightitem": {
+					"rotation": [
+						"variable.is_first_person ? 170.0431 : 170.0431",
+						"variable.is_first_person ? -11.9252 : -11.9252",
+						"variable.is_first_person ? -52.4781 : -52.4781"
+					],
+					"position": ["variable.is_first_person ? -2 : -2", "variable.is_first_person ? 0 : 0", "variable.is_first_person ? 0 : 0"]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "fruit_bowl_bad239e1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "BCD"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:sugar",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:melon_slice",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:bowl",
+        "data": 0
+      },
+      "D": {
+        "item": "minecraft:apple",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:fruit_bowl",
+      "count": 1
+    }
+  }
+}

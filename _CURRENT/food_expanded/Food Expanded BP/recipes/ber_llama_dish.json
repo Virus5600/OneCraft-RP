@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "llama_dish_206e9eee"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      "AC "
+    ],
+    "key": {
+      "A": {
+        "item": "ber:cooked_chicken_nugget",
+        "data": 0
+      },
+      "B": {
+        "item": "ber:cooked_llama",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:plate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:llama_dish",
+      "count": 1
+    }
+  }
+}

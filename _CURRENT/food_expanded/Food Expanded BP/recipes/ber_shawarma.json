@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "shawarma_8f578a44"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "ber:pita_bread",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:cooked_camel_meat",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:shawarma",
+      "count": 1
+    }
+  }
+}

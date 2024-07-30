@@ -1,0 +1,65 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ber:sweet_berry_bottle",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:max_stack_size": 64,
+      "minecraft:foil": false,
+      "minecraft:food": {
+        "saturation_modifier": "normal",
+        "nutrition": 6,
+        "can_always_eat": false,
+        "using_converts_to": "minecraft:glass_bottle",
+        "on_consume": {
+          "event": "on_consume_effects",
+          "target": "self"
+        }
+      },
+      "minecraft:use_duration": 1,
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {},
+      "minecraft:use_animation": "drink",
+      "minecraft:icon": {
+        "texture": "ber:sweet_berry_bottle"
+      },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        }
+      }
+    }
+  }
+}

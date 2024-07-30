@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pita_bread_f45f0a8e"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " A ",
+      "A A",
+      " A "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:wheat",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:pita_bread",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "heavy_dish_7e586793"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " AB",
+      "AC "
+    ],
+    "key": {
+      "A": {
+        "item": "ber:cooked_chicken_nugget",
+        "data": 0
+      },
+      "B": {
+        "item": "ber:cooked_polar_bear_meat",
+        "data": 0
+      },
+      "C": {
+        "item": "ber:plate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "ber:heavy_dish",
+      "count": 1
+    }
+  }
+}
