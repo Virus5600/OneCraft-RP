@@ -1,1 +1,0 @@
-give @s ber:cooked_polar_bear_meat

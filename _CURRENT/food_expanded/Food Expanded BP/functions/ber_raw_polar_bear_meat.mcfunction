@@ -1,1 +1,0 @@
-give @s ber:raw_polar_bear_meat

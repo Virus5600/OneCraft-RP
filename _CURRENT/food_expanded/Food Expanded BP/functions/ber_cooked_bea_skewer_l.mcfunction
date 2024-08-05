@@ -1,1 +1,0 @@
-give @s ber:cooked_bea_skewer_l

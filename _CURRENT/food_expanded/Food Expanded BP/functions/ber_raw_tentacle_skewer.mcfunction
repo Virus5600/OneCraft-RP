@@ -1,1 +1,0 @@
-give @s ber:raw_tentacle_skewer

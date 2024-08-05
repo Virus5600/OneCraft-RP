@@ -849,6 +849,18 @@
 			"textures": [
 				"textures/items/dynamic_lightning/sea_torch"
 			]
+		},
+		//////////////////////
+		// ROLL AND STAMINA //
+		//////////////////////
+		"grappling_hook": {
+			"textures": "textures/items/roll_and_stamina/grappling_hook"
+		},
+		"broken_grappling_hook": {
+			"textures": "textures/items/roll_and_stamina/broken_grappling_hook"
+		},
+		"glider": {
+			"textures": "textures/items/roll_and_stamina/glider"
 		}
 	}
 }

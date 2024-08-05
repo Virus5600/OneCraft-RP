@@ -1,6 +1,0 @@
-﻿item.rns:grappling_hook_item=Grappling Hook
-item.rns:glider=Glider
-item.rns:broken_grappling_hook_item=Broken Grappling Hook
-tile.rns:rope.name=Rope
-tile.rns:trip_wire_with_rope.name=Tripwire with Rope
-tile.rns:elevator_pad_block.name=Elevator Pad

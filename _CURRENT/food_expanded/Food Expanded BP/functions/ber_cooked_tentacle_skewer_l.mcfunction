@@ -1,1 +1,0 @@
-give @s ber:cooked_tentacle_skewer_l

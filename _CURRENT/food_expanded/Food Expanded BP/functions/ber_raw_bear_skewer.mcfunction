@@ -1,1 +1,0 @@
-give @s ber:raw_bear_skewer

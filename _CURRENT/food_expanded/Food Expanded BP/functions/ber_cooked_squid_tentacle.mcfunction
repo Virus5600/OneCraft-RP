@@ -1,1 +1,0 @@
-give @s ber:cooked_squid_tentacle

@@ -7,6 +7,7 @@ import UASSIST_HOME from './uassist_home/zxk';
 import ART_ENTHUSIASM from './art_enthusiasm/index';
 import SDC from './simple_death_counter/main';
 import DYNAMIC_LIGHTNING from './dynamic_lightning/index';
+import RNS from './roll_and_stamina/main';
 
 //////////////////////
 // EPIC KNIGHTS MOD //
@@ -52,3 +53,8 @@ SDC.init();
 /// DYNAMIC LIGHTNING ///
 /////////////////////////
 DYNAMIC_LIGHTNING.init();
+
+////////////////////////
+/// ROLL AND STAMINA ///
+////////////////////////
+RNS.init();

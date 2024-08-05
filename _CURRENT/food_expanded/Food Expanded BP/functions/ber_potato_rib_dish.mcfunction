@@ -1,1 +1,0 @@
-give @s ber:potato_rib_dish

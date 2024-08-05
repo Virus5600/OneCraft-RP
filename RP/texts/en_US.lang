@@ -488,3 +488,14 @@ action.hint.exit.ocrp:ender_dragon_mount=Tap sneak to dismount
 action.hint.exit.ocrp:squid_mount=Tap sneak to dismount
 action.hint.exit.ocrp:wolf_mount=Tap sneak to dismount
 action.hint.exit.ocrp:wither_mount=Tap sneak to dismount
+
+######################
+## ROLL AND STAMINA ##
+######################
+item.ocrp:grappling_hook_item=Grappling Hook
+item.ocrp:glider=Glider
+item.ocrp:broken_grappling_hook_item=Broken Grappling Hook
+
+tile.ocrp:rope.name=Rope
+tile.ocrp:trip_wire_with_rope.name=Tripwire with Rope
+tile.ocrp:elevator_pad_block.name=Elevator Pad

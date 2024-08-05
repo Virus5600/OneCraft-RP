@@ -17,7 +17,7 @@ press <kbd>Ctrl+F</kbd> or <kbd>F3</kbd> to open "Find", or <kbd>⌘+F</kbd> whe
 | Unique Sword | All weapons. | agenthope | [MCPEDL - H.O.P.E](https://mcpedl.com/unique-sword/) |
 | Minimalist Boats | All features. | Byronjvh | [MCPEDL - Byronjvh](https://mcpedl.com/minimalist-boats-addon-1-2/) |
 | Custom Join Messages! | All features. | HoHoHoCCH | [MCPEDL - HoHoHoCCH](https://mcpedl.com/custom-join-messages-customizable/) |
-| Distance Indicator | All features from this addon (functions only while sneaking) | DouarMC | [ModBay - DouarMC](https://modbay.org/mods/1260-distance-indicator.html) |
+| Distance Indicator | All features from this addon. (functions only while sneaking) | DouarMC | [ModBay - DouarMC](https://modbay.org/mods/1260-distance-indicator.html) |
 | Improved Visibility in the Nether | All features. | 姫奈乃 （Hinano） | (Can't find source) |
 | Health Bar | All features. | SHADOW GAMER100K | [MCPEDL - SHADOW GAMER100K](https://mcpedl.com/health-bar-works-with-addons-mobs/) |
 | Chat Ranks and Anti-Spam | All features. | Dizzery | [MCPEDL - Dizzery](https://mcpedl.com/chat-ranks-anti-spam/) |
@@ -25,7 +25,8 @@ press <kbd>Ctrl+F</kbd> or <kbd>F3</kbd> to open "Find", or <kbd>⌘+F</kbd> whe
 | Land Claim | All features. (Modified a bit to also toggle optional explosions) | SHADOW GAMER100K | [MCPEDL - SHADOW GAMER100K](https://mcpedl.com/land-claim/) |
 | One Way Glass | All features. | Amon28 (Dewdimpple) | [MCPEDL - Amon28 (Dewdimpple)](https://mcpedl.com/one-way-glass-addon/) |
 | Art Enthusiasm | All features. | Blues 8s bit | [MCPEDL - Blues 8s bit](https://mcpedl.com/art-enthusiams/) |
-| Animal Mounts | All mobs | Addon_iago | [MCPEDL - Addon_iago](https://mcpedl.com/animal-mounts-addon-v1-0/) |
-| Simple Death Counter | All features | DouarMC | [MCPEDL - DouarMC](https://mcpedl.com/douarmc-simple-death-counter/) |
-| Dynamic Lightning | All features | Lord Raiyon | [MCPEDL - Lord Raiyon](https://mcpedl.com/raiyons-dynamic-light-addon/) |
+| Animal Mounts | All mobs. | Addon_iago | [MCPEDL - Addon_iago](https://mcpedl.com/animal-mounts-addon-v1-0/) |
+| Simple Death Counter | All features. | DouarMC | [MCPEDL - DouarMC](https://mcpedl.com/douarmc-simple-death-counter/) |
+| Dynamic Lightning | All features. | Lord Raiyon | [MCPEDL - Lord Raiyon](https://mcpedl.com/raiyons-dynamic-light-addon/) |
+| Roll and Stamina | All features. | qduoubp | [MCPEDL - qduoubp](https://mcpedl.com/roll-and-stamina/) |
 |  |  |  |  |

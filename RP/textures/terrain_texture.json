@@ -241,6 +241,18 @@
 		///////////////////////
 		"underwater_torch": {
 			"textures": "textures/blocks/dynamic_lightning/torch_underwater"
+		},
+		//////////////////////
+		// ROLL AND STAMINA //
+		//////////////////////
+		"rope": {
+			"textures": "textures/blocks/roll_and_stamina/rope"
+		},
+		"ras_air": {
+			"textures": "textures/blocks/roll_and_stamina/air"
+		},
+		"elevator_pad": {
+			"textures": "textures/entity/roll_and_stamina/elevator_pad"
 		}
 	}
 }

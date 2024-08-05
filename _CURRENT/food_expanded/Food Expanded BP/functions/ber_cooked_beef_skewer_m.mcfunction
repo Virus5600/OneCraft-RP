@@ -1,1 +1,0 @@
-give @s ber:cooked_beef_skewer_m

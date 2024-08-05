@@ -1,0 +1,116 @@
+{
+	"format_version": "1.20.40",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ocrp:trip_wire_with_rope",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.1
+			},
+			"tag:rope": {},
+			"minecraft:geometry": "geometry.trip_wire_with_rope",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "rope",
+					"render_method": "opaque",
+					"ambient_occlusion": false
+				},
+				"plank": {
+					"texture": "planks",
+					"render_method": "opaque",
+					"ambient_occlusion": false
+				},
+				"trip_wire": {
+					"texture": "trip_wire_source",
+					"render_method": "opaque",
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-2,
+					1,
+					-2
+				],
+				"size": [
+					4,
+					8,
+					10
+				]
+			},
+			"minecraft:loot": "loot_tables/trip_wire_with_rope.json",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"north",
+							"south",
+							"west",
+							"east"
+						]
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			}
+		],
+		"events": {}
+	}
+}

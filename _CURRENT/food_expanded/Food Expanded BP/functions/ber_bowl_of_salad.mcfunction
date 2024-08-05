@@ -1,1 +1,0 @@
-give @s ber:bowl_of_salad

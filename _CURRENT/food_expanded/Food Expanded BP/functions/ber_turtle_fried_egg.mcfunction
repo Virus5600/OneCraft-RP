@@ -1,1 +1,0 @@
-give @s ber:turtle_fried_egg

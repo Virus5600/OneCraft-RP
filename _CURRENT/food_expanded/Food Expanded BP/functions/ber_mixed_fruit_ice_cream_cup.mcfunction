@@ -1,1 +1,0 @@
-give @s ber:mixed_fruit_ice_cream_cup
