@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ocrp:sunflower_seeds",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "ocrp:sunflower_seeds",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

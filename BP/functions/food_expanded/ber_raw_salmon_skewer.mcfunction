@@ -1,0 +1,1 @@
+give @s ocrp:raw_salmon_skewer

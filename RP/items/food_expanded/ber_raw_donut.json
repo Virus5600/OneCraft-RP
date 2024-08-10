@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ocrp:raw_donut",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "ocrp:raw_donut",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

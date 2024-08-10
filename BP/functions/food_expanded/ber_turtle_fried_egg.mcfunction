@@ -1,0 +1,1 @@
+give @s ocrp:turtle_fried_egg

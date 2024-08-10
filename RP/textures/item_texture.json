@@ -861,6 +861,441 @@
 		},
 		"glider": {
 			"textures": "textures/items/roll_and_stamina/glider"
+		},
+		//////////////////////
+		// FOOD EXPANDED V3 //
+		//////////////////////
+		"ocrp:cooked_vension": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_vension"
+		},
+		"ocrp:boquette": {
+			"textures": "textures/items/food_expanded/pamobile/ber_boquette"
+		},
+		"ocrp:cooked_chicken_nugget": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_chicken_nugget"
+		},
+		"ocrp:piece_of_cake": {
+			"textures": "textures/items/food_expanded/pamobile/ber_piece_of_cake"
+		},
+		"ocrp:roasted_ribs": {
+			"textures": "textures/items/food_expanded/pamobile/ber_roasted_ribs"
+		},
+		"ocrp:raw_vension": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_vension"
+		},
+		"ocrp:raw_ribs": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_ribs"
+		},
+		"ocrp:raw_chicken_nugget": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_chicken_nugget"
+		},
+		"ocrp:honey_soup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_soup"
+		},
+		"ocrp:plate": {
+			"textures": "textures/items/food_expanded/pamobile/ber_plate"
+		},
+		"ocrp:chocolate_ice_cream_cup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_ice_cream_cup"
+		},
+		"ocrp:ice_cream_cup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_ice_cream_cup"
+		},
+		"ocrp:honey_ice_cream_cup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_ice_cream_cup"
+		},
+		"ocrp:mixed_fruit_ice_cream_cup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_mixed_fruit_ice_cream_cup"
+		},
+		"ocrp:croissant": {
+			"textures": "textures/items/food_expanded/pamobile/ber_croissant"
+		},
+		"ocrp:cup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cup"
+		},
+		"ocrp:sunflower_cookie": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sunflower_cookie"
+		},
+		"ocrp:melon_pan": {
+			"textures": "textures/items/food_expanded/pamobile/ber_melon_pan"
+		},
+		"ocrp:sunflower_seeds": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sunflower_seeds"
+		},
+		"ocrp:berries_ice_cream_cup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_berries_ice_cream_cup"
+		},
+		"ocrp:glow_berries_pie": {
+			"textures": "textures/items/food_expanded/pamobile/ber_glow_berries_pie"
+		},
+		"ocrp:sunflower_bread": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sunflower_bread"
+		},
+		"ocrp:roasted_sunflower_seeds": {
+			"textures": "textures/items/food_expanded/pamobile/ber_roasted_sunflower_seeds"
+		},
+		"ocrp:sunflower_biscuit": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sunflower_biscuit"
+		},
+		"ocrp:toasted_seeds": {
+			"textures": "textures/items/food_expanded/pamobile/ber_toasted_seeds"
+		},
+		"ocrp:glow_berries_salad": {
+			"textures": "textures/items/food_expanded/pamobile/ber_glow_berries_salad"
+		},
+		"ocrp:tropical_salad": {
+			"textures": "textures/items/food_expanded/pamobile/ber_tropical_salad"
+		},
+		"ocrp:gozinaki": {
+			"textures": "textures/items/food_expanded/pamobile/ber_gozinaki"
+		},
+		"ocrp:chicken_nuggets_cup_half": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chicken_nuggets_cup_half"
+		},
+		"ocrp:toasted_pumpkin_seeds": {
+			"textures": "textures/items/food_expanded/pamobile/ber_toasted_pumpkin_seeds"
+		},
+		"ocrp:chicken_nuggets_cup_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chicken_nuggets_cup_f"
+		},
+		"ocrp:french_fries": {
+			"textures": "textures/items/food_expanded/pamobile/ber_french_fries"
+		},
+		"ocrp:cod_soup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cod_soup"
+		},
+		"ocrp:steak_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_steak_dish"
+		},
+		"ocrp:vension_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_vension_dish"
+		},
+		"ocrp:heavy_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_heavy_dish"
+		},
+		"ocrp:potato_steak_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_potato_steak_dish"
+		},
+		"ocrp:pork_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_pork_dish"
+		},
+		"ocrp:potato_camel_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_potato_camel_dish"
+		},
+		"ocrp:chicken_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chicken_dish"
+		},
+		"ocrp:llama_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_llama_dish"
+		},
+		"ocrp:rib_sandwich": {
+			"textures": "textures/items/food_expanded/pamobile/ber_rib_sandwich"
+		},
+		"ocrp:potato_rib_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_potato_rib_dish"
+		},
+		"ocrp:potato_chicken_dish": {
+			"textures": "textures/items/food_expanded/pamobile/ber_potato_chicken_dish"
+		},
+		"ocrp:wheat_cone": {
+			"textures": "textures/items/food_expanded/pamobile/ber_wheat_cone"
+		},
+		"ocrp:cooked_cone": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_cone"
+		},
+		"ocrp:ice_cream": {
+			"textures": "textures/items/food_expanded/pamobile/ber_ice_cream"
+		},
+		"ocrp:honey_ice_cream": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_ice_cream"
+		},
+		"ocrp:chocolate_ice_cream": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_ice_cream"
+		},
+		"ocrp:horse_meat": {
+			"textures": "textures/items/food_expanded/pamobile/ber_horse_meat"
+		},
+		"ocrp:cooked_horse_meat": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_horse_meat"
+		},
+		"ocrp:raw_polar_bear_meat": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_polar_bear_meat"
+		},
+		"ocrp:cherry_ice_cream": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cherry_ice_cream"
+		},
+		"ocrp:cooked_polar_bear_meat": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_polar_bear_meat"
+		},
+		"ocrp:raw_camel_meat": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_camel_meat"
+		},
+		"ocrp:chocolate": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate"
+		},
+		"ocrp:cooked_camel_meat": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_camel_meat"
+		},
+		"ocrp:roasted_cocoa": {
+			"textures": "textures/items/food_expanded/pamobile/ber_roasted_cocoa"
+		},
+		"ocrp:frogs_legs": {
+			"textures": "textures/items/food_expanded/pamobile/ber_frogs_legs"
+		},
+		"ocrp:cooked_frog_legs": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_frog_legs"
+		},
+		"ocrp:sweet_berry_bottle": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sweet_berry_bottle"
+		},
+		"ocrp:chocolate_cookie": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_cookie"
+		},
+		"ocrp:chocolate_bread": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_bread"
+		},
+		"ocrp:honey_sweet_berries": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_sweet_berries"
+		},
+		"ocrp:chocolate_pie": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_pie"
+		},
+		"ocrp:sweet_berry_pie": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sweet_berry_pie"
+		},
+		"ocrp:bowl_of_salad": {
+			"textures": "textures/items/food_expanded/pamobile/ber_bowl_of_salad"
+		},
+		"ocrp:cooked_carrot": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_carrot"
+		},
+		"ocrp:cooked_beetroot": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_beetroot"
+		},
+		"ocrp:beef_burger": {
+			"textures": "textures/items/food_expanded/pamobile/ber_beef_burger"
+		},
+		"ocrp:burger_bun": {
+			"textures": "textures/items/food_expanded/pamobile/ber_burger_bun"
+		},
+		"ocrp:pita_bread": {
+			"textures": "textures/items/food_expanded/pamobile/ber_pita_bread"
+		},
+		"ocrp:corp_salad": {
+			"textures": "textures/items/food_expanded/pamobile/ber_corp_salad"
+		},
+		"ocrp:burger_pork_chop": {
+			"textures": "textures/items/food_expanded/pamobile/ber_burger_pork_chop"
+		},
+		"ocrp:pumpkin_slice": {
+			"textures": "textures/items/food_expanded/pamobile/ber_pumpkin_slice"
+		},
+		"ocrp:pumpkin_soup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_pumpkin_soup"
+		},
+		"ocrp:steak_stew": {
+			"textures": "textures/items/food_expanded/pamobile/ber_steak_stew"
+		},
+		"ocrp:chicken_stew": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chicken_stew"
+		},
+		"ocrp:mashed_potato": {
+			"textures": "textures/items/food_expanded/pamobile/ber_mashed_potato"
+		},
+		"ocrp:shawarma": {
+			"textures": "textures/items/food_expanded/pamobile/ber_shawarma"
+		},
+		"ocrp:fried_egg": {
+			"textures": "textures/items/food_expanded/pamobile/ber_fried_egg"
+		},
+		"ocrp:cooked_squid_tentacle": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_squid_tentacle"
+		},
+		"ocrp:squid_tentacle": {
+			"textures": "textures/items/food_expanded/pamobile/ber_squid_tentacle"
+		},
+		"ocrp:cooked_llama": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_llama"
+		},
+		"ocrp:raw_llama": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_llama"
+		},
+		"ocrp:turtle_fried_egg": {
+			"textures": "textures/items/food_expanded/pamobile/ber_turtle_fried_egg"
+		},
+		"ocrp:bat_wings": {
+			"textures": "textures/items/food_expanded/pamobile/ber_bat_wings"
+		},
+		"ocrp:bat_stew": {
+			"textures": "textures/items/food_expanded/pamobile/ber_bat_stew"
+		},
+		"ocrp:raw_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_donut"
+		},
+		"ocrp:chocolate_bucket_full": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_bucket_full"
+		},
+		"ocrp:bucket_chocolate_low": {
+			"textures": "textures/items/food_expanded/pamobile/ber_bucket_chocolate_low"
+		},
+		"ocrp:honey_apple": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_apple"
+		},
+		"ocrp:plain_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_plain_donut"
+		},
+		"ocrp:honey_bread": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_bread"
+		},
+		"ocrp:chocolate_bucket_mid": {
+			"textures": "textures/items/food_expanded/pamobile/be_chocolate_bucket_mid"
+		},
+		"ocrp:carrot_stew": {
+			"textures": "textures/items/food_expanded/pamobile/ber_carrot_stew"
+		},
+		"ocrp:sweet_berries_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_sweet_berries_donut"
+		},
+		"ocrp:honey_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_honey_donut"
+		},
+		"ocrp:apple_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_apple_donut"
+		},
+		"ocrp:chocolate_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chocolate_donut"
+		},
+		"ocrp:pumpkin_donut": {
+			"textures": "textures/items/food_expanded/pamobile/ber_pumpkin_donut"
+		},
+		"ocrp:fruit_bowl": {
+			"textures": "textures/items/food_expanded/pamobile/ber_fruit_bowl"
+		},
+		"ocrp:cactus_chunk": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cactus_chunk"
+		},
+		"ocrp:llama_shawarma": {
+			"textures": "textures/items/food_expanded/pamobile/ber_llama_shawarma"
+		},
+		"ocrp:tortila": {
+			"textures": "textures/items/food_expanded/pamobile/ber_tortila"
+		},
+		"ocrp:beef_taco": {
+			"textures": "textures/items/food_expanded/pamobile/ber_beef_taco"
+		},
+		"ocrp:beef_burger_egg": {
+			"textures": "textures/items/food_expanded/pamobile/ber_beef_burger_egg"
+		},
+		"ocrp:egg_burger_porkchop": {
+			"textures": "textures/items/food_expanded/pamobile/ber_egg_burger_porkchop"
+		},
+		"ocrp:porkchop_turtle_burger": {
+			"textures": "textures/items/food_expanded/pamobile/ber_porkchop_turtle_burger"
+		},
+		"ocrp:cactus_soup": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cactus_soup"
+		},
+		"ocrp:turtle_beef_burger": {
+			"textures": "textures/items/food_expanded/pamobile/ber_turtle_beef_burger"
+		},
+		"ocrp:horse_meat_burger": {
+			"textures": "textures/items/food_expanded/pamobile/ber_horse_meat_burger"
+		},
+		"ocrp:egg_horse_burger": {
+			"textures": "textures/items/food_expanded/pamobile/ber_egg_horse_burger"
+		},
+		"ocrp:chicken_taco": {
+			"textures": "textures/items/food_expanded/pamobile/ber_chicken_taco"
+		},
+		"ocrp:horse_turtle_burger": {
+			"textures": "textures/items/food_expanded/pamobile/ber_horse_turtle_burger"
+		},
+		"ocrp:cooked_beef_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_beef_skewer_l"
+		},
+		"ocrp:raw_beef_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_beef_skewer"
+		},
+		"ocrp:skewer_stick": {
+			"textures": "textures/items/food_expanded/pamobile/ber_skewer_stick"
+		},
+		"ocrp:cooked_beef_skewer_m": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_beef_skewer_m"
+		},
+		"ocrp:raw_pork_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_pork_skewer"
+		},
+		"ocrp:cooked_pork_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_pork_skewer_l"
+		},
+		"ocrp:cooked_beef_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_beef_skewer"
+		},
+		"ocrp:cooked_salmon_skewer_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_salmon_skewer_f"
+		},
+		"ocrp:raw_tentacle_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_tentacle_skewer"
+		},
+		"ocrp:raw_salmon_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_salmon_skewer"
+		},
+		"ocrp:cooked_salmon_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_salmon_skewer_l"
+		},
+		"ocrp:cooked_salmon_skewer_m": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_salmon_skewer_m"
+		},
+		"ocrp:cooked_pork_skewer_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_pork_skewer_f"
+		},
+		"ocrp:cooked_tentacle_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_tentacle_skewer_l"
+		},
+		"ocrp:cooked_pork_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_pork_skewer"
+		},
+		"ocrp:cooked_tentacle_skewer_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_tentacle_skewer_f"
+		},
+		"ocrp:raw_bear_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_bear_skewer"
+		},
+		"ocrp:cooked_camel_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_camel_skewer_l"
+		},
+		"ocrp:cooked_tentacle_skewer_m": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_tentacle_skewer_m"
+		},
+		"ocrp:cooked_bear_skewer_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_bear_skewer_f"
+		},
+		"ocrp:cooked_bear_skewer_m": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_bear_skewer_m"
+		},
+		"ocrp:cooked_bea_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_bea_skewer_l"
+		},
+		"ocrp:raw_camel_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_camel_skewer"
+		},
+		"ocrp:cooked_camel_skewer_m": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_camel_skewer_m"
+		},
+		"ocrp:cooked_camel_skewer_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_camel_skewer_f"
+		},
+		"ocrp:cooked_cod_skewer_l": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_cod_skewer_l"
+		},
+		"ocrp:cooked_skewer_cod_f": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_skewer_cod_f"
+		},
+		"ocrp:raw_cod_skewer": {
+			"textures": "textures/items/food_expanded/pamobile/ber_raw_cod_skewer"
+		},
+		"ocrp:cooked_skewer_cod_m": {
+			"textures": "textures/items/food_expanded/pamobile/ber_cooked_skewer_cod_m"
 		}
 	}
 }

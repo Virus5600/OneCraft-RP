@@ -1,0 +1,1 @@
+give @s ocrp:cooked_polar_bear_meat

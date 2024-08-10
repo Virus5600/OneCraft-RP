@@ -1,0 +1,1 @@
+give @s ocrp:pumpkin_slice

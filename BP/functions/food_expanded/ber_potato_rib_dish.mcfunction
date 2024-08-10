@@ -1,0 +1,1 @@
+give @s ocrp:potato_rib_dish

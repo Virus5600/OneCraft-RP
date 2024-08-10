@@ -33,10 +33,6 @@
         "nutrition": 8,
         "saturation_modifier": "poor",
         "can_always_eat": true,
-        "on_consume": {
-          "event": "on_consume",
-          "target": "self"
-        }
       }
     },
 

@@ -1,0 +1,1 @@
+give @s ocrp:cooked_cod_skewer_l

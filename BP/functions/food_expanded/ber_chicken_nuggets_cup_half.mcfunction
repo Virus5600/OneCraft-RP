@@ -1,0 +1,1 @@
+give @s ocrp:chicken_nuggets_cup_half

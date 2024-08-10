@@ -1,0 +1,1 @@
+give @s ocrp:corp_salad

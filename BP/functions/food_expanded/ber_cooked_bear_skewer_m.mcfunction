@@ -1,0 +1,1 @@
+give @s ocrp:cooked_bear_skewer_m

@@ -1,0 +1,1 @@
+give @s ocrp:cooked_tentacle_skewer_m

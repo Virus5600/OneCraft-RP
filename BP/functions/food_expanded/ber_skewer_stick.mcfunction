@@ -1,0 +1,1 @@
+give @s ocrp:skewer_stick

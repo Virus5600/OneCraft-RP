@@ -1,0 +1,1 @@
+give @s ocrp:potato_camel_dish

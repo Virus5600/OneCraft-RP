@@ -1,0 +1,61 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ocrp:chocolate_bucket_mid",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:hand_equipped": false,
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:food": {
+        "saturation_modifier": "low",
+        "nutrition": 4,
+        "can_always_eat": false,
+        "using_converts_to": "ocrp:bucket_chocolate_low",
+      },
+      "minecraft:use_duration": 2,
+      "minecraft:allow_off_hand": false,
+      "tag:minecraft:is_food": {},
+      "minecraft:use_animation": "drink",
+      "minecraft:icon": {
+        "texture": "ocrp:chocolate_bucket_mid"
+      },
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        }
+      }
+    }
+  }
+}

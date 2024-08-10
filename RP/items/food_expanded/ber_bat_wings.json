@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ocrp:bat_wings",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": "ocrp:bat_wings",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

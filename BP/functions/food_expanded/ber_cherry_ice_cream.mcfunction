@@ -1,0 +1,1 @@
+give @s ocrp:cherry_ice_cream
