@@ -30,4 +30,5 @@ press <kbd>Ctrl+F</kbd> or <kbd>F3</kbd> to open "Find", or <kbd>⌘+F</kbd> whe
 | Dynamic Lightning | All features. | Lord Raiyon | [MCPEDL - Lord Raiyon](https://mcpedl.com/raiyons-dynamic-light-addon/) |
 | Roll and Stamina | All features. | qduoubp | [MCPEDL - qduoubp](https://mcpedl.com/roll-and-stamina/) |
 | Food Expanded V3 | All features. | Kiranaked | [MCPEDL - Kiranaked](https://mcpedl.com/food-expanded-more-food-to-minecraft/) |
+| Simple Kill Counter | All features. | DouarMC |[MCPEDL - DouarMC](https://mcpedl.com/douarmc-simple-kill-counter/)  |
 |  |  |  |  |

@@ -4,7 +4,7 @@ import { world, system, DisplaySlotId } from "@minecraft/server";
 const databaseObjective = world.scoreboard.getObjective("databaseObjective")
 	?? world.scoreboard.addObjective("databaseObjective", "db");
 const deathObjective = world.scoreboard.getObjective("deathObjective")
-	?? world.scoreboard.addObjective("deathObjective", "§cDeaths");
+	?? world.scoreboard.addObjective("deathObjective", "§cDeaths§r");
 const objectiveIdSidebarSlot = world.scoreboard.getObjectiveAtDisplaySlot(DisplaySlotId.Sidebar)?.objective.id;
 const objectiveIdBelownameSlot = world.scoreboard.getObjectiveAtDisplaySlot(DisplaySlotId.BelowName)?.objective.id;
 const objectiveIdListSlot = world.scoreboard.getObjectiveAtDisplaySlot(DisplaySlotId.List)?.objective.id;
@@ -12,7 +12,7 @@ const objectiveIdListSlot = world.scoreboard.getObjectiveAtDisplaySlot(DisplaySl
 if (objectiveIdSidebarSlot !== "deathObjective"
 	&& objectiveIdBelownameSlot !== "deathObjective"
 	&& objectiveIdListSlot !== "deathObjective") {
-	world.scoreboard.setObjectiveAtDisplaySlot(DisplaySlotId.Sidebar, { objective: deathObjective });
+	world.scoreboard.setObjectiveAtDisplaySlot(DisplaySlotId.List, { objective: deathObjective });
 }
 
 export default {
