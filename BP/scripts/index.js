@@ -8,6 +8,7 @@ import ART_ENTHUSIASM from './art_enthusiasm/index';
 import SDC from './simple_death_counter/main';
 import DYNAMIC_LIGHTNING from './dynamic_lightning/index';
 import RNS from './roll_and_stamina/main';
+import SKC from './simple_kill_counter/index';
 
 //////////////////////
 // EPIC KNIGHTS MOD //
@@ -58,3 +59,8 @@ DYNAMIC_LIGHTNING.init();
 /// ROLL AND STAMINA ///
 ////////////////////////
 RNS.init();
+
+/////////////////////////
+// SIMPLE KILL COUNTER //
+/////////////////////////
+SKC.init();
