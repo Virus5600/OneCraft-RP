@@ -1,1 +1,0 @@
-give @s ocrp:potato_chicken_dish

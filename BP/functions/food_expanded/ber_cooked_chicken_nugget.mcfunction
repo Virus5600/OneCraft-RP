@@ -1,1 +1,0 @@
-give @s ocrp:cooked_chicken_nugget

@@ -1,1 +1,0 @@
-give @s ocrp:raw_cod_skewer

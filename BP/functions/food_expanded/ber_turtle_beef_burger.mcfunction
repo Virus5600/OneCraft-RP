@@ -1,1 +1,0 @@
-give @s ocrp:turtle_beef_burger

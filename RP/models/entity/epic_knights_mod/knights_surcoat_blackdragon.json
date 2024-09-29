@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_surcoat_blackdragon",
+				"identifier": "geometry.knights_surcoat_blackdragon",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -262,7 +262,7 @@
 							"origin": [
 								-3.75,
 								13,
-								-3
+								-2.87
 							],
 							"size": [
 								7.5,

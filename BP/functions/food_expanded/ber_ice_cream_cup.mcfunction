@@ -1,1 +1,0 @@
-give @s ocrp:ice_cream_cup

@@ -1,1 +1,0 @@
-give @s ocrp:raw_pork_skewer

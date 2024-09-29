@@ -1,1 +1,0 @@
-give @s ocrp:glow_berries_salad

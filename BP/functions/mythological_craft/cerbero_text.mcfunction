@@ -1,1 +1,0 @@
-tellraw @p { "rawtext": [{ "text": "§cTHE CERBERUS HAVE BROKEN DOWN! §fYou Have §2three (3) minutes §fto tame him with §3minotaur bone§f, or he will get up..." } ] }

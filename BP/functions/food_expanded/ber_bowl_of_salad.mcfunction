@@ -1,1 +1,0 @@
-give @s ocrp:bowl_of_salad

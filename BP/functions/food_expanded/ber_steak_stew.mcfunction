@@ -1,1 +1,0 @@
-give @s ocrp:steak_stew

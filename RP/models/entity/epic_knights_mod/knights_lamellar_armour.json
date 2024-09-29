@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_lamellar_armour",
+				"identifier": "geometry.knights_lamellar_armour",
 				"texture_width": 64,
 				"texture_height": 32,
 				"visible_bounds_width": 3,
@@ -351,7 +351,7 @@
 									]
 								}
 							},
-							"inflate": 0.6
+							"inflate": 0.59
 						}
 					],
 					"parent": "rightArm"
@@ -522,7 +522,7 @@
 									]
 								}
 							},
-							"inflate": 0.6
+							"inflate": 0.59
 						}
 					],
 					"parent": "leftArm"

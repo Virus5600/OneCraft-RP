@@ -1,1 +1,0 @@
-give @s ocrp:pork_dish

@@ -1,1 +1,0 @@
-give @s ocrp:piece_of_cake

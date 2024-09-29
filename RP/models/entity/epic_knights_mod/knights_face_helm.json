@@ -1,6 +1,6 @@
 {
 	"format_version": "1.10.0",
-	"geometry.epic_knights_mod.knights_face_helm": {
+	"geometry.knights_face_helm": {
 		"texturewidth": 64,
 		"textureheight": 32,
 		"visible_bounds_width": 2,

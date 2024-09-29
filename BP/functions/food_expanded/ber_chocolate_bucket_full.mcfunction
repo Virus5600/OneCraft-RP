@@ -1,1 +1,0 @@
-give @s ocrp:chocolate_bucket_full

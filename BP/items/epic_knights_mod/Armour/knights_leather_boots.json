@@ -1,9 +1,12 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
-			"identifier": "ocrp:leather_boots",
-			"category": "equipment"
+			"identifier": "knights:leather_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -21,18 +24,10 @@
 					"max": 100
 				}
 			},
-			"minecraft:icon": {
-				"texture": "epic_knights_mod.knights_leather_boots"
-			},
-
-			"minecraft:armor": {
-				"protection": 2
-			},
+			"minecraft:icon": "epic_knights_mod:knights_leather_boots",
 			"minecraft:wearable": {
-				"slot": "slot.armor.feet"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.boots"
+				"slot": "slot.armor.feet",
+				"protection": 2
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -40,13 +35,13 @@
 						"items": [
 							"minecraft:leather"
 						],
-						"repair_amount": "query.max_durability*0.25"
+						"repair_amount": "query.max_durability * 0.25"
 					},
 					{
 						"items": [
-							"ocrp:leather_boots"
+							"knights:leather_boots"
 						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
 					}
 				]
 			}

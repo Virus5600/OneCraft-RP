@@ -1,1 +1,0 @@
-give @s ocrp:cooked_bea_skewer_l

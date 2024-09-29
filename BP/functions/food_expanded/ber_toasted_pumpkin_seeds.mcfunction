@@ -1,1 +1,0 @@
-give @s ocrp:toasted_pumpkin_seeds

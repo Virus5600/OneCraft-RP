@@ -1,1 +1,0 @@
-give @s ocrp:fruit_bowl

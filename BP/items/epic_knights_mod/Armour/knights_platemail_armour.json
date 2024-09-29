@@ -1,55 +1,44 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "ocrp:platemail_armour",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:max_stack_size": 1,
-			"minecraft:display_name": {
-				"value": "Platemail Armour"
-			},
-			"minecraft:enchantable": {
-				"value": 9,
-				"slot": "armor_torso"
-			},
-			"minecraft:durability": {
-				"max_durability": 350,
-				"damage_chance": {
-					"min": 60,
-					"max": 100
-				}
-			},
-			"minecraft:icon": {
-				"texture": "epic_knights_mod.knights_platemail_armour"
-			},
-
-			"minecraft:armor": {
-				"protection": 6
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.chest"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.chestplate"
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": [
-							"ocrp:steel_chainmail"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"ocrp:platemail_armour"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
-					}
-				]
-			}
-		}
-	}
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "knights:platemail_armour",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.chestplate"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:display_name": {
+                "value": "Platemail Armour"
+            },
+            "minecraft:enchantable": {
+                "value": 9,
+                "slot": "armor_torso"
+            },
+            "minecraft:durability": {
+                "max_durability": 350,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": "epic_knights_mod:knights_platemail_armour",
+            "minecraft:wearable": {
+                "slot": "slot.armor.chest",
+                "protection": 6
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "knights:platemail_armour"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+                    }
+                ]
+            }
+        }
+    }
 }

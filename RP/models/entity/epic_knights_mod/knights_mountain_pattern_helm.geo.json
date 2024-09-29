@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_mountain_pattern_helm",
+				"identifier": "geometry.knights_mountain_pattern_helm",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
