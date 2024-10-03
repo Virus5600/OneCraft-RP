@@ -18,22 +18,16 @@ const SKC = {
 	 * 
 	 * @returns void
 	 */
-	init: function() {
+	init: function () {
 		// Create or collect the KillCounter scoreboard and put it in the sidebar.
 		const killCounterObjective = world.scoreboard.getObjective("ocrp:kill_counter")
-			?? world.scoreboard.addObjective("ocrp:kill_counter", "§bKills§r");
+			?? SKC.initScoreboard();
 
 		// Check if the counter mode is set in the world's dynamic properties. If
 		// it isn't, set it to "player" and save it to the world's dynamic properties.	
 		SKC.counterMode = world.getDynamicProperty("ocrp:counter_mode") ?? SKC.counterMode;
 		if (!SKC.counterMode)
 			world.setDynamicProperty("ocrp:counter_mode", "player");
-
-		// Set the display slot of the kill counter objective to the sidebar.
-		world.scoreboard.setObjectiveAtDisplaySlot(
-			DisplaySlotId.Sidebar,
-			{ objective: killCounterObjective }
-		);
 
 		// Initializes the loop for the kill counter.
 		system.runInterval(() => {
@@ -79,14 +73,12 @@ const SKC = {
 	 * @param {ScriptEventCommandMessageAfterEvent} eventData The event data received from the script event.
 	 * @returns void
 	 */
-	killCounter: function(eventData) {
+	killCounter: function (eventData) {
 		const { deadEntity: deadPlayer, damageSource } = eventData;
 		const damagePlayer = damageSource.damagingEntity;
 
-		if (damagePlayer === undefined)
-			return;
-
-		if (damagePlayer.typeId !== "minecraft:player")
+		if (damagePlayer.typeId !== "minecraft:player"
+			|| damagePlayer === undefined)
 			return;
 
 		damagePlayer.setDynamicProperty(
@@ -100,7 +92,7 @@ const SKC = {
 	 * 
 	 * @returns void
 	 */
-	resetKillCounter: function(eventData) {
+	resetKillCounter: function (eventData) {
 		const scriptEventID = eventData.id;
 		if (scriptEventID !== "ocrp:reset_kill_counter")
 			return;
@@ -115,16 +107,34 @@ const SKC = {
 	 * the kill counter will only count a kill if a player kills another player. If the mode is "all",
 	 * the kill counter will count a kill if any entity kills another entity.
 	 * 
+	 * To toggle the mode, send a script event with the ID `ocrp:toggle_mode` and the message as either
+	 * "player" or "all". If the message is not one of these two, the kill counter will toggle between
+	 * "player" and "all".
+	 * 
+	 * Example:
+	 * - `/scriptevent ocrp:toggle_mode all` - This will set the kill counter mode to "All".
+	 * - `/scriptevent ocrp:toggle_mode player` - This will set the kill counter mode to "Player".
+	 * - `/scriptevent ocrp:toggle_mode` - This will toggle the kill counter mode between "Player" and "All".
+	 * - `/scriptevent ocrp:toggle_mode auysvdi` - The same with the above, it will toggle the kill counter mode between "Player" and "All".
+	 * 
 	 * @see {@link SKC.counterMode}
 	 * 
 	 * @returns void
 	 */
-	toggleMode: function(eventData) {
+	toggleMode: function (eventData) {
 		const scriptEventID = eventData.id;
+		const scriptEventMessage = eventData.message.toLowerCase();
+		const choices = ["player", "all"];
+
 		if (scriptEventID !== "ocrp:toggle_mode")
 			return;
-
+		
 		SKC.counterMode = world.getDynamicProperty("ocrp:counter_mode") ?? SKC.counterMode;
+		if (choices.includes(scriptEventMessage)) {
+			let index = choices.indexOf(scriptEventMessage) === 0 ? 1 : 0;
+			SKC.counterMode = choices[index];
+		}
+
 		switch (SKC.counterMode) {
 			case false:
 			case "all":
@@ -136,8 +146,12 @@ const SKC = {
 				break;
 		}
 
+		// Update the display name of the kill counter objective.
+		SKC.initScoreboard(true);
+
+		// Update the counter mode in the world's dynamic properties, then notify player.
 		world.setDynamicProperty("ocrp:counter_mode", SKC.counterMode);
-		world.sendMessage(`§aKill Counter mode has been set to: §b${SKC.counterMode.charAt(0).toUpperCase() + SKC.counterMode.slice(1)}§r`);
+		world.sendMessage(`§aKill Counter mode has been set to: §b${`(${SKC.counterMode.charAt(0).toUpperCase()})` + SKC.counterMode.slice(1)}§r`);
 
 		// Resubscribes the kill counter from the entityDie event.
 		let options = {};
@@ -148,13 +162,37 @@ const SKC = {
 	/**
 	 * Tells the current mode of the kill counter.
 	 */
-	currentMode: function(eventData) {
+	currentMode: function (eventData) {
 		const scriptEventID = eventData.id;
-		if (scriptEventID !== "ocrp:current_mode")
+		if (scriptEventID !== "ocrp:current_mode" && scriptEventID !== "ocrp:mode")
 			return;
 
 		SKC.counterMode = world.getDynamicProperty("ocrp:counter_mode") ?? SKC.counterMode;
-		world.sendMessage(`§aKill Counter mode is currently set to: §b${SKC.counterMode.charAt(0).toUpperCase() + SKC.counterMode.slice(1)}§r`);
+		world.sendMessage(`§aKill Counter mode is currently set to: §b${`(${SKC.counterMode.charAt(0).toUpperCase()})` + SKC.counterMode.slice(1)}§r`);
+	},
+	/**
+	 * Initializes the scoreboard for the kill counter.
+	 * 
+	 * @param {boolean} removeObjective Whether to remove the objective if it already exists. Default is `false`.
+	 * 
+	 * @returns {ScoreboardObjective} Returns the initialized scoreboard objective.
+	 */
+	initScoreboard: function (removeObjective = false) {
+		if (removeObjective)
+			world.scoreboard.removeObjective("ocrp:kill_counter");
+
+		const killCounterObjective = world.scoreboard
+			.addObjective(
+				"ocrp:kill_counter",
+				`§cKills §b(${SKC.counterMode.charAt(0).toUpperCase()})§r`
+			);
+
+		world.scoreboard.setObjectiveAtDisplaySlot(
+			DisplaySlotId.Sidebar,
+			{ objective: killCounterObjective }
+		);
+
+		return killCounterObjective;
 	}
 };
 
