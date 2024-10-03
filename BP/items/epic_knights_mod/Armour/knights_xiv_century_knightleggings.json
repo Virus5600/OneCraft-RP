@@ -1,55 +1,44 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "ocrp:xiv_century_knightleggings",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:max_stack_size": 1,
-			"minecraft:display_name": {
-				"value": "XIV Century Knight Leggings"
-			},
-			"minecraft:enchantable": {
-				"value": 9,
-				"slot": "armor_legs"
-			},
-			"minecraft:durability": {
-				"max_durability": 390,
-				"damage_chance": {
-					"min": 60,
-					"max": 100
-				}
-			},
-			"minecraft:icon": {
-				"texture": "epic_knights_mod.knights_xiv_century_knightleggings"
-			},
-
-			"minecraft:armor": {
-				"protection": 5
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.legs"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.leggings"
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": [
-							"ocrp:steel_chainmail"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"ocrp:xiv_century_knightleggings"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
-					}
-				]
-			}
-		}
-	}
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "knights:xiv_century_knightleggings",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.leggings"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:display_name": {
+                "value": "XIV Century Knight Leggings"
+            },
+            "minecraft:enchantable": {
+                "value": 9,
+                "slot": "armor_legs"
+            },
+            "minecraft:durability": {
+                "max_durability": 395,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": "epic_knights_mod:knights_xiv_century_knightleggings",
+            "minecraft:wearable": {
+                "slot": "slot.armor.legs",
+                "protection": 5
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "knights:xiv_century_knightleggings"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+                    }
+                ]
+            }
+        }
+    }
 }

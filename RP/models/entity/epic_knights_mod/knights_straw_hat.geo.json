@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_straw_hat",
+				"identifier": "geometry.knights_straw_hat",
 				"texture_width": 128,
 				"texture_height": 128,
 				"visible_bounds_width": 3,

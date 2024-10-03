@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_surcoat_blacktwoeadedeagle",
+				"identifier": "geometry.knights_surcoat_blacktwoeadedeagle",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -262,7 +262,7 @@
 							"origin": [
 								-4.25,
 								12.5,
-								-3
+								-2.76
 							],
 							"size": [
 								8.5,

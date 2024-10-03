@@ -1,58 +1,44 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "ocrp:knight_leggings",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:max_stack_size": 1,
-			"minecraft:display_name": {
-				"value": "Knight Leggings\n\n§9+1 Knockback Resistance"
-			},
-			"minecraft:enchantable": {
-				"value": 9,
-				"slot": "armor_legs"
-			},
-			"minecraft:durability": {
-				"max_durability": 450,
-				"damage_chance": {
-					"min": 60,
-					"max": 100
-				}
-			},
-			"minecraft:knockback_resistance": {
-				"protection": 1
-			},
-			"minecraft:icon": {
-				"texture": "epic_knights_mod.knights_knight_leggings"
-			},
-
-			"minecraft:armor": {
-				"protection": 6
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.legs"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.leggings"
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": [
-							"ocrp:steel_plate"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"ocrp:knight_leggings"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
-					}
-				]
-			}
-		}
-	}
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "knights:knight_leggings",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.leggings"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:display_name": {
+                "value": "Knight Leggings"
+            },
+            "minecraft:enchantable": {
+                "value": 9,
+                "slot": "armor_legs"
+            },
+            "minecraft:durability": {
+                "max_durability": 450,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": "epic_knights_mod:knights_knight_leggings",
+            "minecraft:wearable": {
+                "slot": "slot.armor.legs",
+                "protection": 6
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "knights:knight_leggings"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+                    }
+                ]
+            }
+        }
+    }
 }

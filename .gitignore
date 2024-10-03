@@ -5,3 +5,7 @@ Desktop.ini
 !.bridge/compiler/
 !.bridge/extensions
 builds
+
+# Automation Files(?)
+*.ipynb
+template.json

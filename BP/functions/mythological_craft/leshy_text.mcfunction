@@ -1,1 +1,0 @@
-tellraw @p { "rawtext": [{ "text": "§cCareful! §fYou are now entering a dangerous areas, the §2Spirit of the Forest §fdoes not like §8INVADERS..." } ] }

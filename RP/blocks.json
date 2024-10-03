@@ -3,9 +3,5 @@
 		1,
 		19,
 		0
-	],
-	"underwater_torch": {
-		"textures": "underwater_torch",
-		"sound": "wood"
-	}
+	]
 }

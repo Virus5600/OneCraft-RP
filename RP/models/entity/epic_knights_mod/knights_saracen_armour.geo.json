@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_saracen_armour",
+				"identifier": "geometry.knights_saracen_armour",
 				"texture_width": 64,
 				"texture_height": 32,
 				"visible_bounds_width": 3,
@@ -119,7 +119,7 @@
 								6,
 								4
 							],
-							"inflate": 0.65,
+							"inflate": 0.61,
 							"uv": {
 								"north": {
 									"uv": [
@@ -290,7 +290,7 @@
 								6,
 								4
 							],
-							"inflate": 0.65,
+							"inflate": 0.61,
 							"uv": {
 								"north": {
 									"uv": [

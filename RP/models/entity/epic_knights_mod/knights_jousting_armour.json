@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.epic_knights_mod.knights_jousting_armour",
+				"identifier": "geometry.knights_jousting_armour",
 				"texture_width": 16,
 				"texture_height": 16,
 				"visible_bounds_width": 3,
@@ -426,7 +426,7 @@
 									]
 								}
 							},
-							"inflate": 0.6
+							"inflate": 0.59
 						}
 					],
 					"parent": "rightArm"
@@ -672,7 +672,7 @@
 									]
 								}
 							},
-							"inflate": 0.6
+							"inflate": 0.59
 						}
 					],
 					"parent": "leftArm"

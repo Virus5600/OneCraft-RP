@@ -1,0 +1,1 @@
+scriptevent ocrp:reset_kill_counter message

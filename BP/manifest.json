@@ -6,7 +6,7 @@
 		],
 		"generated_with": {
 			"bridge": [
-				"2.7.30"
+				"2.7.37"
 			],
 			"dash": [
 				"0.11.7"
@@ -53,18 +53,18 @@
 	"dependencies": [
 		{
 			"module_name": "@minecraft/server-ui",
-			"version": "1.2.0-beta"
+			"version": "1.4.0-beta"
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.12.0-beta"
+			"version": "1.15.0-beta"
 		},
 		{
 			"uuid": "f6c2a183-2629-4ad1-88c3-e750266e5d72",
 			"version": [
 				0,
 				0,
-				1
+				2
 			]
 		}
 	]

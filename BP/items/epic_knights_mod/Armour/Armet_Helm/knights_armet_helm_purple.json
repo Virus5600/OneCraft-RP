@@ -1,54 +1,44 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "ocrp:armet_helm_purple",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:display_name": {
-				"value": "Armet Helm"
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:enchantable": {
-				"value": 9,
-				"slot": "armor_head"
-			},
-			"minecraft:durability": {
-				"max_durability": 440,
-				"damage_chance": {
-					"min": 60,
-					"max": 100
-				}
-			},
-			"minecraft:icon": {
-				"texture": "epic_knights_mod.knights_armet_helm_purple"
-			},
-			"minecraft:armor": {
-				"protection": 5
-			},
-			"minecraft:wearable": {
-				"slot": "slot.armor.head"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.helmet"
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": [
-							"ocrp:steel_plate"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"ocrp:armet_helm_purple"
-						],
-						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
-					}
-				]
-			}
-		}
-	}
+    "format_version": "1.20.80",
+    "minecraft:item": {
+        "description": {
+            "identifier": "knights:armet_helm_purple",
+            "menu_category": {
+                "category": "equipment",
+                "group": "itemGroup.name.helmet"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:enchantable": {
+                "value": 9,
+                "slot": "armor_head"
+            },
+            "minecraft:durability": {
+                "max_durability": 440,
+                "damage_chance": {
+                    "min": 60,
+                    "max": 100
+                }
+            },
+            "minecraft:icon": "epic_knights_mod:knights_armet_helm_purple",
+            "minecraft:display_name": {
+                "value": "Armet Helm"
+            },
+            "minecraft:wearable": {
+                "slot": "slot.armor.head",
+                "protection": 5
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "knights:armet_helm_purple"
+                        ],
+                        "repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+                    }
+                ]
+            }
+        }
+    }
 }
